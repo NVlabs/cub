@@ -36,6 +36,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">CUB
+   &#160;<!--span id="projectnumber">1.16.0</span>
    </div>
   </td>
  </tr>
@@ -114,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -128,28 +129,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>If()
-: <a class="el" href="structcub_1_1_device_partition.html#ac6bb4773e615e68be34cd7d491b6d8e4">cub::DevicePartition</a>
-, <a class="el" href="structcub_1_1_device_select.html#abec3c5afa3f1ca08e7b4fe3fd8990c39">cub::DeviceSelect</a>
+: <a class="el" href="struct_device_partition.html#a05b60bdf8c89ab9deaa103c549c75ef2">DevicePartition</a>
+, <a class="el" href="struct_device_select.html#a218270b0ccc5e55a2bb869ccad7402b6">DeviceSelect</a>
 </li>
 <li>InclusiveScan()
-: <a class="el" href="classcub_1_1_block_scan.html#a09452aec6c46b2bcadc5e0d641ef16e1">cub::BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
-, <a class="el" href="structcub_1_1_device_scan.html#a16d7bc049ba8985dd89b10b3bcf0a8a3">cub::DeviceScan</a>
-, <a class="el" href="classcub_1_1_block_scan.html#a702cd90359874b9dcd52f443bf2af7d3">cub::BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
-, <a class="el" href="classcub_1_1_warp_scan.html#a74a352bafc6d202f9633ab6db3c1238a">cub::WarpScan&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
-, <a class="el" href="classcub_1_1_block_scan.html#ae08f8fda4bf2692073d1eac7fdfc7f38">cub::BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_scan.html#ae5649cb6065910218236eb385ef50e2c">BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+, <a class="el" href="struct_device_scan.html#a2a2657c72991f446ae51c063a879f717">DeviceScan</a>
+, <a class="el" href="class_warp_scan.html#a8bd2121a778729447e0d1d6911bded0f">WarpScan&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
+, <a class="el" href="class_block_scan.html#ab6a400cd194fc9fc3de86101b925502f">BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+, <a class="el" href="class_warp_scan.html#a0172e61ba55cafd42beafbb482a9d885">WarpScan&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
+, <a class="el" href="class_block_scan.html#ab6cf2286d228639ab2e76d09c141606f">BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+</li>
+<li>InclusiveScanByKey()
+: <a class="el" href="struct_device_scan.html#a50139a403deb58509244c446a76cb2d8">DeviceScan</a>
 </li>
 <li>InclusiveSum()
-: <a class="el" href="classcub_1_1_block_scan.html#aac305c11b1d04708e2a41328c894830c">cub::BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
-, <a class="el" href="classcub_1_1_warp_scan.html#ad7ed6829c838ab358e4008cc4393cbfd">cub::WarpScan&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
-, <a class="el" href="classcub_1_1_block_scan.html#ab74faf02d031085922021ac6fd5b481e">cub::BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
-, <a class="el" href="structcub_1_1_device_scan.html#a9416ac1ea26f9fde669d83ddc883795a">cub::DeviceScan</a>
-, <a class="el" href="classcub_1_1_block_scan.html#a161048b996cf29f1d008fb7ff6b9a8c1">cub::BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_scan.html#a34ce93b3e9646199327ff5bd37152a1f">BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+, <a class="el" href="class_warp_scan.html#a3fdce057dfcb9d8813f76fa770e2258e">WarpScan&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
+, <a class="el" href="struct_device_scan.html#a6c39b278b312c3be6a49bcfe090fd689">DeviceScan</a>
+, <a class="el" href="class_block_scan.html#a30f9a0becf5e6b9355758d35871bc46d">BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+</li>
+<li>InclusiveSumByKey()
+: <a class="el" href="struct_device_scan.html#a36854641d92a3bad9a934f4425bd5663">DeviceScan</a>
 </li>
 <li>InequalityWrapper()
-: <a class="el" href="structcub_1_1_inequality_wrapper.html#a933c170bd76eef23017c5ff6ea010f49">cub::InequalityWrapper&lt; EqualityOp &gt;</a>
+: <a class="el" href="struct_inequality_wrapper.html#a7fef788b36862c43a7b2e5c4699dd2f2">InequalityWrapper&lt; EqualityOp &gt;</a>
 </li>
 <li>InitHistogram()
-: <a class="el" href="classcub_1_1_block_histogram.html#a080faf88a47e73e8bfa9964cd8f26feb">cub::BlockHistogram&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, BINS, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_histogram.html#abc3cded3e7db59369eebbb55fef17c8f">BlockHistogram&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, BINS, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+</li>
+<li>Invoke()
+: <a class="el" href="struct_chained_policy_3_01_p_t_x___v_e_r_s_i_o_n_00_01_policy_t_00_01_policy_t_01_4.html#ac520332eaa49386045f0b251ad2a0200">ChainedPolicy&lt; PTX_VERSION, PolicyT, PolicyT &gt;</a>
+, <a class="el" href="struct_chained_policy.html#a46b02f40ee17bfb617d6c49deb2b5a32">ChainedPolicy&lt; PTX_VERSION, PolicyT, PrevPolicyT &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -160,7 +171,7 @@ Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 <br>
-&copy; 2013 NVIDIA Corporation
+&copy; 2022 NVIDIA Corporation
 </small></address>
 </body>
 </html>

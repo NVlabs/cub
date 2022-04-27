@@ -36,6 +36,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">CUB
+   &#160;<!--span id="projectnumber">1.16.0</span>
    </div>
   </td>
  </tr>
@@ -114,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -128,20 +129,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
 <li>Reduce()
-: <a class="el" href="classcub_1_1_block_reduce.html#a089953b3bdfe7c48208632d0cc2ac1fb">cub::BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
-, <a class="el" href="structcub_1_1_device_reduce.html#aa4adabeb841b852a7a5ecf4f99a2daeb">cub::DeviceReduce</a>
-, <a class="el" href="structcub_1_1_device_segmented_reduce.html#a366739c1fc3cab723f216110f010c6d0">cub::DeviceSegmentedReduce</a>
-, <a class="el" href="classcub_1_1_block_reduce.html#a0e947f6a1d812d21839632b87aaf32e5">cub::BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
-, <a class="el" href="classcub_1_1_warp_reduce.html#a0dd72fc4cf7e1ecf59e8b15bd6819185">cub::WarpReduce&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_reduce.html#ad3083c25425f22904f10a3cc67f7cd40">BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+, <a class="el" href="struct_device_reduce.html#a8dfcb42993ed8b3b5e58a23b0082cc36">DeviceReduce</a>
+, <a class="el" href="struct_device_segmented_reduce.html#a8915877d237f349578c48aec98b32a88">DeviceSegmentedReduce</a>
+, <a class="el" href="class_block_reduce.html#afcb406d24eeb82606acfa5359bbd800d">BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+, <a class="el" href="class_warp_reduce.html#afd60caa9ce7282e9a6667bf8ddcfc8cf">WarpReduce&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
 </li>
 <li>ReduceByKey()
-: <a class="el" href="structcub_1_1_device_reduce.html#a303ae673ac32825f95912b4bfff8bef1">cub::DeviceReduce</a>
+: <a class="el" href="struct_device_reduce.html#adc698d3e6efbd6b413cf9f7ae983a512">DeviceReduce</a>
 </li>
 <li>ReduceByKeyOp()
-: <a class="el" href="structcub_1_1_reduce_by_key_op.html#aa9e777450d365effbfc54e4e7700dd24">cub::ReduceByKeyOp&lt; ReductionOpT &gt;</a>
+: <a class="el" href="struct_reduce_by_key_op.html#a18607a384ff0fa2cfca23de2c1a8b8af">ReduceByKeyOp&lt; ReductionOpT &gt;</a>
 </li>
 <li>ReduceBySegmentOp()
-: <a class="el" href="structcub_1_1_reduce_by_segment_op.html#aa01e5bafddc8cf5b6df1601ba783b17e">cub::ReduceBySegmentOp&lt; ReductionOpT &gt;</a>
+: <a class="el" href="struct_reduce_by_segment_op.html#a646989675ed5ea618071a1f731a37320">ReduceBySegmentOp&lt; ReductionOpT &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -152,7 +153,7 @@ Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 <br>
-&copy; 2013 NVIDIA Corporation
+&copy; 2022 NVIDIA Corporation
 </small></address>
 </body>
 </html>

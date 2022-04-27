@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['blockhistogramalgorithm',['BlockHistogramAlgorithm',['../namespacecub.html#a845ca81ef9b346ef7429a35d4fdc80d2',1,'cub']]],
-  ['blockloadalgorithm',['BlockLoadAlgorithm',['../namespacecub.html#a9d7e37497fdd99864c57adecda710401',1,'cub']]],
-  ['blockreducealgorithm',['BlockReduceAlgorithm',['../namespacecub.html#add0251c713859b8974806079e498d10a',1,'cub']]],
-  ['blockscanalgorithm',['BlockScanAlgorithm',['../namespacecub.html#abec44bba36037c547e7e84906d0d23ab',1,'cub']]],
-  ['blockstorealgorithm',['BlockStoreAlgorithm',['../namespacecub.html#a839b145451e9eec3d44172e3c3619700',1,'cub']]]
+  ['blockhistogramalgorithm',['BlockHistogramAlgorithm',['../block__histogram_8cuh.html#a0612e52f6c396ce1925c0e247efdc573',1,'block_histogram.cuh']]],
+  ['blockloadalgorithm',['BlockLoadAlgorithm',['../block__load_8cuh.html#a75990b83e22a326539b3ffba93d98c4b',1,'block_load.cuh']]],
+  ['blockreducealgorithm',['BlockReduceAlgorithm',['../block__reduce_8cuh.html#a8c602a208dc648c6a8653aefdc885ab5',1,'block_reduce.cuh']]],
+  ['blockscanalgorithm',['BlockScanAlgorithm',['../block__scan_8cuh.html#a4716de48dda8ed7f6e5b0d962405478f',1,'block_scan.cuh']]],
+  ['blockstorealgorithm',['BlockStoreAlgorithm',['../block__store_8cuh.html#a73bfcdeec9754bed2c652515e7b495a0',1,'block_store.cuh']]]
 ];

@@ -36,6 +36,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">CUB
+   &#160;<!--span id="projectnumber">1.16.0</span>
    </div>
   </td>
  </tr>
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,7 +100,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">block_scan.cuh File Reference</div>  </div>
@@ -107,43 +107,91 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &quot;specializations/block_scan_raking.cuh&quot;</code><br/>
 <code>#include &quot;specializations/block_scan_warp_scans.cuh&quot;</code><br/>
-<code>#include &quot;<a class="el" href="util__arch_8cuh.html">../util_arch.cuh</a>&quot;</code><br/>
+<code>#include &quot;../config.cuh&quot;</code><br/>
 <code>#include &quot;<a class="el" href="util__type_8cuh.html">../util_type.cuh</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="util__ptx_8cuh.html">../util_ptx.cuh</a>&quot;</code><br/>
-<code>#include &quot;../util_namespace.cuh&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_scan.html">cub::BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classcub_1_1_block_scan.html" title="The BlockScan class provides collective methods for computing a parallel prefix sum/scan of items par...">BlockScan</a> class provides <a href="index.html#sec0"><em>collective</em></a> methods for computing a parallel prefix sum/scan of items partitioned across a CUDA thread block. </p>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_block_scan.html">BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_block_scan.html" title="The BlockScan class provides collective methods for computing a parallel prefix sum/scan of items par...">BlockScan</a> class provides <a href="index.html#sec0"><em>collective</em></a> methods for computing a parallel prefix sum/scan of items partitioned across a CUDA thread block. </p>
 <div class="image">
 <img src="block_scan_logo.png" alt="block_scan_logo.png"/>
 <div class="caption">
 .</div></div>
-  <a href="classcub_1_1_block_scan.html#details">More...</a><br/></td></tr>
+  <a href="class_block_scan.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_block_scan_1_1_temp_storage.html">cub::BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;::TempStorage</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The operations exposed by <a class="el" href="classcub_1_1_block_scan.html" title="The BlockScan class provides collective methods for computing a parallel prefix sum/scan of items par...">BlockScan</a> require a temporary memory allocation of this nested type for thread communication. This opaque storage can be allocated directly using the <code>__shared__</code> keyword. Alternatively, it can be aliased to externally allocated memory (shared or global) or <code>union</code>'d with other storage allocation types to facilitate memory reuse.  <a href="structcub_1_1_block_scan_1_1_temp_storage.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacecub"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecub.html">cub</a></td></tr>
-<tr class="memdesc:namespacecub"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional outer namespace(s) <br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_block_scan_1_1_temp_storage.html">BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;::TempStorage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The operations exposed by <a class="el" href="class_block_scan.html" title="The BlockScan class provides collective methods for computing a parallel prefix sum/scan of items par...">BlockScan</a> require a temporary memory allocation of this nested type for thread communication. This opaque storage can be allocated directly using the <code>__shared__</code> keyword. Alternatively, it can be aliased to externally allocated memory (shared or global) or <code>union</code>'d with other storage allocation types to facilitate memory reuse.  <a href="struct_block_scan_1_1_temp_storage.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:abec44bba36037c547e7e84906d0d23ab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23ab">cub::BlockScanAlgorithm</a> { <a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23aba0fa6cac57b7df2f475a67af053b9371c">cub::BLOCK_SCAN_RAKING</a>, 
-<a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23abadc8dfe7760ac97ddde467ecf1070674f">cub::BLOCK_SCAN_RAKING_MEMOIZE</a>, 
-<a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23aba7f51e58246eb53f1a97bd1bc8c0f400f">cub::BLOCK_SCAN_WARP_SCANS</a>
+<tr class="memitem:a4716de48dda8ed7f6e5b0d962405478f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="block__scan_8cuh.html#a4716de48dda8ed7f6e5b0d962405478f">BlockScanAlgorithm</a> { <a class="el" href="block__scan_8cuh.html#a4716de48dda8ed7f6e5b0d962405478fa7c39163e5c38cf0e261dab72462d8357">BLOCK_SCAN_RAKING</a>, 
+<a class="el" href="block__scan_8cuh.html#a4716de48dda8ed7f6e5b0d962405478fa7a35f6b545dbedefe9c4c7a0c7783a7b">BLOCK_SCAN_RAKING_MEMOIZE</a>, 
+<a class="el" href="block__scan_8cuh.html#a4716de48dda8ed7f6e5b0d962405478fa9992487fe4a69a7307652f26573eb9d0">BLOCK_SCAN_WARP_SCANS</a>
  }</td></tr>
-<tr class="memdesc:abec44bba36037c547e7e84906d0d23ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlockScanAlgorithm enumerates alternative algorithms for <a class="el" href="classcub_1_1_block_scan.html" title="The BlockScan class provides collective methods for computing a parallel prefix sum/scan of items par...">cub::BlockScan</a> to compute a parallel prefix scan across a CUDA thread block.  <a href="namespacecub.html#abec44bba36037c547e7e84906d0d23ab">More...</a><br/></td></tr>
-<tr class="separator:abec44bba36037c547e7e84906d0d23ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a4716de48dda8ed7f6e5b0d962405478f"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlockScanAlgorithm enumerates alternative algorithms for cub::BlockScan to compute a parallel prefix scan across a CUDA thread block.  <a href="block__scan_8cuh.html#a4716de48dda8ed7f6e5b0d962405478f">More...</a><br/></td></tr>
+<tr class="separator:a4716de48dda8ed7f6e5b0d962405478f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classcub_1_1_block_scan.html" title="The BlockScan class provides collective methods for computing a parallel prefix sum/scan of items par...">cub::BlockScan</a> class provides <a href="index.html#sec0"><em>collective</em></a> methods for computing a parallel prefix sum/scan of items partitioned across a CUDA thread block. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>The cub::BlockScan class provides <a href="index.html#sec0"><em>collective</em></a> methods for computing a parallel prefix sum/scan of items partitioned across a CUDA thread block. </p>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a4716de48dda8ed7f6e5b0d962405478f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="block__scan_8cuh.html#a4716de48dda8ed7f6e5b0d962405478f">BlockScanAlgorithm</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BlockScanAlgorithm enumerates alternative algorithms for cub::BlockScan to compute a parallel prefix scan across a CUDA thread block. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a4716de48dda8ed7f6e5b0d962405478fa7c39163e5c38cf0e261dab72462d8357"></a>BLOCK_SCAN_RAKING</em>&nbsp;</td><td class="fielddoc">
+<dl class="section user"><dt>Overview</dt><dd>An efficient "raking reduce-then-scan" prefix scan algorithm. Execution is comprised of five phases:<ol type="1">
+<li>Upsweep sequential reduction in registers (if threads contribute more than one input each). Each thread then places the partial reduction of its item(s) into shared memory.</li>
+<li>Upsweep sequential reduction in shared memory. Threads within a single warp rake across segments of shared partial reductions.</li>
+<li>A warp-synchronous Kogge-Stone style exclusive scan within the raking warp.</li>
+<li>Downsweep sequential exclusive scan in shared memory. Threads within a single warp rake across segments of shared partial reductions, seeded with the warp-scan output.</li>
+<li>Downsweep sequential scan in registers (if threads contribute more than one input), seeded with the raking scan output.</li>
+</ol>
+</dd></dl>
+<dl class="section user"><dt></dt><dd><div class="image">
+<img src="block_scan_raking.png" alt="block_scan_raking.png"/>
+</div>
+ <div class="centercaption"><code>BLOCK_SCAN_RAKING</code> data flow for a hypothetical 16-thread thread block and 4-thread raking warp.</div></dd></dl>
+<dl class="section user"><dt>Performance Considerations</dt><dd><ul>
+<li>Although this variant may suffer longer turnaround latencies when the GPU is under-occupied, it can often provide higher overall throughput across the GPU when suitably occupied. </li>
+</ul>
+</dd></dl>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4716de48dda8ed7f6e5b0d962405478fa7a35f6b545dbedefe9c4c7a0c7783a7b"></a>BLOCK_SCAN_RAKING_MEMOIZE</em>&nbsp;</td><td class="fielddoc">
+<dl class="section user"><dt>Overview</dt><dd>Similar to cub::BLOCK_SCAN_RAKING, but with fewer shared memory reads at the expense of higher register pressure. Raking threads preserve their "upsweep" segment of values in registers while performing warp-synchronous scan, allowing the "downsweep" not to re-read them from shared memory. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a4716de48dda8ed7f6e5b0d962405478fa9992487fe4a69a7307652f26573eb9d0"></a>BLOCK_SCAN_WARP_SCANS</em>&nbsp;</td><td class="fielddoc">
+<dl class="section user"><dt>Overview</dt><dd>A quick "tiled warpscans" prefix scan algorithm. Execution is comprised of four phases:<ol type="1">
+<li>Upsweep sequential reduction in registers (if threads contribute more than one input each). Each thread then places the partial reduction of its item(s) into shared memory.</li>
+<li>Compute a shallow, but inefficient warp-synchronous Kogge-Stone style scan within each warp.</li>
+<li>A propagation phase where the warp scan outputs in each warp are updated with the aggregate from each preceding warp.</li>
+<li>Downsweep sequential scan in registers (if threads contribute more than one input), seeded with the raking scan output.</li>
+</ol>
+</dd></dl>
+<dl class="section user"><dt></dt><dd><div class="image">
+<img src="block_scan_warpscans.png" alt="block_scan_warpscans.png"/>
+</div>
+ <div class="centercaption"><code>BLOCK_SCAN_WARP_SCANS</code> data flow for a hypothetical 16-thread thread block and 4-thread raking warp.</div></dd></dl>
+<dl class="section user"><dt>Performance Considerations</dt><dd><ul>
+<li>Although this variant may suffer lower overall throughput across the GPU because due to a heavy reliance on inefficient warpscans, it can often provide lower turnaround latencies when the GPU is under-occupied. </li>
+</ul>
+</dd></dl>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
@@ -151,7 +199,7 @@ Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 <br>
-&copy; 2013 NVIDIA Corporation
+&copy; 2022 NVIDIA Corporation
 </small></address>
 </body>
 </html>

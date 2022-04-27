@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['equality',['Equality',['../structcub_1_1_equality.html',1,'cub']]],
-  ['equals',['Equals',['../structcub_1_1_equals.html',1,'cub']]]
+  ['equality',['Equality',['../struct_equality.html',1,'']]],
+  ['equals',['Equals',['../struct_equals.html',1,'']]]
 ];

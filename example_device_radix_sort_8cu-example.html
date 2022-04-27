@@ -36,6 +36,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">CUB
+   &#160;<!--span id="projectnumber">1.16.0</span>
    </div>
   </td>
  </tr>
@@ -77,7 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -148,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="comment">//---------------------------------------------------------------------</span></div>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">bool</span>                    g_verbose = <span class="keyword">false</span>;  <span class="comment">// Whether to display input/output to console</span></div>
-<div class="line"><a name="_a0"></a><a class="code" href="structcub_1_1_caching_device_allocator.html" title="A simple caching allocator for device memory allocations. ">CachingDeviceAllocator</a>  g_allocator(<span class="keyword">true</span>);  <span class="comment">// Caching allocator for device memory</span></div>
+<div class="line"><a name="_a0"></a><a class="code" href="struct_caching_device_allocator.html" title="A simple caching allocator for device memory allocations. ">CachingDeviceAllocator</a>  g_allocator(<span class="keyword">true</span>);  <span class="comment">// Caching allocator for device memory</span></div>
 <div class="line"></div>
 <div class="line"></div>
 <div class="line"><span class="comment">//---------------------------------------------------------------------</span></div>
@@ -169,8 +170,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// Return true if key is negative zero and b.key is positive zero</span></div>
-<div class="line">        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> key_bits   = *<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span>*<span class="keyword">&gt;</span>(<span class="keyword">const_cast&lt;</span><span class="keywordtype">float</span>*<span class="keyword">&gt;</span>(&amp;key));</div>
-<div class="line">        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> b_key_bits = *<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span>*<span class="keyword">&gt;</span>(<span class="keyword">const_cast&lt;</span><span class="keywordtype">float</span>*<span class="keyword">&gt;</span>(&amp;b.key));</div>
+<div class="line">        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> key_bits   = SafeBitCast&lt;unsigned int&gt;(key);</div>
+<div class="line">        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> b_key_bits = SafeBitCast&lt;unsigned int&gt;(b.key);</div>
 <div class="line">        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> HIGH_BIT   = 1u &lt;&lt; 31;</div>
 <div class="line"></div>
 <div class="line">        <span class="keywordflow">return</span> ((key_bits &amp; HIGH_BIT) != 0) &amp;&amp; ((b_key_bits &amp; HIGH_BIT) == 0);</div>
@@ -270,7 +271,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordtype">size_t</span>  temp_storage_bytes  = 0;</div>
 <div class="line">    <span class="keywordtype">void</span>    *d_temp_storage     = NULL;</div>
 <div class="line"></div>
-<div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a name="a2"></a><a class="code" href="structcub_1_1_device_radix_sort.html#a9e14a29dc4ba6d68dc804bc6b0da7dd4" title="Sorts key-value pairs into ascending order. (~2N auxiliary storage required) ">DeviceRadixSort::SortPairs</a>(d_temp_storage, temp_storage_bytes, d_keys, d_values, num_items));</div>
+<div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a name="a2"></a><a class="code" href="struct_device_radix_sort.html#abd20ebfc109aea91bdb6a20fa5b7f9e7" title="Sorts key-value pairs into ascending order. (~2N auxiliary storage required) ">DeviceRadixSort::SortPairs</a>(d_temp_storage, temp_storage_bytes, d_keys, d_values, num_items));</div>
 <div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(g_allocator.DeviceAllocate(&amp;d_temp_storage, temp_storage_bytes));</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Initialize device arrays</span></div>
@@ -278,7 +279,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(cudaMemcpy(d_values.d_buffers[d_values.selector], h_values, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>) * num_items, cudaMemcpyHostToDevice));</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Run</span></div>
-<div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a class="code" href="structcub_1_1_device_radix_sort.html#a9e14a29dc4ba6d68dc804bc6b0da7dd4" title="Sorts key-value pairs into ascending order. (~2N auxiliary storage required) ">DeviceRadixSort::SortPairs</a>(d_temp_storage, temp_storage_bytes, d_keys, d_values, num_items));</div>
+<div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a class="code" href="struct_device_radix_sort.html#abd20ebfc109aea91bdb6a20fa5b7f9e7" title="Sorts key-value pairs into ascending order. (~2N auxiliary storage required) ">DeviceRadixSort::SortPairs</a>(d_temp_storage, temp_storage_bytes, d_keys, d_values, num_items));</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Check for correctness (and display results, if specified)</span></div>
 <div class="line">    <span class="keywordtype">int</span> compare = CompareDeviceResults(h_reference_keys, d_keys.Current(), num_items, <span class="keyword">true</span>, g_verbose);</div>
@@ -315,7 +316,7 @@ Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 <br>
-&copy; 2013 NVIDIA Corporation
+&copy; 2022 NVIDIA Corporation
 </small></address>
 </body>
 </html>

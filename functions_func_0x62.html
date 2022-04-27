@@ -36,6 +36,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">CUB
+   &#160;<!--span id="projectnumber">1.16.0</span>
    </div>
   </td>
  </tr>
@@ -114,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -128,41 +129,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
 <li>BindTexture()
-: <a class="el" href="classcub_1_1_tex_obj_input_iterator.html#a1c8e90058139201e706d2aa863839a85">cub::TexObjInputIterator&lt; T, OffsetT &gt;</a>
-, <a class="el" href="classcub_1_1_tex_ref_input_iterator.html#a992d24ab41d940120b093589c5eaf132">cub::TexRefInputIterator&lt; T, UNIQUE_ID, OffsetT &gt;</a>
+: <a class="el" href="class_tex_obj_input_iterator.html#a491a08408a1943120e76c206fbde8790">TexObjInputIterator&lt; T, OffsetT &gt;</a>
+, <a class="el" href="class_tex_ref_input_iterator.html#ab085a24611522a32e6f3f1b571c6973a">TexRefInputIterator&lt; T, UNIQUE_ID, OffsetT &gt;</a>
 </li>
 <li>BlockDiscontinuity()
-: <a class="el" href="classcub_1_1_block_discontinuity.html#aa641f119413a2c64058770335fad3e98">cub::BlockDiscontinuity&lt; T, BLOCK_DIM_X, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_discontinuity.html#ac90766c0a1ad8f4b1ac877f5eab09ed8">BlockDiscontinuity&lt; T, BLOCK_DIM_X, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>BlockedToStriped()
-: <a class="el" href="classcub_1_1_block_exchange.html#a0746f38e2c4c94f5538a1b9181d65f86">cub::BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_exchange.html#ad29bea1012e29c141857759a20078727">BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>BlockedToWarpStriped()
-: <a class="el" href="classcub_1_1_block_exchange.html#af5787cd789a3ffdee385080f1d1375f8">cub::BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_exchange.html#a7aa558001b9feaf505838ad4e4a007ba">BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>BlockExchange()
-: <a class="el" href="classcub_1_1_block_exchange.html#a06929def20885f3a79b4a00edbd027a7">cub::BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_exchange.html#a4a03fea085e4ea0d2c6a40375dc3e0e0">BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>BlockHistogram()
-: <a class="el" href="classcub_1_1_block_histogram.html#a0cebf0947dda55b487e33ca63d900d7b">cub::BlockHistogram&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, BINS, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_histogram.html#a57429e20dfd6aa35118f4592d692e8e2">BlockHistogram&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, BINS, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>BlockLoad()
-: <a class="el" href="classcub_1_1_block_load.html#a4dd32bdc4eb8efa0aef66fec635c29b2">cub::BlockLoad&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_load.html#a184d10f172fb094ce4b770a4ddeb8791">BlockLoad&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>BlockRadixSort()
-: <a class="el" href="classcub_1_1_block_radix_sort.html#abaccdf539c5a4d3ec0eea3f080650f65">cub::BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_radix_sort.html#a7fc5bb34bec8a19697bb8375a6444f14">BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>BlockReduce()
-: <a class="el" href="classcub_1_1_block_reduce.html#a66f94839182ae9981219c6313d5ccff4">cub::BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_reduce.html#aa2432d510a122cb7ff0e1b76abc7e10e">BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>BlockScan()
-: <a class="el" href="classcub_1_1_block_scan.html#aa5156b3509d81ed5e53e06e270ab28cf">cub::BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_scan.html#a601b0ff197e8eec4860e97f4f49b95a1">BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>BlockStore()
-: <a class="el" href="classcub_1_1_block_store.html#a4fdd2c5743b99310dc3896754d7b69af">cub::BlockStore&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_store.html#a79f2ebe20caccafea64f2fc6cf6963de">BlockStore&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>Broadcast()
-: <a class="el" href="classcub_1_1_warp_scan.html#a97e5ad8bd37d95b39f9f7dee8254d9ad">cub::WarpScan&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
+: <a class="el" href="class_warp_scan.html#a0bb6bbb5d5b5c94d690cf3ab63d88180">WarpScan&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -173,7 +174,7 @@ Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 <br>
-&copy; 2013 NVIDIA Corporation
+&copy; 2022 NVIDIA Corporation
 </small></address>
 </body>
 </html>

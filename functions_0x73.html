@@ -36,6 +36,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">CUB
+   &#160;<!--span id="projectnumber">1.16.0</span>
    </div>
   </td>
  </tr>
@@ -116,7 +117,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -130,79 +131,79 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>Scan()
-: <a class="el" href="classcub_1_1_warp_scan.html#a3266a375b79e44f77087cec512e0c1a3">cub::WarpScan&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
+: <a class="el" href="class_warp_scan.html#abdfb75709713b488d2bc7a2543a9e6f5">WarpScan&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
 </li>
 <li>ScatterToBlocked()
-: <a class="el" href="classcub_1_1_block_exchange.html#a0e625a6848e7216af9508f2f53e4a47d">cub::BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_exchange.html#a193e2efcafe16d41618917f71d2481a0">BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>ScatterToStriped()
-: <a class="el" href="classcub_1_1_block_exchange.html#a95e0dc98782e0af0a5c65c504f5ddd0a">cub::BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_exchange.html#a04d262564d8de555514560b25bc65604">BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>ScatterToStripedFlagged()
-: <a class="el" href="classcub_1_1_block_exchange.html#ab6b88165b861b8dcb7933cccdd65d6bc">cub::BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_exchange.html#a847cba74a01ce03015f477618d4d0c4f">BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>ScatterToStripedGuarded()
-: <a class="el" href="classcub_1_1_block_exchange.html#a3d870f1b58e869d9401a1b4a90695d1d">cub::BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_exchange.html#a248099e8646116b11d18efac4db570ce">BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>self_type
-: <a class="el" href="classcub_1_1_cache_modified_input_iterator.html#af26facb4f00568a940d5529047bd90d7">cub::CacheModifiedInputIterator&lt; MODIFIER, ValueType, OffsetT &gt;</a>
-, <a class="el" href="classcub_1_1_cache_modified_output_iterator.html#abca48cb8f0172b355ba465ff3c6308c2">cub::CacheModifiedOutputIterator&lt; MODIFIER, ValueType, OffsetT &gt;</a>
-, <a class="el" href="classcub_1_1_constant_input_iterator.html#a0d85b740ebf81e48973e2c6cf9d0e812">cub::ConstantInputIterator&lt; ValueType, OffsetT &gt;</a>
-, <a class="el" href="classcub_1_1_counting_input_iterator.html#a4e89463441c1c008e7610473ae8d7435">cub::CountingInputIterator&lt; ValueType, OffsetT &gt;</a>
-, <a class="el" href="classcub_1_1_tex_obj_input_iterator.html#aa7e85f2b2f4d580e3ded497028604a5c">cub::TexObjInputIterator&lt; T, OffsetT &gt;</a>
-, <a class="el" href="classcub_1_1_tex_ref_input_iterator.html#a03d63027c130152d31623eee579f8506">cub::TexRefInputIterator&lt; T, UNIQUE_ID, OffsetT &gt;</a>
-, <a class="el" href="classcub_1_1_arg_index_input_iterator.html#a269a675a55e66836cde1d83f842a480e">cub::ArgIndexInputIterator&lt; InputIteratorT, OffsetT, OutputValueT &gt;</a>
-, <a class="el" href="classcub_1_1_transform_input_iterator.html#ad9e475cc2aae6601422445fff16de9b4">cub::TransformInputIterator&lt; ValueType, ConversionOp, InputIteratorT, OffsetT &gt;</a>
+: <a class="el" href="class_cache_modified_input_iterator.html#a1c5b1c5d6294b77ec3b764e328988351">CacheModifiedInputIterator&lt; MODIFIER, ValueType, OffsetT &gt;</a>
+, <a class="el" href="class_cache_modified_output_iterator.html#abe924b13ddec73f3efee896c52f38219">CacheModifiedOutputIterator&lt; MODIFIER, ValueType, OffsetT &gt;</a>
+, <a class="el" href="class_constant_input_iterator.html#a0e2d46bde8ab6bb4aea0cab171259a48">ConstantInputIterator&lt; ValueType, OffsetT &gt;</a>
+, <a class="el" href="class_counting_input_iterator.html#a1e40101ef9ed7db3a4faafd49d199001">CountingInputIterator&lt; ValueType, OffsetT &gt;</a>
+, <a class="el" href="class_tex_obj_input_iterator.html#a005384c3256fb3d4fda9270adad7a328">TexObjInputIterator&lt; T, OffsetT &gt;</a>
+, <a class="el" href="class_tex_ref_input_iterator.html#adc19080fec8608e68e5e7c7f393374ff">TexRefInputIterator&lt; T, UNIQUE_ID, OffsetT &gt;</a>
+, <a class="el" href="class_arg_index_input_iterator.html#a5f76592509aeb1357d33b28194fc0b94">ArgIndexInputIterator&lt; InputIteratorT, OffsetT, OutputValueT &gt;</a>
+, <a class="el" href="class_transform_input_iterator.html#a55217ebe7844eec5b426ea4f3925777d">TransformInputIterator&lt; ValueType, ConversionOp, InputIteratorT, OffsetT &gt;</a>
 </li>
 <li>SetMaxCachedBytes()
-: <a class="el" href="structcub_1_1_caching_device_allocator.html#a2216ab13fdeb11ce61f04f69899fff33">cub::CachingDeviceAllocator</a>
+: <a class="el" href="struct_caching_device_allocator.html#a635d54b28298121840ee94a287b54158">CachingDeviceAllocator</a>
 </li>
 <li>Sort()
-: <a class="el" href="classcub_1_1_block_radix_sort.html#a537a579fbefc794643b160be97251973">cub::BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_radix_sort.html#af5fd5259b9079ed48ad71c0e3deba785">BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>SortBlockedToStriped()
-: <a class="el" href="classcub_1_1_block_radix_sort.html#aa1f1b25ba587267008baf1f041306eb6">cub::BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_radix_sort.html#a60132d5519198a4d59cf286b071083c8">BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>SortDescending()
-: <a class="el" href="classcub_1_1_block_radix_sort.html#a2c89d00a1082632104498352b15264b3">cub::BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_radix_sort.html#a3d8f925e4d788a1d74e3a3be0961f7f9">BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>SortDescendingBlockedToStriped()
-: <a class="el" href="classcub_1_1_block_radix_sort.html#ae89db4d439f0996b0dd7ad4b105e4f1d">cub::BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_radix_sort.html#a84e856978a462227701b5fe7c6317e9d">BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>SortKeys()
-: <a class="el" href="structcub_1_1_device_radix_sort.html#aac3b51925d55aa4504a29cb1379ae42e">cub::DeviceRadixSort</a>
-, <a class="el" href="structcub_1_1_device_segmented_radix_sort.html#afb74f4a40be7f0b4c66b389d1ac8394a">cub::DeviceSegmentedRadixSort</a>
+: <a class="el" href="struct_device_radix_sort.html#a80d4845f853c9182a9287369cd3edc9b">DeviceRadixSort</a>
+, <a class="el" href="struct_device_segmented_radix_sort.html#af3ded5ffef2e84ae5ba6e348cf1a7240">DeviceSegmentedRadixSort</a>
 </li>
 <li>SortKeysDescending()
-: <a class="el" href="structcub_1_1_device_segmented_radix_sort.html#a85a592609829a0045639b091b41db844">cub::DeviceSegmentedRadixSort</a>
-, <a class="el" href="structcub_1_1_device_radix_sort.html#a590a4835c266715906f9a7f3009262a6">cub::DeviceRadixSort</a>
-, <a class="el" href="structcub_1_1_device_segmented_radix_sort.html#a699b87f3b00b9386f505d280a7a099a3">cub::DeviceSegmentedRadixSort</a>
+: <a class="el" href="struct_device_segmented_radix_sort.html#ae083cec950559a91f68f55084dc3b87d">DeviceSegmentedRadixSort</a>
+, <a class="el" href="struct_device_radix_sort.html#a765c6e6f04683e50c1d304a4992b5bd7">DeviceRadixSort</a>
+, <a class="el" href="struct_device_segmented_radix_sort.html#abba7eea7602e3183bd21753cd0b3cffc">DeviceSegmentedRadixSort</a>
 </li>
 <li>SortPairs()
-: <a class="el" href="structcub_1_1_device_radix_sort.html#a9e14a29dc4ba6d68dc804bc6b0da7dd4">cub::DeviceRadixSort</a>
-, <a class="el" href="structcub_1_1_device_segmented_radix_sort.html#a0ce82f886816d1b7769ba148210538bb">cub::DeviceSegmentedRadixSort</a>
+: <a class="el" href="struct_device_radix_sort.html#abd20ebfc109aea91bdb6a20fa5b7f9e7">DeviceRadixSort</a>
+, <a class="el" href="struct_device_segmented_radix_sort.html#a83feb5a8b6566b32be471c4d8167c63f">DeviceSegmentedRadixSort</a>
 </li>
 <li>SortPairsDescending()
-: <a class="el" href="structcub_1_1_device_radix_sort.html#a44ed1342b9fd17bec3733f10d4e1ae54">cub::DeviceRadixSort</a>
-, <a class="el" href="structcub_1_1_device_segmented_radix_sort.html#a86f4958fde5074bf8196e87078a3cf70">cub::DeviceSegmentedRadixSort</a>
-, <a class="el" href="structcub_1_1_device_radix_sort.html#aea53a40e665f2d5ed683a6655a3d188e">cub::DeviceRadixSort</a>
+: <a class="el" href="struct_device_radix_sort.html#a95a8aae12d2cf4e2be519e9c2d09a6c4">DeviceRadixSort</a>
+, <a class="el" href="struct_device_segmented_radix_sort.html#a0bf3deaa51ad24310af4a9c5ab3ae2a2">DeviceSegmentedRadixSort</a>
+, <a class="el" href="struct_device_radix_sort.html#ad7f720e37d7f00e282bf2b5ff1a25eed">DeviceRadixSort</a>
 </li>
 <li>Store()
-: <a class="el" href="classcub_1_1_block_store.html#a884d83528f6356568fcd6ce61410a2c8">cub::BlockStore&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_store.html#a7af47cf051787fda7a77e07fb4faeda2">BlockStore&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>StripedToBlocked()
-: <a class="el" href="classcub_1_1_block_exchange.html#a052e583a9106d5a189c12e38dd128044">cub::BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_exchange.html#abc42328bdae6890ad7a45019a603085e">BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>Sum()
-: <a class="el" href="structcub_1_1_device_segmented_reduce.html#a4854a13561cb66d46aa617aab16b8825">cub::DeviceSegmentedReduce</a>
-, <a class="el" href="classcub_1_1_block_reduce.html#a7632bd9c8950dd6a3528ca99fa3f0890">cub::BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
-, <a class="el" href="classcub_1_1_warp_reduce.html#abe4aeeabf8859a7582a0b5858b84ee7a">cub::WarpReduce&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
-, <a class="el" href="structcub_1_1_device_reduce.html#ab7f21e8255eb842aaf74305975ae607f">cub::DeviceReduce</a>
-, <a class="el" href="classcub_1_1_warp_reduce.html#ad9c4a8d85a7795cf220713f362c36f30">cub::WarpReduce&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
-, <a class="el" href="classcub_1_1_block_reduce.html#a33ddffdde07275ab0c4e1bf61b0d9409">cub::BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="struct_device_segmented_reduce.html#ada715faeeb780315f6161e87e3daec6e">DeviceSegmentedReduce</a>
+, <a class="el" href="class_block_reduce.html#a9134e9e26c67cb82541b879f8f6a28e6">BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+, <a class="el" href="class_warp_reduce.html#a78538f57da1eacdc8ed79b2e7d9422f1">WarpReduce&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
+, <a class="el" href="struct_device_reduce.html#a2a0ca350f551f51c78e354190982b5af">DeviceReduce</a>
+, <a class="el" href="class_warp_reduce.html#a31df9e99e3b9fe670985cf691aa2e287">WarpReduce&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
+, <a class="el" href="class_block_reduce.html#a3d7ed8b2bde4d962a074f67dbd1e3950">BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>SwizzleScanOp()
-: <a class="el" href="classcub_1_1_swizzle_scan_op.html#ae81a38aa9d94025da72544b9e0dc611b">cub::SwizzleScanOp&lt; ScanOp &gt;</a>
+: <a class="el" href="class_swizzle_scan_op.html#a75f59fc3ab061317735f274c554e8649">SwizzleScanOp&lt; ScanOp &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -213,7 +214,7 @@ Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 <br>
-&copy; 2013 NVIDIA Corporation
+&copy; 2022 NVIDIA Corporation
 </small></address>
 </body>
 </html>

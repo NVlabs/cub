@@ -36,6 +36,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">CUB
+   &#160;<!--span id="projectnumber">1.16.0</span>
    </div>
   </td>
  </tr>
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -98,45 +99,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">thread_store.cuh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cuda.h&gt;</code><br/>
+<div class="textblock"><code>#include &quot;../config.cuh&quot;</code><br/>
 <code>#include &quot;<a class="el" href="util__ptx_8cuh.html">../util_ptx.cuh</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="util__type_8cuh.html">../util_type.cuh</a>&quot;</code><br/>
-<code>#include &quot;../util_namespace.cuh&quot;</code><br/>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacecub"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecub.html">cub</a></td></tr>
-<tr class="memdesc:namespacecub"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional outer namespace(s) <br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga648d25a92a50ca41cf73e93a35f21f37"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_io.html#ga648d25a92a50ca41cf73e93a35f21f37">cub::CacheStoreModifier</a> { <br/>
-&#160;&#160;<a class="el" href="group___util_io.html#gga648d25a92a50ca41cf73e93a35f21f37a434aa4b3efc8e0c0ce4f1a00cdad26bd">cub::STORE_DEFAULT</a>, 
-<a class="el" href="group___util_io.html#gga648d25a92a50ca41cf73e93a35f21f37afd29f1e82f0a9dc8258fb7977b0a8237">cub::STORE_WB</a>, 
-<a class="el" href="group___util_io.html#gga648d25a92a50ca41cf73e93a35f21f37aacea07ea298b89dd1962a40b4823652d">cub::STORE_CG</a>, 
-<a class="el" href="group___util_io.html#gga648d25a92a50ca41cf73e93a35f21f37a00ae8891d1acad179d134fdd60d7839b">cub::STORE_CS</a>, 
+<tr class="memitem:gab01ff298577ffda7d8bb0508b7724159"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_io.html#gab01ff298577ffda7d8bb0508b7724159">CacheStoreModifier</a> { <br/>
+&#160;&#160;<a class="el" href="group___util_io.html#ggab01ff298577ffda7d8bb0508b7724159a879ff700e6cab0159e28c46732779582">STORE_DEFAULT</a>, 
+<a class="el" href="group___util_io.html#ggab01ff298577ffda7d8bb0508b7724159a51c66e31719c79640f57e03353baf618">STORE_WB</a>, 
+<a class="el" href="group___util_io.html#ggab01ff298577ffda7d8bb0508b7724159afd0184e4cc975724c6e10f4f5b26b283">STORE_CG</a>, 
+<a class="el" href="group___util_io.html#ggab01ff298577ffda7d8bb0508b7724159a68a69b844ccc601784f768f339868e6e">STORE_CS</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___util_io.html#gga648d25a92a50ca41cf73e93a35f21f37a5bf33b361cb9f3229588c95402fc484f">cub::STORE_WT</a>, 
-<a class="el" href="group___util_io.html#gga648d25a92a50ca41cf73e93a35f21f37aba537dcdd7a709bcdff169e014dcaf08">cub::STORE_VOLATILE</a>
+&#160;&#160;<a class="el" href="group___util_io.html#ggab01ff298577ffda7d8bb0508b7724159a4abcb1c95fb06349f3f43ee53bb9159b">STORE_WT</a>, 
+<a class="el" href="group___util_io.html#ggab01ff298577ffda7d8bb0508b7724159a7c2472121791d4bbab84d95e3996c1d8">STORE_VOLATILE</a>
 <br/>
  }</td></tr>
-<tr class="memdesc:ga648d25a92a50ca41cf73e93a35f21f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of cache modifiers for memory store operations.  <a href="group___util_io.html#ga648d25a92a50ca41cf73e93a35f21f37">More...</a><br/></td></tr>
-<tr class="separator:ga648d25a92a50ca41cf73e93a35f21f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:gab01ff298577ffda7d8bb0508b7724159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of cache modifiers for memory store operations.  <a href="group___util_io.html#gab01ff298577ffda7d8bb0508b7724159">More...</a><br/></td></tr>
+<tr class="separator:gab01ff298577ffda7d8bb0508b7724159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Thread I/O (cache modified)</div></td></tr>
-<tr class="memitem:ga7e46f6e1c83bab6124cf8d4b66377812"><td class="memTemplParams" colspan="2">template&lt;CacheStoreModifier MODIFIER, typename OutputIteratorT , typename T &gt; </td></tr>
-<tr class="memitem:ga7e46f6e1c83bab6124cf8d4b66377812"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___util_io.html#ga7e46f6e1c83bab6124cf8d4b66377812">cub::ThreadStore</a> (OutputIteratorT itr, T val)</td></tr>
-<tr class="memdesc:ga7e46f6e1c83bab6124cf8d4b66377812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread utility for writing memory using <a class="el" href="group___util_io.html#ga648d25a92a50ca41cf73e93a35f21f37" title="Enumeration of cache modifiers for memory store operations. ">cub::CacheStoreModifier</a> cache modifiers. Can be used to store any data type.  <a href="group___util_io.html#ga7e46f6e1c83bab6124cf8d4b66377812">More...</a><br/></td></tr>
-<tr class="separator:ga7e46f6e1c83bab6124cf8d4b66377812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f6291f0b659c56195105b7401cf3c7d"><td class="memTemplParams" colspan="2">template&lt;CacheStoreModifier MODIFIER, typename OutputIteratorT , typename T &gt; </td></tr>
+<tr class="memitem:ga5f6291f0b659c56195105b7401cf3c7d"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___util_io.html#ga5f6291f0b659c56195105b7401cf3c7d">ThreadStore</a> (OutputIteratorT itr, T val)</td></tr>
+<tr class="memdesc:ga5f6291f0b659c56195105b7401cf3c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread utility for writing memory using cub::CacheStoreModifier cache modifiers. Can be used to store any data type.  <a href="group___util_io.html#ga5f6291f0b659c56195105b7401cf3c7d">More...</a><br/></td></tr>
+<tr class="separator:ga5f6291f0b659c56195105b7401cf3c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Thread utilities for writing memory using PTX cache modifiers. </p>
@@ -148,7 +141,7 @@ Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 <br>
-&copy; 2013 NVIDIA Corporation
+&copy; 2022 NVIDIA Corporation
 </small></address>
 </body>
 </html>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ptr',['ptr',['../classcub_1_1_cache_modified_input_iterator.html#abcd5d6e49d039ebbcec5402738f21047',1,'cub::CacheModifiedInputIterator']]]
+  ['ptr',['ptr',['../class_cache_modified_input_iterator.html#a138b2efa89f69bb08339630e1287f5a4',1,'CacheModifiedInputIterator']]]
 ];

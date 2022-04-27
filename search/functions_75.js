@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['unbindtexture',['UnbindTexture',['../classcub_1_1_tex_obj_input_iterator.html#a35b98dd35b014a052f996ee37afe1b67',1,'cub::TexObjInputIterator::UnbindTexture()'],['../classcub_1_1_tex_ref_input_iterator.html#a5f451683e1f40e5f702251b707e87956',1,'cub::TexRefInputIterator::UnbindTexture()']]],
-  ['unique',['Unique',['../structcub_1_1_device_select.html#a5e9ea8f2581326391ea63e1808ba514d',1,'cub::DeviceSelect']]]
+  ['unbindtexture',['UnbindTexture',['../class_tex_obj_input_iterator.html#a05dcfe0cde33c59f6c97a818a055aa97',1,'TexObjInputIterator::UnbindTexture()'],['../class_tex_ref_input_iterator.html#a0ad1c4599aaebeba78c36d87eaa53979',1,'TexRefInputIterator::UnbindTexture()']]],
+  ['unique',['Unique',['../struct_device_select.html#a80c750e096bd8ef3344f7b85c44d4ac7',1,'DeviceSelect']]],
+  ['uniquebykey',['UniqueByKey',['../struct_device_select.html#a9320485c233651b5379f4e5f73af4c80',1,'DeviceSelect']]]
 ];
