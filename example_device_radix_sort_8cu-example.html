@@ -149,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="comment">//---------------------------------------------------------------------</span></div>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">bool</span>                    g_verbose = <span class="keyword">false</span>;  <span class="comment">// Whether to display input/output to console</span></div>
-<div class="line"><a name="_a0"></a><a class="code" href="struct_caching_device_allocator.html" title="A simple caching allocator for device memory allocations. ">CachingDeviceAllocator</a>  g_allocator(<span class="keyword">true</span>);  <span class="comment">// Caching allocator for device memory</span></div>
+<div class="line"><a name="_a0"></a><a class="code" href="structcub_1_1_caching_device_allocator.html" title="A simple caching allocator for device memory allocations. ">CachingDeviceAllocator</a>  g_allocator(<span class="keyword">true</span>);  <span class="comment">// Caching allocator for device memory</span></div>
 <div class="line"></div>
 <div class="line"></div>
 <div class="line"><span class="comment">//---------------------------------------------------------------------</span></div>
@@ -271,7 +271,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordtype">size_t</span>  temp_storage_bytes  = 0;</div>
 <div class="line">    <span class="keywordtype">void</span>    *d_temp_storage     = NULL;</div>
 <div class="line"></div>
-<div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a name="a2"></a><a class="code" href="struct_device_radix_sort.html#abd20ebfc109aea91bdb6a20fa5b7f9e7" title="Sorts key-value pairs into ascending order. (~2N auxiliary storage required) ">DeviceRadixSort::SortPairs</a>(d_temp_storage, temp_storage_bytes, d_keys, d_values, num_items));</div>
+<div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a name="a2"></a><a class="code" href="structcub_1_1_device_radix_sort.html#a65e82152de448c6373ed9563aaf8af7e" title="Sorts key-value pairs into ascending order. (~2N auxiliary storage required) ">DeviceRadixSort::SortPairs</a>(d_temp_storage, temp_storage_bytes, d_keys, d_values, num_items));</div>
 <div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(g_allocator.DeviceAllocate(&amp;d_temp_storage, temp_storage_bytes));</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Initialize device arrays</span></div>
@@ -279,7 +279,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(cudaMemcpy(d_values.d_buffers[d_values.selector], h_values, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>) * num_items, cudaMemcpyHostToDevice));</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Run</span></div>
-<div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a class="code" href="struct_device_radix_sort.html#abd20ebfc109aea91bdb6a20fa5b7f9e7" title="Sorts key-value pairs into ascending order. (~2N auxiliary storage required) ">DeviceRadixSort::SortPairs</a>(d_temp_storage, temp_storage_bytes, d_keys, d_values, num_items));</div>
+<div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a class="code" href="structcub_1_1_device_radix_sort.html#a65e82152de448c6373ed9563aaf8af7e" title="Sorts key-value pairs into ascending order. (~2N auxiliary storage required) ">DeviceRadixSort::SortPairs</a>(d_temp_storage, temp_storage_bytes, d_keys, d_values, num_items));</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Check for correctness (and display results, if specified)</span></div>
 <div class="line">    <span class="keywordtype">int</span> compare = CompareDeviceResults(h_reference_keys, d_keys.Current(), num_items, <span class="keyword">true</span>, g_verbose);</div>

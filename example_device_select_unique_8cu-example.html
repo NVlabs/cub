@@ -149,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="comment">//---------------------------------------------------------------------</span></div>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">bool</span>                    g_verbose = <span class="keyword">false</span>;  <span class="comment">// Whether to display input/output to console</span></div>
-<div class="line"><a name="_a0"></a><a class="code" href="struct_caching_device_allocator.html" title="A simple caching allocator for device memory allocations. ">CachingDeviceAllocator</a>  g_allocator(<span class="keyword">true</span>);  <span class="comment">// Caching allocator for device memory</span></div>
+<div class="line"><a name="_a0"></a><a class="code" href="structcub_1_1_caching_device_allocator.html" title="A simple caching allocator for device memory allocations. ">CachingDeviceAllocator</a>  g_allocator(<span class="keyword">true</span>);  <span class="comment">// Caching allocator for device memory</span></div>
 <div class="line"></div>
 <div class="line"></div>
 <div class="line"><span class="comment">//---------------------------------------------------------------------</span></div>
@@ -276,11 +276,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="comment">// Allocate temporary storage</span></div>
 <div class="line">    <span class="keywordtype">void</span>            *d_temp_storage = NULL;</div>
 <div class="line">    <span class="keywordtype">size_t</span>          temp_storage_bytes = 0;</div>
-<div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a name="a2"></a><a class="code" href="struct_device_select.html#a80c750e096bd8ef3344f7b85c44d4ac7" title="Given an input sequence d_in having runs of consecutive equal-valued keys, only the first key from ea...">DeviceSelect::Unique</a>(d_temp_storage, temp_storage_bytes, d_in, d_out, d_num_selected_out, num_items));</div>
+<div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a name="a2"></a><a class="code" href="structcub_1_1_device_select.html#a5e9ea8f2581326391ea63e1808ba514d" title="Given an input sequence d_in having runs of consecutive equal-valued keys, only the first key from ea...">DeviceSelect::Unique</a>(d_temp_storage, temp_storage_bytes, d_in, d_out, d_num_selected_out, num_items));</div>
 <div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(g_allocator.DeviceAllocate(&amp;d_temp_storage, temp_storage_bytes));</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Run</span></div>
-<div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a class="code" href="struct_device_select.html#a80c750e096bd8ef3344f7b85c44d4ac7" title="Given an input sequence d_in having runs of consecutive equal-valued keys, only the first key from ea...">DeviceSelect::Unique</a>(d_temp_storage, temp_storage_bytes, d_in, d_out, d_num_selected_out, num_items));</div>
+<div class="line">    <a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a class="code" href="structcub_1_1_device_select.html#a5e9ea8f2581326391ea63e1808ba514d" title="Given an input sequence d_in having runs of consecutive equal-valued keys, only the first key from ea...">DeviceSelect::Unique</a>(d_temp_storage, temp_storage_bytes, d_in, d_out, d_num_selected_out, num_items));</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Check for correctness (and display results, if specified)</span></div>
 <div class="line">    <span class="keywordtype">int</span> compare = CompareDeviceResults(h_reference, d_out, num_selected, <span class="keyword">true</span>, g_verbose);</div>

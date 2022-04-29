@@ -14,14 +14,16 @@ var searchData=
   ['warp_5fstore_5ftranspose',['WARP_STORE_TRANSPOSE',['../warp__store_8cuh.html#a140c2d0d43a86a4b3f441ca6e4eb0d8dadc0601203e13ac6bb36e982f82670bd0',1,'warp_store.cuh']]],
   ['warp_5fstore_5fvectorize',['WARP_STORE_VECTORIZE',['../warp__store_8cuh.html#a140c2d0d43a86a4b3f441ca6e4eb0d8daaf1bd2b2fd88f2373189a3da41a5f7a5',1,'warp_store.cuh']]],
   ['warpexchange',['WarpExchange',['../class_warp_exchange.html',1,'WarpExchange&lt; InputT, ITEMS_PER_THREAD, LOGICAL_WARP_THREADS, PTX_ARCH &gt;'],['../class_warp_exchange.html#a8eeb62ec2c57fef36ef9c939cdd7b90c',1,'WarpExchange::WarpExchange()']]],
-  ['warpid',['WarpId',['../group___util_ptx.html#ga6b2082c02f9fef6233769f7c5eeaf564',1,'util_ptx.cuh']]],
+  ['warpid',['WarpId',['../group___util_ptx.html#gadd1601dca30742c7a26e108c1dc933c9',1,'cub']]],
   ['warploadalgorithm',['WarpLoadAlgorithm',['../warp__load_8cuh.html#aee2c4c35d43fcd63d870bcfd0db55b46',1,'warp_load.cuh']]],
-  ['warpmask',['WarpMask',['../group___util_ptx.html#ga71c3aa1d5e4088ba4ba8f697bd93ab50',1,'util_ptx.cuh']]],
+  ['warpmask',['WarpMask',['../group___util_ptx.html#gad0d8881e8fe53dc6ee5e3bdeec31bb13',1,'cub']]],
   ['warpmergesort',['WarpMergeSort',['../class_warp_merge_sort.html',1,'']]],
   ['warp_2dwide',['Warp-wide',['../group___warp_module.html',1,'']]],
-  ['warpreduce',['WarpReduce',['../class_warp_reduce.html',1,'WarpReduce&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;'],['../class_warp_reduce.html#a58de50590d55a46adaa1be51e4eb2987',1,'WarpReduce::WarpReduce()']]],
-  ['warpscan',['WarpScan',['../class_warp_scan.html',1,'WarpScan&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;'],['../class_warp_scan.html#aa2008a45bb853e56780cd53715002c1c',1,'WarpScan::WarpScan()']]],
+  ['warpreduce',['WarpReduce',['../classcub_1_1_warp_reduce.html',1,'cub']]],
+  ['warpreduce',['WarpReduce',['../classcub_1_1_warp_reduce.html#ac62468e86401f21b58b9dfb5db9f717b',1,'cub::WarpReduce']]],
+  ['warpscan',['WarpScan',['../classcub_1_1_warp_scan.html',1,'cub']]],
+  ['warpscan',['WarpScan',['../classcub_1_1_warp_scan.html#a97e8ea275768d3fed3be69e813675461',1,'cub::WarpScan']]],
   ['warpstore',['WarpStore',['../class_warp_store.html',1,'WarpStore&lt; T, ITEMS_PER_THREAD, ALGORITHM, LOGICAL_WARP_THREADS, PTX_ARCH &gt;'],['../class_warp_store.html#a806f0a66d63c43cb518f88de94b8ca14',1,'WarpStore::WarpStore()'],['../class_warp_store.html#acab4a4393e041c5af7f657a08a2144f5',1,'WarpStore::WarpStore(TempStorage &amp;temp_storage)']]],
   ['warpstorealgorithm',['WarpStoreAlgorithm',['../warp__store_8cuh.html#a140c2d0d43a86a4b3f441ca6e4eb0d8d',1,'warp_store.cuh']]],
-  ['warpstripedtoblocked',['WarpStripedToBlocked',['../class_block_exchange.html#aa080e140fb03a8693513be9ec91c0e5f',1,'BlockExchange']]]
+  ['warpstripedtoblocked',['WarpStripedToBlocked',['../classcub_1_1_block_exchange.html#af3e1f75c8b8a7d3dd193fa1b1e2fcfe3',1,'cub::BlockExchange']]]
 ];

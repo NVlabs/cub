@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kernelconfig',['KernelConfig',['../struct_kernel_config.html',1,'']]]
+  ['kernelconfig',['KernelConfig',['../structcub_1_1_kernel_config.html',1,'cub']]]
 ];

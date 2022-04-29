@@ -115,96 +115,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_block_reduce.html">BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_block_reduce.html" title="The BlockReduce class provides collective methods for computing a parallel reduction of items partiti...">BlockReduce</a> class provides <a href="index.html#sec0"><em>collective</em></a> methods for computing a parallel reduction of items partitioned across a CUDA thread block. </p>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_reduce.html">cub::BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classcub_1_1_block_reduce.html" title="The BlockReduce class provides collective methods for computing a parallel reduction of items partiti...">BlockReduce</a> class provides <a href="index.html#sec0"><em>collective</em></a> methods for computing a parallel reduction of items partitioned across a CUDA thread block. </p>
 <div class="image">
 <img src="reduce_logo.png" alt="reduce_logo.png"/>
 <div class="caption">
 .</div></div>
-  <a href="class_block_reduce.html#details">More...</a><br/></td></tr>
+  <a href="classcub_1_1_block_reduce.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_block_reduce_1_1_temp_storage.html">BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;::TempStorage</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The operations exposed by <a class="el" href="class_block_reduce.html" title="The BlockReduce class provides collective methods for computing a parallel reduction of items partiti...">BlockReduce</a> require a temporary memory allocation of this nested type for thread communication. This opaque storage can be allocated directly using the <code>__shared__</code> keyword. Alternatively, it can be aliased to externally allocated memory (shared or global) or <code>union</code>'d with other storage allocation types to facilitate memory reuse.  <a href="struct_block_reduce_1_1_temp_storage.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_block_reduce_1_1_temp_storage.html">cub::BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;::TempStorage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The operations exposed by <a class="el" href="classcub_1_1_block_reduce.html" title="The BlockReduce class provides collective methods for computing a parallel reduction of items partiti...">BlockReduce</a> require a temporary memory allocation of this nested type for thread communication. This opaque storage can be allocated directly using the <code>__shared__</code> keyword. Alternatively, it can be aliased to externally allocated memory (shared or global) or <code>union</code>'d with other storage allocation types to facilitate memory reuse.  <a href="structcub_1_1_block_reduce_1_1_temp_storage.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a8c602a208dc648c6a8653aefdc885ab5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="block__reduce_8cuh.html#a8c602a208dc648c6a8653aefdc885ab5">BlockReduceAlgorithm</a> { <a class="el" href="block__reduce_8cuh.html#a8c602a208dc648c6a8653aefdc885ab5a0105e212405c9c5458a907c2bd9d0504">BLOCK_REDUCE_RAKING_COMMUTATIVE_ONLY</a>, 
-<a class="el" href="block__reduce_8cuh.html#a8c602a208dc648c6a8653aefdc885ab5a9335c8eb0e6a5d7bda4b5a78f38d758c">BLOCK_REDUCE_RAKING</a>, 
-<a class="el" href="block__reduce_8cuh.html#a8c602a208dc648c6a8653aefdc885ab5a0930227e51257449e387d36568b64cde">BLOCK_REDUCE_WARP_REDUCTIONS</a>
+<tr class="memitem:add0251c713859b8974806079e498d10a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>BlockReduceAlgorithm</b> { <b>cub::BLOCK_REDUCE_RAKING_COMMUTATIVE_ONLY</b>, 
+<b>cub::BLOCK_REDUCE_RAKING</b>, 
+<b>cub::BLOCK_REDUCE_WARP_REDUCTIONS</b>
  }</td></tr>
-<tr class="separator:a8c602a208dc648c6a8653aefdc885ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:add0251c713859b8974806079e498d10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The cub::BlockReduce class provides <a href="index.html#sec0"><em>collective</em></a> methods for computing a parallel reduction of items partitioned across a CUDA thread block. </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="a8c602a208dc648c6a8653aefdc885ab5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="block__reduce_8cuh.html#a8c602a208dc648c6a8653aefdc885ab5">BlockReduceAlgorithm</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>BlockReduceAlgorithm enumerates alternative algorithms for parallel reduction across a CUDA thread block. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a8c602a208dc648c6a8653aefdc885ab5a0105e212405c9c5458a907c2bd9d0504"></a>BLOCK_REDUCE_RAKING_COMMUTATIVE_ONLY</em>&nbsp;</td><td class="fielddoc">
-<dl class="section user"><dt>Overview</dt><dd>An efficient "raking" reduction algorithm that only supports commutative reduction operators (true for most operations, e.g., addition).</dd></dl>
-<dl class="section user"><dt></dt><dd>Execution is comprised of three phases:<ol type="1">
-<li>Upsweep sequential reduction in registers (if threads contribute more than one input each). Threads in warps other than the first warp place their partial reductions into shared memory.</li>
-<li>Upsweep sequential reduction in shared memory. Threads within the first warp continue to accumulate by raking across segments of shared partial reductions</li>
-<li>A warp-synchronous Kogge-Stone style reduction within the raking warp.</li>
-</ol>
-</dd></dl>
-<dl class="section user"><dt></dt><dd><div class="image">
-<img src="block_reduce.png" alt="block_reduce.png"/>
-</div>
- <div class="centercaption"><code>BLOCK_REDUCE_RAKING</code> data flow for a hypothetical 16-thread thread block and 4-thread raking warp.</div></dd></dl>
-<dl class="section user"><dt>Performance Considerations</dt><dd><ul>
-<li>This variant performs less communication than BLOCK_REDUCE_RAKING_NON_COMMUTATIVE and is preferable when the reduction operator is commutative. This variant applies fewer reduction operators than BLOCK_REDUCE_WARP_REDUCTIONS, and can provide higher overall throughput across the GPU when suitably occupied. However, turn-around latency may be higher than to BLOCK_REDUCE_WARP_REDUCTIONS and thus less-desirable when the GPU is under-occupied. </li>
-</ul>
-</dd></dl>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8c602a208dc648c6a8653aefdc885ab5a9335c8eb0e6a5d7bda4b5a78f38d758c"></a>BLOCK_REDUCE_RAKING</em>&nbsp;</td><td class="fielddoc">
-<dl class="section user"><dt>Overview</dt><dd>An efficient "raking" reduction algorithm that supports commutative (e.g., addition) and non-commutative (e.g., string concatenation) reduction operators. Assumes a <a href="index.html#sec4sec3"><em>blocked arrangement</em></a> of (<em>block-threads</em>*<em>items-per-thread</em>) items across the thread block, where thread<sub><em>i</em></sub> owns the <em>i</em><sup>th</sup> range of <em>items-per-thread</em> contiguous items. For multi-dimensional thread blocks, a row-major thread ordering is assumed..</dd></dl>
-<dl class="section user"><dt></dt><dd>Execution is comprised of three phases:<ol type="1">
-<li>Upsweep sequential reduction in registers (if threads contribute more than one input each). Each thread then places the partial reduction of its item(s) into shared memory.</li>
-<li>Upsweep sequential reduction in shared memory. Threads within a single warp rake across segments of shared partial reductions.</li>
-<li>A warp-synchronous Kogge-Stone style reduction within the raking warp.</li>
-</ol>
-</dd></dl>
-<dl class="section user"><dt></dt><dd><div class="image">
-<img src="block_reduce.png" alt="block_reduce.png"/>
-</div>
- <div class="centercaption"><code>BLOCK_REDUCE_RAKING</code> data flow for a hypothetical 16-thread thread block and 4-thread raking warp.</div></dd></dl>
-<dl class="section user"><dt>Performance Considerations</dt><dd><ul>
-<li>This variant performs more communication than BLOCK_REDUCE_RAKING and is only preferable when the reduction operator is non-commutative. This variant applies fewer reduction operators than BLOCK_REDUCE_WARP_REDUCTIONS, and can provide higher overall throughput across the GPU when suitably occupied. However, turn-around latency may be higher than to BLOCK_REDUCE_WARP_REDUCTIONS and thus less-desirable when the GPU is under-occupied. </li>
-</ul>
-</dd></dl>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a8c602a208dc648c6a8653aefdc885ab5a0930227e51257449e387d36568b64cde"></a>BLOCK_REDUCE_WARP_REDUCTIONS</em>&nbsp;</td><td class="fielddoc">
-<dl class="section user"><dt>Overview</dt><dd>A quick "tiled warp-reductions" reduction algorithm that supports commutative (e.g., addition) and non-commutative (e.g., string concatenation) reduction operators.</dd></dl>
-<dl class="section user"><dt></dt><dd>Execution is comprised of four phases:<ol type="1">
-<li>Upsweep sequential reduction in registers (if threads contribute more than one input each). Each thread then places the partial reduction of its item(s) into shared memory.</li>
-<li>Compute a shallow, but inefficient warp-synchronous Kogge-Stone style reduction within each warp.</li>
-<li>A propagation phase where the warp reduction outputs in each warp are updated with the aggregate from each preceding warp.</li>
-</ol>
-</dd></dl>
-<dl class="section user"><dt></dt><dd><div class="image">
-<img src="block_scan_warpscans.png" alt="block_scan_warpscans.png"/>
-</div>
- <div class="centercaption"><code>BLOCK_REDUCE_WARP_REDUCTIONS</code> data flow for a hypothetical 16-thread thread block and 4-thread raking warp.</div></dd></dl>
-<dl class="section user"><dt>Performance Considerations</dt><dd><ul>
-<li>This variant applies more reduction operators than BLOCK_REDUCE_RAKING or BLOCK_REDUCE_RAKING_NON_COMMUTATIVE, which may result in lower overall throughput across the GPU. However turn-around latency may be lower and thus useful when the GPU is under-occupied. </li>
-</ul>
-</dd></dl>
-</td></tr>
-</table>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>The <a class="el" href="classcub_1_1_block_reduce.html" title="The BlockReduce class provides collective methods for computing a parallel reduction of items partiti...">cub::BlockReduce</a> class provides <a href="index.html#sec0"><em>collective</em></a> methods for computing a parallel reduction of items partitioned across a CUDA thread block. </p>
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -118,58 +118,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_switch_device.html">SwitchDevice</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RAII helper which saves the current device and switches to the specified device on construction and switches to the saved device on destruction.  <a href="struct_switch_device.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_switch_device.html">cub::SwitchDevice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RAII helper which saves the current device and switches to the specified device on construction and switches to the saved device on destruction.  <a href="structcub_1_1_switch_device.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_kernel_config.html">KernelConfig</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_kernel_config.html">cub::KernelConfig</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chained_policy.html">ChainedPolicy&lt; PTX_VERSION, PolicyT, PrevPolicyT &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for dispatching into a policy chain.  <a href="struct_chained_policy.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_chained_policy.html">cub::ChainedPolicy&lt; PTX_VERSION, PolicyT, PrevPolicyT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for dispatching into a policy chain.  <a href="structcub_1_1_chained_policy.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chained_policy_3_01_p_t_x___v_e_r_s_i_o_n_00_01_policy_t_00_01_policy_t_01_4.html">ChainedPolicy&lt; PTX_VERSION, PolicyT, PolicyT &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for dispatching into a policy chain (end-of-chain specialization)  <a href="struct_chained_policy_3_01_p_t_x___v_e_r_s_i_o_n_00_01_policy_t_00_01_policy_t_01_4.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_chained_policy_3_01_p_t_x___v_e_r_s_i_o_n_00_01_policy_t_00_01_policy_t_01_4.html">cub::ChainedPolicy&lt; PTX_VERSION, PolicyT, PolicyT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for dispatching into a policy chain (end-of-chain specialization)  <a href="structcub_1_1_chained_policy_3_01_p_t_x___v_e_r_s_i_o_n_00_01_policy_t_00_01_policy_t_01_4.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga76318f1ac34f86485b80d0e45a69990f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga76318f1ac34f86485b80d0e45a69990f"></a>
-CUB_RUNTIME_FUNCTION int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga76318f1ac34f86485b80d0e45a69990f">CurrentDevice</a> ()</td></tr>
-<tr class="memdesc:ga76318f1ac34f86485b80d0e45a69990f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current device or -1 if an error occurred. <br/></td></tr>
-<tr class="separator:ga76318f1ac34f86485b80d0e45a69990f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7e6e03291175631642882767e3153527"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7e6e03291175631642882767e3153527"></a>
-CUB_RUNTIME_FUNCTION int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga7e6e03291175631642882767e3153527">DeviceCountUncached</a> ()</td></tr>
-<tr class="memdesc:ga7e6e03291175631642882767e3153527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of CUDA devices available or -1 if an error occurred. <br/></td></tr>
-<tr class="separator:ga7e6e03291175631642882767e3153527"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3b14be921c2e1331bc5ec2fa7bb8781e"><td class="memItemLeft" align="right" valign="top">CUB_RUNTIME_FUNCTION int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga3b14be921c2e1331bc5ec2fa7bb8781e">DeviceCount</a> ()</td></tr>
-<tr class="memdesc:ga3b14be921c2e1331bc5ec2fa7bb8781e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of CUDA devices available.  <a href="group___util_mgmt.html#ga3b14be921c2e1331bc5ec2fa7bb8781e">More...</a><br/></td></tr>
-<tr class="separator:ga3b14be921c2e1331bc5ec2fa7bb8781e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga70d68733506efde612ae72e9da01579b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga70d68733506efde612ae72e9da01579b"></a>
-CUB_RUNTIME_FUNCTION cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga70d68733506efde612ae72e9da01579b">PtxVersionUncached</a> (int &amp;ptx_version)</td></tr>
-<tr class="memdesc:ga70d68733506efde612ae72e9da01579b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the PTX version that will be used on the current device (major * 100 + minor * 10). <br/></td></tr>
-<tr class="separator:ga70d68733506efde612ae72e9da01579b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7f2340498df51da7c9d2a83fe60fd4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad7f2340498df51da7c9d2a83fe60fd4b"></a>
-__host__ cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#gad7f2340498df51da7c9d2a83fe60fd4b">PtxVersionUncached</a> (int &amp;ptx_version, int device)</td></tr>
-<tr class="memdesc:gad7f2340498df51da7c9d2a83fe60fd4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the PTX version that will be used on <code>device</code> (major * 100 + minor * 10). <br/></td></tr>
-<tr class="separator:gad7f2340498df51da7c9d2a83fe60fd4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad68d898a8af8753f9baa903ea3507b20"><td class="memItemLeft" align="right" valign="top">__host__ cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#gad68d898a8af8753f9baa903ea3507b20">PtxVersion</a> (int &amp;ptx_version, int device)</td></tr>
-<tr class="memdesc:gad68d898a8af8753f9baa903ea3507b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the PTX version that will be used on <code>device</code> (major * 100 + minor * 10).  <a href="group___util_mgmt.html#gad68d898a8af8753f9baa903ea3507b20">More...</a><br/></td></tr>
-<tr class="separator:gad68d898a8af8753f9baa903ea3507b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga506d79c27392a2aa8c00f9fcab93ffd8"><td class="memItemLeft" align="right" valign="top">CUB_RUNTIME_FUNCTION cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga506d79c27392a2aa8c00f9fcab93ffd8">PtxVersion</a> (int &amp;ptx_version)</td></tr>
-<tr class="memdesc:ga506d79c27392a2aa8c00f9fcab93ffd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the PTX version that will be used on the current device (major * 100 + minor * 10).  <a href="group___util_mgmt.html#ga506d79c27392a2aa8c00f9fcab93ffd8">More...</a><br/></td></tr>
-<tr class="separator:ga506d79c27392a2aa8c00f9fcab93ffd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa688b3a81dc32169bd82735523ddb564"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa688b3a81dc32169bd82735523ddb564"></a>
-CUB_RUNTIME_FUNCTION cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#gaa688b3a81dc32169bd82735523ddb564">SmVersionUncached</a> (int &amp;sm_version, int device=<a class="el" href="group___util_mgmt.html#ga76318f1ac34f86485b80d0e45a69990f">CurrentDevice</a>())</td></tr>
-<tr class="memdesc:gaa688b3a81dc32169bd82735523ddb564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the SM version of <code>device</code> (major * 100 + minor * 10) <br/></td></tr>
-<tr class="separator:gaa688b3a81dc32169bd82735523ddb564"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f4594ddce627427955a67aff6b69256"><td class="memItemLeft" align="right" valign="top">CUB_RUNTIME_FUNCTION cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga3f4594ddce627427955a67aff6b69256">SmVersion</a> (int &amp;sm_version, int device=<a class="el" href="group___util_mgmt.html#ga76318f1ac34f86485b80d0e45a69990f">CurrentDevice</a>())</td></tr>
-<tr class="memdesc:ga3f4594ddce627427955a67aff6b69256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the SM version of <code>device</code> (major * 100 + minor * 10)  <a href="group___util_mgmt.html#ga3f4594ddce627427955a67aff6b69256">More...</a><br/></td></tr>
-<tr class="separator:ga3f4594ddce627427955a67aff6b69256"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeca242adddc255161ddabf9f98205e47"><td class="memItemLeft" align="right" valign="top">CUB_RUNTIME_FUNCTION cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#gaeca242adddc255161ddabf9f98205e47">SyncStream</a> (cudaStream_t stream)</td></tr>
-<tr class="separator:gaeca242adddc255161ddabf9f98205e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga63b9b6c566ac4bf39e9fe8ed51daeeb1"><td class="memTemplParams" colspan="2">template&lt;typename KernelPtr &gt; </td></tr>
-<tr class="memitem:ga63b9b6c566ac4bf39e9fe8ed51daeeb1"><td class="memTemplItemLeft" align="right" valign="top">CUB_RUNTIME_FUNCTION cudaError_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga63b9b6c566ac4bf39e9fe8ed51daeeb1">MaxSmOccupancy</a> (int &amp;max_sm_occupancy, KernelPtr kernel_ptr, int block_threads, int dynamic_smem_bytes=0)</td></tr>
-<tr class="memdesc:ga63b9b6c566ac4bf39e9fe8ed51daeeb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes maximum SM occupancy in thread blocks for executing the given kernel function pointer <code>kernel_ptr</code> on the current device with <code>block_threads</code> per thread block.  <a href="group___util_mgmt.html#ga63b9b6c566ac4bf39e9fe8ed51daeeb1">More...</a><br/></td></tr>
-<tr class="separator:ga63b9b6c566ac4bf39e9fe8ed51daeeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6fce728b883d07a2c792bf5016af332"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac6fce728b883d07a2c792bf5016af332"></a>
+CUB_RUNTIME_FUNCTION int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#gac6fce728b883d07a2c792bf5016af332">cub::CurrentDevice</a> ()</td></tr>
+<tr class="memdesc:gac6fce728b883d07a2c792bf5016af332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current device or -1 if an error occurred. <br/></td></tr>
+<tr class="separator:gac6fce728b883d07a2c792bf5016af332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga226afbb6eb3c475ddbc6f5614aca5363"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga226afbb6eb3c475ddbc6f5614aca5363"></a>
+CUB_RUNTIME_FUNCTION int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga226afbb6eb3c475ddbc6f5614aca5363">cub::DeviceCountUncached</a> ()</td></tr>
+<tr class="memdesc:ga226afbb6eb3c475ddbc6f5614aca5363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of CUDA devices available or -1 if an error occurred. <br/></td></tr>
+<tr class="separator:ga226afbb6eb3c475ddbc6f5614aca5363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae60e74dc4a3e97efb70b775e5e430496"><td class="memItemLeft" align="right" valign="top">CUB_RUNTIME_FUNCTION int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#gae60e74dc4a3e97efb70b775e5e430496">cub::DeviceCount</a> ()</td></tr>
+<tr class="memdesc:gae60e74dc4a3e97efb70b775e5e430496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of CUDA devices available.  <a href="group___util_mgmt.html#gae60e74dc4a3e97efb70b775e5e430496">More...</a><br/></td></tr>
+<tr class="separator:gae60e74dc4a3e97efb70b775e5e430496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad16a09c779feeb96f7b9b47b6d13dceb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad16a09c779feeb96f7b9b47b6d13dceb"></a>
+CUB_RUNTIME_FUNCTION cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#gad16a09c779feeb96f7b9b47b6d13dceb">cub::PtxVersionUncached</a> (int &amp;ptx_version)</td></tr>
+<tr class="memdesc:gad16a09c779feeb96f7b9b47b6d13dceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the PTX version that will be used on the current device (major * 100 + minor * 10). <br/></td></tr>
+<tr class="separator:gad16a09c779feeb96f7b9b47b6d13dceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab11edb35cb624172054da946cbf8a8a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab11edb35cb624172054da946cbf8a8a1"></a>
+__host__ cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#gab11edb35cb624172054da946cbf8a8a1">cub::PtxVersionUncached</a> (int &amp;ptx_version, int device)</td></tr>
+<tr class="memdesc:gab11edb35cb624172054da946cbf8a8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the PTX version that will be used on <code>device</code> (major * 100 + minor * 10). <br/></td></tr>
+<tr class="separator:gab11edb35cb624172054da946cbf8a8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga930a29f2089bb310bb3701388e587631"><td class="memItemLeft" align="right" valign="top">__host__ cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga930a29f2089bb310bb3701388e587631">cub::PtxVersion</a> (int &amp;ptx_version, int device)</td></tr>
+<tr class="memdesc:ga930a29f2089bb310bb3701388e587631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the PTX version that will be used on <code>device</code> (major * 100 + minor * 10).  <a href="group___util_mgmt.html#ga930a29f2089bb310bb3701388e587631">More...</a><br/></td></tr>
+<tr class="separator:ga930a29f2089bb310bb3701388e587631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2d0f47fde28cf1325e410639ad40745"><td class="memItemLeft" align="right" valign="top">CUB_RUNTIME_FUNCTION cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#gab2d0f47fde28cf1325e410639ad40745">cub::PtxVersion</a> (int &amp;ptx_version)</td></tr>
+<tr class="memdesc:gab2d0f47fde28cf1325e410639ad40745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the PTX version that will be used on the current device (major * 100 + minor * 10).  <a href="group___util_mgmt.html#gab2d0f47fde28cf1325e410639ad40745">More...</a><br/></td></tr>
+<tr class="separator:gab2d0f47fde28cf1325e410639ad40745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09910e67a23c1437873cb9b5d0c90df9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga09910e67a23c1437873cb9b5d0c90df9"></a>
+CUB_RUNTIME_FUNCTION cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga09910e67a23c1437873cb9b5d0c90df9">cub::SmVersionUncached</a> (int &amp;sm_version, int device=CurrentDevice())</td></tr>
+<tr class="memdesc:ga09910e67a23c1437873cb9b5d0c90df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the SM version of <code>device</code> (major * 100 + minor * 10) <br/></td></tr>
+<tr class="separator:ga09910e67a23c1437873cb9b5d0c90df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad935edec8b87a1a1795190f683d2a282"><td class="memItemLeft" align="right" valign="top">CUB_RUNTIME_FUNCTION cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#gad935edec8b87a1a1795190f683d2a282">cub::SmVersion</a> (int &amp;sm_version, int device=CurrentDevice())</td></tr>
+<tr class="memdesc:gad935edec8b87a1a1795190f683d2a282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the SM version of <code>device</code> (major * 100 + minor * 10)  <a href="group___util_mgmt.html#gad935edec8b87a1a1795190f683d2a282">More...</a><br/></td></tr>
+<tr class="separator:gad935edec8b87a1a1795190f683d2a282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20a6451b49b6cc41c2d6da1c1638a375"><td class="memItemLeft" align="right" valign="top">CUB_RUNTIME_FUNCTION cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga20a6451b49b6cc41c2d6da1c1638a375">cub::SyncStream</a> (cudaStream_t stream)</td></tr>
+<tr class="separator:ga20a6451b49b6cc41c2d6da1c1638a375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad426539b30328122fae0d921243a303e"><td class="memTemplParams" colspan="2">template&lt;typename KernelPtr &gt; </td></tr>
+<tr class="memitem:gad426539b30328122fae0d921243a303e"><td class="memTemplItemLeft" align="right" valign="top">CUB_RUNTIME_FUNCTION cudaError_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#gad426539b30328122fae0d921243a303e">cub::MaxSmOccupancy</a> (int &amp;max_sm_occupancy, KernelPtr kernel_ptr, int block_threads, int dynamic_smem_bytes=0)</td></tr>
+<tr class="memdesc:gad426539b30328122fae0d921243a303e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes maximum SM occupancy in thread blocks for executing the given kernel function pointer <code>kernel_ptr</code> on the current device with <code>block_threads</code> per thread block.  <a href="group___util_mgmt.html#gad426539b30328122fae0d921243a303e">More...</a><br/></td></tr>
+<tr class="separator:gad426539b30328122fae0d921243a303e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Properties of a given CUDA device and the corresponding PTX bundle </p>

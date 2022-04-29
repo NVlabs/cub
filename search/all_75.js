@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['unbindtexture',['UnbindTexture',['../class_tex_obj_input_iterator.html#a05dcfe0cde33c59f6c97a818a055aa97',1,'TexObjInputIterator::UnbindTexture()'],['../class_tex_ref_input_iterator.html#a0ad1c4599aaebeba78c36d87eaa53979',1,'TexRefInputIterator::UnbindTexture()']]],
-  ['unique',['Unique',['../struct_device_select.html#a80c750e096bd8ef3344f7b85c44d4ac7',1,'DeviceSelect']]],
-  ['uniquebykey',['UniqueByKey',['../struct_device_select.html#a9320485c233651b5379f4e5f73af4c80',1,'DeviceSelect']]],
-  ['up',['Up',['../class_block_shuffle.html#a1f2d0a14c3e00b8dc6517477b3adf3a5',1,'BlockShuffle::Up(T(&amp;input)[ITEMS_PER_THREAD], T(&amp;prev)[ITEMS_PER_THREAD])'],['../class_block_shuffle.html#a6c9f185309e6ea948c4d6eb2bf59c382',1,'BlockShuffle::Up(T(&amp;input)[ITEMS_PER_THREAD], T(&amp;prev)[ITEMS_PER_THREAD], T &amp;block_suffix)']]],
+  ['unbindtexture',['UnbindTexture',['../classcub_1_1_tex_obj_input_iterator.html#a35b98dd35b014a052f996ee37afe1b67',1,'cub::TexObjInputIterator::UnbindTexture()'],['../classcub_1_1_tex_ref_input_iterator.html#a5f451683e1f40e5f702251b707e87956',1,'cub::TexRefInputIterator::UnbindTexture()']]],
+  ['unique',['Unique',['../structcub_1_1_device_select.html#a5e9ea8f2581326391ea63e1808ba514d',1,'cub::DeviceSelect']]],
+  ['uniquebykey',['UniqueByKey',['../structcub_1_1_device_select.html#abf7e3cdb5fd86d3b28cde2fdd83a0102',1,'cub::DeviceSelect']]],
+  ['up',['Up',['../classcub_1_1_block_shuffle.html#a8fd8aecfd84f8e46ae2eb43f1a55d5fb',1,'cub::BlockShuffle::Up(T(&amp;input)[ITEMS_PER_THREAD], T(&amp;prev)[ITEMS_PER_THREAD])'],['../classcub_1_1_block_shuffle.html#a0b4e269982369692d33213044aeedd5b',1,'cub::BlockShuffle::Up(T(&amp;input)[ITEMS_PER_THREAD], T(&amp;prev)[ITEMS_PER_THREAD], T &amp;block_suffix)']]],
   ['upperbound',['UpperBound',['../thread__search_8cuh.html#a765c246c933c284d87ded487221838e2',1,'thread_search.cuh']]],
   ['util_5farch_2ecuh',['util_arch.cuh',['../util__arch_8cuh.html',1,'']]],
   ['util_5fdebug_2ecuh',['util_debug.cuh',['../util__debug_8cuh.html',1,'']]],

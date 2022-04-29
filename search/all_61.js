@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['activepolicy',['ActivePolicy',['../struct_chained_policy.html#ae00deb08bcc3a1de27d81ad908079c63',1,'ChainedPolicy::ActivePolicy()'],['../struct_chained_policy_3_01_p_t_x___v_e_r_s_i_o_n_00_01_policy_t_00_01_policy_t_01_4.html#a39daa82c64a08cd013da65cc882b2092',1,'ChainedPolicy&lt; PTX_VERSION, PolicyT, PolicyT &gt;::ActivePolicy()']]],
-  ['allocationsize',['AllocationSize',['../class_grid_queue.html#a570b8f914de3d783339d09c71df597c2',1,'GridQueue']]],
+  ['activepolicy',['ActivePolicy',['../structcub_1_1_chained_policy.html#a7cd7be83babe80884f9f4e9e64363077',1,'cub::ChainedPolicy::ActivePolicy()'],['../structcub_1_1_chained_policy_3_01_p_t_x___v_e_r_s_i_o_n_00_01_policy_t_00_01_policy_t_01_4.html#a1b4ead5717e5f363acf62bf45c9e1aea',1,'cub::ChainedPolicy&lt; PTX_VERSION, PolicyT, PolicyT &gt;::ActivePolicy()']]],
+  ['allocationsize',['AllocationSize',['../classcub_1_1_grid_queue.html#af61cd6d340dd1759566e3dd2191a0e38',1,'cub::GridQueue']]],
   ['arg_5findex_5finput_5fiterator_2ecuh',['arg_index_input_iterator.cuh',['../arg__index__input__iterator_8cuh.html',1,'']]],
-  ['argindexinputiterator',['ArgIndexInputIterator',['../class_arg_index_input_iterator.html',1,'ArgIndexInputIterator&lt; InputIteratorT, OffsetT, OutputValueT &gt;'],['../class_arg_index_input_iterator.html#a73b7cca26dafdb3bb0ac56fe5b88c9aa',1,'ArgIndexInputIterator::ArgIndexInputIterator()']]],
-  ['argmax',['ArgMax',['../struct_arg_max.html',1,'ArgMax'],['../struct_device_reduce.html#a3d3688e892b61bcd64be7fba3383fc12',1,'DeviceReduce::ArgMax()'],['../struct_device_segmented_reduce.html#a88a8e293c423f63184b4325d4f8075b4',1,'DeviceSegmentedReduce::ArgMax()']]],
-  ['argmin',['ArgMin',['../struct_arg_min.html',1,'ArgMin'],['../struct_device_reduce.html#a015175fb57d4350cd395b3725ffb4cb7',1,'DeviceReduce::ArgMin()'],['../struct_device_segmented_reduce.html#a493bf6d9c44e159d5d5cec12ab036c7a',1,'DeviceSegmentedReduce::ArgMin()']]]
+  ['argindexinputiterator',['ArgIndexInputIterator',['../classcub_1_1_arg_index_input_iterator.html',1,'cub']]],
+  ['argindexinputiterator',['ArgIndexInputIterator',['../classcub_1_1_arg_index_input_iterator.html#a594bce67ac2e7e77bdab7c15e7c23dfc',1,'cub::ArgIndexInputIterator']]],
+  ['argmax',['ArgMax',['../structcub_1_1_device_reduce.html#a07a9ecbf0b6db1882107f6adee1c4276',1,'cub::DeviceReduce::ArgMax()'],['../structcub_1_1_device_segmented_reduce.html#a9088605f171a3a8ed78660d692211d1f',1,'cub::DeviceSegmentedReduce::ArgMax()']]],
+  ['argmax',['ArgMax',['../structcub_1_1_arg_max.html',1,'cub']]],
+  ['argmin',['ArgMin',['../structcub_1_1_arg_min.html',1,'cub']]],
+  ['argmin',['ArgMin',['../structcub_1_1_device_reduce.html#a6b35963e90120b6d2c76a6068b0340a9',1,'cub::DeviceReduce::ArgMin()'],['../structcub_1_1_device_segmented_reduce.html#a6c5d11ec871db561530113a0e01e4c31',1,'cub::DeviceSegmentedReduce::ArgMin()']]]
 ];

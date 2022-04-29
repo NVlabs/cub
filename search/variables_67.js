@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['grid_5fsize',['grid_size',['../struct_grid_even_share.html#acd65bceb8c5ff52f0ef75114995fd240',1,'GridEvenShare']]]
+  ['grid_5fsize',['grid_size',['../structcub_1_1_grid_even_share.html#a593036d6499363669f3c3e0bd7a3b3e3',1,'cub::GridEvenShare']]]
 ];

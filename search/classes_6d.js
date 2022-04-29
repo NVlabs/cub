@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['max',['Max',['../struct_max.html',1,'']]],
-  ['min',['Min',['../struct_min.html',1,'']]]
+  ['max',['Max',['../structcub_1_1_max.html',1,'cub']]],
+  ['min',['Min',['../structcub_1_1_min.html',1,'cub']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['block_5fend',['block_end',['../struct_grid_even_share.html#aaab8b481054e73b9c90f8eae1e075b68',1,'GridEvenShare']]],
-  ['block_5foffset',['block_offset',['../struct_grid_even_share.html#a8ddb23c76142720a03eaacd2e7ace076',1,'GridEvenShare']]],
-  ['block_5fstride',['block_stride',['../struct_grid_even_share.html#a4ba1a3c9be5fb165601406dbb2691968',1,'GridEvenShare']]]
+  ['block_5fend',['block_end',['../structcub_1_1_grid_even_share.html#a6748137f9117693abb89c18cfe514dfa',1,'cub::GridEvenShare']]],
+  ['block_5foffset',['block_offset',['../structcub_1_1_grid_even_share.html#a7cb630cdf5e87953020a2eb24cb1ed01',1,'cub::GridEvenShare']]],
+  ['block_5fstride',['block_stride',['../structcub_1_1_grid_even_share.html#a8344b79302e42c7f005a31242748d3d5',1,'cub::GridEvenShare']]]
 ];

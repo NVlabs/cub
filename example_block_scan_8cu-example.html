@@ -161,20 +161,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="keyword">template</span> &lt;</div>
 <div class="line">    <span class="keywordtype">int</span>                     BLOCK_THREADS,</div>
 <div class="line">    <span class="keywordtype">int</span>                     ITEMS_PER_THREAD,</div>
-<div class="line">    <a class="code" href="block__scan_8cuh.html#a4716de48dda8ed7f6e5b0d962405478f" title="BlockScanAlgorithm enumerates alternative algorithms for cub::BlockScan to compute a parallel prefix ...">BlockScanAlgorithm</a>      ALGORITHM&gt;</div>
+<div class="line">    BlockScanAlgorithm      ALGORITHM&gt;</div>
 <div class="line">__global__ <span class="keywordtype">void</span> BlockPrefixSumKernel(</div>
 <div class="line">    <span class="keywordtype">int</span>         *d_in,          <span class="comment">// Tile of input</span></div>
 <div class="line">    <span class="keywordtype">int</span>         *d_out,         <span class="comment">// Tile of output</span></div>
 <div class="line">    clock_t     *d_elapsed)     <span class="comment">// Elapsed cycle count of block scan</span></div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Specialize BlockLoad type for our thread block (uses warp-striped loads for coalescing, then transposes in shared memory to a blocked arrangement)</span></div>
-<div class="line">    <span class="keyword">typedef</span> <a name="_a0"></a><a class="code" href="class_block_load.html" title="The BlockLoad class provides collective data movement methods for loading a linear segment of items f...">BlockLoad&lt;int, BLOCK_THREADS, ITEMS_PER_THREAD, BLOCK_LOAD_WARP_TRANSPOSE&gt;</a> BlockLoadT;</div>
+<div class="line">    <span class="keyword">typedef</span> <a name="_a0"></a><a class="code" href="classcub_1_1_block_load.html" title="The BlockLoad class provides collective data movement methods for loading a linear segment of items f...">BlockLoad&lt;int, BLOCK_THREADS, ITEMS_PER_THREAD, BLOCK_LOAD_WARP_TRANSPOSE&gt;</a> BlockLoadT;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Specialize BlockStore type for our thread block (uses warp-striped loads for coalescing, then transposes in shared memory to a blocked arrangement)</span></div>
-<div class="line">    <span class="keyword">typedef</span> <a name="_a1"></a><a class="code" href="class_block_store.html" title="The BlockStore class provides collective data movement methods for writing a blocked arrangement of i...">BlockStore&lt;int, BLOCK_THREADS, ITEMS_PER_THREAD, BLOCK_STORE_WARP_TRANSPOSE&gt;</a> BlockStoreT;</div>
+<div class="line">    <span class="keyword">typedef</span> <a name="_a1"></a><a class="code" href="classcub_1_1_block_store.html" title="The BlockStore class provides collective data movement methods for writing a blocked arrangement of i...">BlockStore&lt;int, BLOCK_THREADS, ITEMS_PER_THREAD, BLOCK_STORE_WARP_TRANSPOSE&gt;</a> BlockStoreT;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Specialize BlockScan type for our thread block</span></div>
-<div class="line">    <span class="keyword">typedef</span> <a name="_a2"></a><a class="code" href="class_block_scan.html" title="The BlockScan class provides collective methods for computing a parallel prefix sum/scan of items par...">BlockScan&lt;int, BLOCK_THREADS, ALGORITHM&gt;</a> BlockScanT;</div>
+<div class="line">    <span class="keyword">typedef</span> <a name="_a2"></a><a class="code" href="classcub_1_1_block_scan.html" title="The BlockScan class provides collective methods for computing a parallel prefix sum/scan of items par...">BlockScan&lt;int, BLOCK_THREADS, ALGORITHM&gt;</a> BlockScanT;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Shared memory</span></div>
 <div class="line">    __shared__ <span class="keyword">union </span>TempStorage</div>
@@ -245,7 +245,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="keyword">template</span> &lt;</div>
 <div class="line">    <span class="keywordtype">int</span>                 BLOCK_THREADS,</div>
 <div class="line">    <span class="keywordtype">int</span>                 ITEMS_PER_THREAD,</div>
-<div class="line">    <a class="code" href="block__scan_8cuh.html#a4716de48dda8ed7f6e5b0d962405478f" title="BlockScanAlgorithm enumerates alternative algorithms for cub::BlockScan to compute a parallel prefix ...">BlockScanAlgorithm</a>  ALGORITHM&gt;</div>
+<div class="line">    BlockScanAlgorithm  ALGORITHM&gt;</div>
 <div class="line"><span class="keywordtype">void</span> Test()</div>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> TILE_SIZE = BLOCK_THREADS * ITEMS_PER_THREAD;</div>
@@ -277,13 +277,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">    <span class="comment">// Kernel props</span></div>
 <div class="line">    <span class="keywordtype">int</span> max_sm_occupancy;</div>
-<div class="line">    <a name="a3"></a><a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a name="a4"></a><a class="code" href="group___util_mgmt.html#ga63b9b6c566ac4bf39e9fe8ed51daeeb1" title="Computes maximum SM occupancy in thread blocks for executing the given kernel function pointer kernel...">MaxSmOccupancy</a>(max_sm_occupancy, BlockPrefixSumKernel&lt;BLOCK_THREADS, ITEMS_PER_THREAD, ALGORITHM&gt;, BLOCK_THREADS));</div>
+<div class="line">    <a name="a3"></a><a class="code" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8" title="Debug macro with exit. ">CubDebugExit</a>(<a name="a4"></a><a class="code" href="group___util_mgmt.html#gad426539b30328122fae0d921243a303e" title="Computes maximum SM occupancy in thread blocks for executing the given kernel function pointer kernel...">MaxSmOccupancy</a>(max_sm_occupancy, BlockPrefixSumKernel&lt;BLOCK_THREADS, ITEMS_PER_THREAD, ALGORITHM&gt;, BLOCK_THREADS));</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Copy problem to device</span></div>
 <div class="line">    cudaMemcpy(d_in, h_in, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>) * TILE_SIZE, cudaMemcpyHostToDevice);</div>
 <div class="line"></div>
 <div class="line">    printf(<span class="stringliteral">&quot;BlockScan algorithm %s on %d items (%d timing iterations, %d blocks, %d threads, %d items per thread, %d SM occupancy):\n&quot;</span>,</div>
-<div class="line">        (ALGORITHM == <a name="a5"></a><a class="code" href="block__scan_8cuh.html#a4716de48dda8ed7f6e5b0d962405478fa7c39163e5c38cf0e261dab72462d8357">BLOCK_SCAN_RAKING</a>) ? <span class="stringliteral">&quot;BLOCK_SCAN_RAKING&quot;</span> : (ALGORITHM == <a name="a6"></a><a class="code" href="block__scan_8cuh.html#a4716de48dda8ed7f6e5b0d962405478fa7a35f6b545dbedefe9c4c7a0c7783a7b">BLOCK_SCAN_RAKING_MEMOIZE</a>) ? <span class="stringliteral">&quot;BLOCK_SCAN_RAKING_MEMOIZE&quot;</span> : <span class="stringliteral">&quot;BLOCK_SCAN_WARP_SCANS&quot;</span>,</div>
+<div class="line">        (ALGORITHM == BLOCK_SCAN_RAKING) ? <span class="stringliteral">&quot;BLOCK_SCAN_RAKING&quot;</span> : (ALGORITHM == BLOCK_SCAN_RAKING_MEMOIZE) ? <span class="stringliteral">&quot;BLOCK_SCAN_RAKING_MEMOIZE&quot;</span> : <span class="stringliteral">&quot;BLOCK_SCAN_WARP_SCANS&quot;</span>,</div>
 <div class="line">        TILE_SIZE, g_timing_iterations, g_grid_size, BLOCK_THREADS, ITEMS_PER_THREAD, max_sm_occupancy);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Run aggregate/prefix kernel</span></div>

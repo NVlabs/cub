@@ -112,11 +112,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga84c3a4c178bf6593e0fad2b763606236"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga84c3a4c178bf6593e0fad2b763606236"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga84c3a4c178bf6593e0fad2b763606236">CubDebug</a>(e)&#160;&#160;&#160;<a class="el" href="group___util_mgmt.html#ga82bd0265beca751b05b669677995471a">CUB_NS_QUALIFIER::Debug</a>((cudaError_t) (e), __FILE__, __LINE__)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga84c3a4c178bf6593e0fad2b763606236">CubDebug</a>(e)&#160;&#160;&#160;CUB_NS_QUALIFIER::Debug((cudaError_t) (e), __FILE__, __LINE__)</td></tr>
 <tr class="memdesc:ga84c3a4c178bf6593e0fad2b763606236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug macro. <br/></td></tr>
 <tr class="separator:ga84c3a4c178bf6593e0fad2b763606236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga26211db894893b3cec946e4e537536f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga26211db894893b3cec946e4e537536f8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8">CubDebugExit</a>(e)&#160;&#160;&#160;if (<a class="el" href="group___util_mgmt.html#ga82bd0265beca751b05b669677995471a">CUB_NS_QUALIFIER::Debug</a>((cudaError_t) (e), __FILE__, __LINE__)) { exit(1); }</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga26211db894893b3cec946e4e537536f8">CubDebugExit</a>(e)&#160;&#160;&#160;if (CUB_NS_QUALIFIER::Debug((cudaError_t) (e), __FILE__, __LINE__)) { exit(1); }</td></tr>
 <tr class="memdesc:ga26211db894893b3cec946e4e537536f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug macro with exit. <br/></td></tr>
 <tr class="separator:ga26211db894893b3cec946e4e537536f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga25f361894440b53e637cb7ead2a4c0b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga25f361894440b53e637cb7ead2a4c0b7"></a>
@@ -126,10 +126,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga82bd0265beca751b05b669677995471a"><td class="memItemLeft" align="right" valign="top">__host__ __device__ <br class="typebreak"/>
-__forceinline__ cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga82bd0265beca751b05b669677995471a">Debug</a> (cudaError_t error, const char *filename, int line)</td></tr>
-<tr class="memdesc:ga82bd0265beca751b05b669677995471a"><td class="mdescLeft">&#160;</td><td class="mdescRight">CUB error reporting macro (prints error messages to stderr)  <a href="group___util_mgmt.html#ga82bd0265beca751b05b669677995471a">More...</a><br/></td></tr>
-<tr class="separator:ga82bd0265beca751b05b669677995471a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a175d2a88f63f7f1ab30e8b4f2cfa95"><td class="memItemLeft" align="right" valign="top">__host__ __device__ <br class="typebreak"/>
+__forceinline__ cudaError_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___util_mgmt.html#ga5a175d2a88f63f7f1ab30e8b4f2cfa95">cub::Debug</a> (cudaError_t error, const char *filename, int line)</td></tr>
+<tr class="memdesc:ga5a175d2a88f63f7f1ab30e8b4f2cfa95"><td class="mdescLeft">&#160;</td><td class="mdescRight">CUB error reporting macro (prints error messages to stderr)  <a href="group___util_mgmt.html#ga5a175d2a88f63f7f1ab30e8b4f2cfa95">More...</a><br/></td></tr>
+<tr class="separator:ga5a175d2a88f63f7f1ab30e8b4f2cfa95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Error and event logging routines.</p>

@@ -192,11 +192,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">__global__ <span class="keywordtype">void</span> BlockSortKernel(<span class="keywordtype">int</span> *d_in, <span class="keywordtype">int</span> *d_out)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Specialize BlockLoad, BlockStore, and BlockRadixSort collective types</span></div>
-<div class="line">    <span class="keyword">typedef</span> cub::BlockLoad&lt;</div>
-<div class="line">        <span class="keywordtype">int</span>*, BLOCK_THREADS, ITEMS_PER_THREAD, <a class="code" href="block__load_8cuh.html#a75990b83e22a326539b3ffba93d98c4baa4d1ea04f3602fa96d8a3dc2db1b1498">BLOCK_LOAD_TRANSPOSE</a>&gt; BlockLoadT;</div>
-<div class="line">    <span class="keyword">typedef</span> cub::BlockStore&lt;</div>
-<div class="line">        <span class="keywordtype">int</span>*, BLOCK_THREADS, ITEMS_PER_THREAD, <a class="code" href="block__store_8cuh.html#a73bfcdeec9754bed2c652515e7b495a0ac9e0adea0a25c117fce8d53991902479">BLOCK_STORE_TRANSPOSE</a>&gt; BlockStoreT;</div>
-<div class="line">    <span class="keyword">typedef</span> cub::BlockRadixSort&lt;</div>
+<div class="line">    <span class="keyword">typedef</span> <a class="code" href="classcub_1_1_block_load.html" title="The BlockLoad class provides collective data movement methods for loading a linear segment of items f...">cub::BlockLoad</a>&lt;</div>
+<div class="line">        <span class="keywordtype">int</span>*, BLOCK_THREADS, ITEMS_PER_THREAD, BLOCK_LOAD_TRANSPOSE&gt; BlockLoadT;</div>
+<div class="line">    <span class="keyword">typedef</span> <a class="code" href="classcub_1_1_block_store.html" title="The BlockStore class provides collective data movement methods for writing a blocked arrangement of i...">cub::BlockStore</a>&lt;</div>
+<div class="line">        <span class="keywordtype">int</span>*, BLOCK_THREADS, ITEMS_PER_THREAD, BLOCK_STORE_TRANSPOSE&gt; BlockStoreT;</div>
+<div class="line">    <span class="keyword">typedef</span> <a class="code" href="classcub_1_1_block_radix_sort.html" title="The BlockRadixSort class provides collective methods for sorting items partitioned across a CUDA thre...">cub::BlockRadixSort</a>&lt;</div>
 <div class="line">        int, BLOCK_THREADS, ITEMS_PER_THREAD&gt; BlockRadixSortT;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Allocate type-safe, repurposable shared memory for collectives</span></div>
@@ -229,19 +229,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="keywordtype">int</span> num_blocks = ...;</div>
 <div class="line">BlockSortKernel&lt;128, 16&gt;&lt;&lt;&lt;num_blocks, 128&gt;&gt;&gt;(d_in, d_out); </div>
 </div><!-- fragment --></dd></dl>
-<dl class="section user"><dt></dt><dd>In this example, threads use cub::BlockLoad, cub::BlockRadixSort, and cub::BlockStore to collectively load, sort and store the block's segment of input items. Because these operations are cooperative, each primitive requires an allocation of shared memory for threads to communicate through. The typical usage pattern for a CUB collective is:<ol type="1">
+<dl class="section user"><dt></dt><dd>In this example, threads use <a class="el" href="classcub_1_1_block_load.html" title="The BlockLoad class provides collective data movement methods for loading a linear segment of items f...">cub::BlockLoad</a>, <a class="el" href="classcub_1_1_block_radix_sort.html" title="The BlockRadixSort class provides collective methods for sorting items partitioned across a CUDA thre...">cub::BlockRadixSort</a>, and <a class="el" href="classcub_1_1_block_store.html" title="The BlockStore class provides collective data movement methods for writing a blocked arrangement of i...">cub::BlockStore</a> to collectively load, sort and store the block's segment of input items. Because these operations are cooperative, each primitive requires an allocation of shared memory for threads to communicate through. The typical usage pattern for a CUB collective is:<ol type="1">
 <li>Statically specialize the primitive for the specific problem setting at hand, e.g., the data type being sorted, the number of threads per block, the number of keys per thread, optional algorithmic alternatives, etc. (CUB primitives are also implicitly specialized by the targeted compilation architecture.)</li>
 <li>Allocate (or alias) an instance of the specialized primitive's nested <code>TempStorage</code> type within a shared memory space.</li>
 <li>Specify communication details (e.g., the <code>TempStorage</code> allocation) to construct an instance of the primitive.</li>
 <li>Invoke methods on the primitive instance.</li>
 </ol>
 </dd></dl>
-<dl class="section user"><dt></dt><dd>In particular, cub::BlockRadixSort is used to collectively sort the segment of data items that have been partitioned across the thread block. To provide coalesced accesses to device memory, we configure the cub::BlockLoad and cub::BlockStore primitives to access memory using a striped access pattern (where consecutive threads simultaneously access consecutive items) and then <em>transpose</em> the keys into a <a href="index.html#sec4sec3"><em>blocked arrangement</em></a> of elements across threads. To reuse shared memory across all three primitives, the thread block statically allocates a union of their <code>TempStorage</code> types.</dd></dl>
+<dl class="section user"><dt></dt><dd>In particular, <a class="el" href="classcub_1_1_block_radix_sort.html" title="The BlockRadixSort class provides collective methods for sorting items partitioned across a CUDA thre...">cub::BlockRadixSort</a> is used to collectively sort the segment of data items that have been partitioned across the thread block. To provide coalesced accesses to device memory, we configure the <a class="el" href="classcub_1_1_block_load.html" title="The BlockLoad class provides collective data movement methods for loading a linear segment of items f...">cub::BlockLoad</a> and <a class="el" href="classcub_1_1_block_store.html" title="The BlockStore class provides collective data movement methods for writing a blocked arrangement of i...">cub::BlockStore</a> primitives to access memory using a striped access pattern (where consecutive threads simultaneously access consecutive items) and then <em>transpose</em> the keys into a <a href="index.html#sec4sec3"><em>blocked arrangement</em></a> of elements across threads. To reuse shared memory across all three primitives, the thread block statically allocates a union of their <code>TempStorage</code> types.</dd></dl>
 <h1><a class="anchor" id="sec4"></a>
 (4) Why do you need CUB?</h1>
 <dl class="section user"><dt></dt><dd>Writing, tuning, and maintaining kernel code is perhaps the most challenging, time-consuming aspect of CUDA programming. Kernel software is where the complexity of parallelism is expressed. Programmers must reason about deadlock, livelock, synchronization, race conditions, shared memory layout, plurality of state, granularity, throughput, latency, memory bottlenecks, etc.</dd></dl>
 <dl class="section user"><dt></dt><dd>With the exception of CUB, however, there are few (if any) software libraries of <em>reusable</em> kernel primitives. In the CUDA ecosystem, CUB is unique in this regard. As a <a href="http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#hardware-implementation">SIMT</a> library and software abstraction layer, CUB provides:<ol type="1">
-<li><b><em>Simplicity of composition</em></b>. CUB enhances programmer productivity by allowing complex parallel operations to be easily sequenced and nested. For example, cub::BlockRadixSort is constructed from cub::BlockExchange and cub::BlockRadixRank. The latter is composed of cub::BlockScan which incorporates cub::WarpScan.<div class="image">
+<li><b><em>Simplicity of composition</em></b>. CUB enhances programmer productivity by allowing complex parallel operations to be easily sequenced and nested. For example, <a class="el" href="classcub_1_1_block_radix_sort.html" title="The BlockRadixSort class provides collective methods for sorting items partitioned across a CUDA thre...">cub::BlockRadixSort</a> is constructed from <a class="el" href="classcub_1_1_block_exchange.html" title="The BlockExchange class provides collective methods for rearranging data partitioned across a CUDA th...">cub::BlockExchange</a> and cub::BlockRadixRank. The latter is composed of <a class="el" href="classcub_1_1_block_scan.html" title="The BlockScan class provides collective methods for computing a parallel prefix sum/scan of items par...">cub::BlockScan</a> which incorporates <a class="el" href="classcub_1_1_warp_scan.html" title="The WarpScan class provides collective methods for computing a parallel prefix scan of items partitio...">cub::WarpScan</a>.<div class="image">
 <img src="nested_composition.png" alt="nested_composition.png"/>
 </div>
 </li>
@@ -258,7 +258,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li><b><em>Simplicity of performance tuning</em></b>:<ul>
 <li><b><em>Resource utilization</em></b>. CUB primitives allow developers to quickly change grain sizes (threads per block, items per thread, etc.) to best match the processor resources of their target architecture</li>
-<li><b><em>Variant tuning</em></b>. Most CUB primitives support alternative algorithmic strategies. For example, cub::BlockHistogram is parameterized to implement either an atomic-based approach or a sorting-based approach. (The latter provides uniform performance regardless of input distribution.)</li>
+<li><b><em>Variant tuning</em></b>. Most CUB primitives support alternative algorithmic strategies. For example, <a class="el" href="classcub_1_1_block_histogram.html" title="The BlockHistogram class provides collective methods for constructing block-wide histograms from data...">cub::BlockHistogram</a> is parameterized to implement either an atomic-based approach or a sorting-based approach. (The latter provides uniform performance regardless of input distribution.)</li>
 <li><b><em>Co-optimization</em></b>. When the enclosing kernel is similarly parameterizable, a tuning configuration can be found that optimally accommodates their combined register and shared memory pressure.<br/>
 <br/>
 </li>
@@ -302,10 +302,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">__global__ <span class="keywordtype">void</span> SomeKernelFoo(...)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Specialize BlockScan for 128 threads on integer types</span></div>
-<div class="line">    <span class="keyword">typedef</span> cub::BlockScan&lt;int, 128&gt; BlockScan;</div>
+<div class="line">    <span class="keyword">typedef</span> <a class="code" href="classcub_1_1_block_scan.html" title="The BlockScan class provides collective methods for computing a parallel prefix sum/scan of items par...">cub::BlockScan&lt;int, 128&gt;</a> BlockScan;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Allocate shared memory for BlockScan</span></div>
-<div class="line">    __shared__ <span class="keyword">typename</span> <a class="code" href="struct_block_scan_1_1_temp_storage.html" title="The operations exposed by BlockScan require a temporary memory allocation of this nested type for thr...">BlockScan::TempStorage</a> scan_storage;</div>
+<div class="line">    __shared__ <span class="keyword">typename</span> BlockScan::TempStorage scan_storage;</div>
 <div class="line"></div>
 <div class="line">    ...</div>
 <div class="line">    </div>
@@ -315,7 +315,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    ...</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Perform an exclusive block-wide prefix sum</span></div>
-<div class="line">    BlockScan(scan_storage).ExclusiveSum(thread_data_in, thread_data_out);</div>
+<div class="line">    BlockScan(scan_storage).<a class="code" href="classcub_1_1_block_scan.html#a266a054160f65c87e43f645cd8e46fd1" title="Computes an exclusive block-wide prefix scan using addition (+) as the scan operator. Each thread contributes one input element. The value of 0 is applied as the initial value, and is assigned to output in thread0. ">ExclusiveSum</a>(thread_data_in, thread_data_out);</div>
 </div><!-- fragment --></dd></dl>
 <dl class="section user"><dt></dt><dd>Furthermore, the CUB interface is designed to separate parameter fields by concerns. CUB primitives have three distinct parameter fields:<ol type="1">
 <li><b><em>Static template parameters</em></b>. These are constants that will dictate the storage layout and the unrolling of algorithmic steps (e.g., the input data type and the number of block threads), and are used to specialize the class.</li>
@@ -362,10 +362,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>Instruction-level parallelism. Multiple items per thread also facilitates greater ILP for improved throughput and utilization.</li>
 </ul>
 </dd></dl>
-<dl class="section user"><dt></dt><dd>Finally, cub::BlockExchange provides operations for converting between blocked and striped arrangements.</dd></dl>
+<dl class="section user"><dt></dt><dd>Finally, <a class="el" href="classcub_1_1_block_exchange.html" title="The BlockExchange class provides collective methods for rearranging data partitioned across a CUDA th...">cub::BlockExchange</a> provides operations for converting between blocked and striped arrangements.</dd></dl>
 <h2><a class="anchor" id="sec5sec4"></a>
 5.4 Static tuning and co-tuning</h2>
-<dl class="section user"><dt></dt><dd>This style of flexible interface simplifies performance tuning. Most CUB primitives support alternative algorithmic strategies that can be statically targeted by a compiler-based or JIT-based autotuner. (For example, cub::BlockHistogram is parameterized to implement either an atomic-based approach or a sorting-based approach.) Algorithms are also tunable over parameters such as thread count and grain size as well. Taken together, each of the CUB algorithms provides a fairly rich tuning space.</dd></dl>
+<dl class="section user"><dt></dt><dd>This style of flexible interface simplifies performance tuning. Most CUB primitives support alternative algorithmic strategies that can be statically targeted by a compiler-based or JIT-based autotuner. (For example, <a class="el" href="classcub_1_1_block_histogram.html" title="The BlockHistogram class provides collective methods for constructing block-wide histograms from data...">cub::BlockHistogram</a> is parameterized to implement either an atomic-based approach or a sorting-based approach.) Algorithms are also tunable over parameters such as thread count and grain size as well. Taken together, each of the CUB algorithms provides a fairly rich tuning space.</dd></dl>
 <dl class="section user"><dt></dt><dd>Whereas conventional libraries are optimized offline and in isolation, CUB provides interesting opportunities for whole-program optimization. For example, each CUB primitive is typically parameterized by threads-per-block and items-per-thread, both of which affect the underlying algorithm's efficiency and resource requirements. When the enclosing kernel is similarly parameterized, the coupled CUB primitives adjust accordingly. This enables autotuners to search for a single configuration that maximizes the performance of the entire kernel for a given set of hardware resources.</dd></dl>
 <h1><a class="anchor" id="sec6"></a>
 (6) How do I get started using CUB?</h1>
@@ -422,7 +422,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>New Features:<ul>
 <li>API change: Device-, block-, and warp-wide exclusive scans have been revised to now accept an "initial value" (instead of an "identity value") for seeding the computation with an arbitrary prefix.</li>
 <li>API change: Device-wide reductions and scans can now have input sequence types that are different from output sequence types (as long as they are coercible) value") for seeding the computation with an arbitrary prefix</li>
-<li>API change: <a class="el" href="class_block_load.html" title="The BlockLoad class provides collective data movement methods for loading a linear segment of items f...">BlockLoad</a> and <a class="el" href="class_block_store.html" title="The BlockStore class provides collective data movement methods for writing a blocked arrangement of i...">BlockStore</a> are now templated by the local data type, instead of the Iterator type. This allows for output iterators having <code>void</code> as their <code>value_type</code> (e.g., discard iterators).</li>
+<li>API change: BlockLoad and BlockStore are now templated by the local data type, instead of the Iterator type. This allows for output iterators having <code>void</code> as their <code>value_type</code> (e.g., discard iterators).</li>
 </ul>
 </li>
 <li>Reduce repository size (move doxygen binary to doc repository)</li>
@@ -450,10 +450,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <td style="white-space: nowrap; vertical-align:text-top;">04/13/2015<br/>
  <a href="https://github.com/NVlabs/cub/archive/1.4.1.zip"><b>CUB v1.4.1</b></a> </td><td style="vertical-align:text-top;"><ul>
 <li>New Features:<ul>
-<li>Updated cub::DeviceHistogram implementation that provides the same "histogram-even" and "histogram-range" functionality as IPP/NPP. Provides extremely fast and, perhaps more importantly, very uniform performance response across diverse real-world datasets, including pathological (homogeneous) sample distributions (resilience)</li>
-<li>New cub::DeviceSpmv methods for multiplying sparse matrices by dense vectors, load-balanced using a merge-based parallel decomposition.</li>
-<li>New cub::DeviceRadixSort sorting entry-points that always return the sorted output into the specified buffer (as opposed to the cub::DoubleBuffer in which it could end up in either buffer)</li>
-<li>New cub::DeviceRunLengthEncode::NonTrivialRuns for finding the starting offsets and lengths of all non-trivial runs (i.e., length &gt; 1) of keys in a given sequence. (Useful for top-down partitioning algorithms like MSD sorting of very-large keys.)</li>
+<li>Updated <a class="el" href="structcub_1_1_device_histogram.html" title="DeviceHistogram provides device-wide parallel operations for constructing histogram(s) from a sequenc...">cub::DeviceHistogram</a> implementation that provides the same "histogram-even" and "histogram-range" functionality as IPP/NPP. Provides extremely fast and, perhaps more importantly, very uniform performance response across diverse real-world datasets, including pathological (homogeneous) sample distributions (resilience)</li>
+<li>New <a class="el" href="structcub_1_1_device_spmv.html" title="DeviceSpmv provides device-wide parallel operations for performing sparse-matrix * dense-vector multi...">cub::DeviceSpmv</a> methods for multiplying sparse matrices by dense vectors, load-balanced using a merge-based parallel decomposition.</li>
+<li>New <a class="el" href="structcub_1_1_device_radix_sort.html" title="DeviceRadixSort provides device-wide, parallel operations for computing a radix sort across a sequenc...">cub::DeviceRadixSort</a> sorting entry-points that always return the sorted output into the specified buffer (as opposed to the cub::DoubleBuffer in which it could end up in either buffer)</li>
+<li>New <a class="el" href="structcub_1_1_device_run_length_encode.html#aa2318dc7a69f28a8c47d417aaf53db3a" title="Enumerates the starting offsets and lengths of all non-trivial runs (of length &gt; 1) of same-valued ke...">cub::DeviceRunLengthEncode::NonTrivialRuns</a> for finding the starting offsets and lengths of all non-trivial runs (i.e., length &gt; 1) of keys in a given sequence. (Useful for top-down partitioning algorithms like MSD sorting of very-large keys.)</li>
 </ul>
 </li>
 <li>See the <a href="https://github.com/NVIDIA/cub/blob/main/CHANGELOG.md">change-log</a> for further details, including bug-fixes </li>
@@ -469,7 +469,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>Most CUB programs having typical 1D usage should not require any changes to accomodate these updates.</li>
 </ul>
 </li>
-<li>Added new "combination scan" methods to cub::WarpScan for efficiently computing both inclusive and exclusive prefix scans (and sums).</li>
+<li>Added new "combination scan" methods to <a class="el" href="classcub_1_1_warp_scan.html" title="The WarpScan class provides collective methods for computing a parallel prefix scan of items partitio...">cub::WarpScan</a> for efficiently computing both inclusive and exclusive prefix scans (and sums).</li>
 <li>See the <a href="https://github.com/NVIDIA/cub/blob/main/CHANGELOG.md">change-log</a> for further details </li>
 </ul>
 <p class="endtd"></p>
@@ -477,7 +477,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr>
 <td style="white-space: nowrap; vertical-align:text-top;">04/01/2014<br/>
  <b>CUB v1.2.3</b> </td><td style="vertical-align:text-top;"><ul>
-<li>Added device-wide reduce-by-key (cub::DeviceReduce::ReduceByKey, cub::DeviceReduce::RunLengthEncode)</li>
+<li>Added device-wide reduce-by-key (<a class="el" href="structcub_1_1_device_reduce.html#a303ae673ac32825f95912b4bfff8bef1" title="Reduces segments of values, where segments are demarcated by corresponding runs of identical keys...">cub::DeviceReduce::ReduceByKey</a>, cub::DeviceReduce::RunLengthEncode)</li>
 <li>Added MS VC++ project solutions for device-wide and block-wide examples</li>
 <li>See the <a href="https://github.com/NVIDIA/cub/blob/main/CHANGELOG.md">change-log</a> for further details, including bug-fixes </li>
 </ul>
@@ -486,13 +486,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr>
 <td style="white-space: nowrap; vertical-align:text-top;">12/11/2013<br/>
  <b>CUB v1.1.1</b> </td><td style="vertical-align:text-top;"><ul>
-<li>Added cub::TexObjInputIteratorT, cub::TexRefInputIteratorT, cub::CacheModifiedInputIteratorT, and cub::CacheModifiedOutputIterator types for loading &amp; storing arbitrary data types through the cache hierarchy. Compatible with Thrust API.</li>
-<li>Added descending sorting to cub::DeviceRadixSort and cub::BlockRadixSort</li>
-<li>Added min, max, arg-min, and arg-max to cub::DeviceReduce</li>
-<li>Added cub::DeviceSelect (select-unique, select-if, and select-flagged)</li>
-<li>Added cub::DevicePartition (partition-if, partition-flagged)</li>
-<li>Added generic cub::ShuffleUp(), cub::ShuffleDown(), and cub::ShuffleIndex() for warp-wide communication of arbitrary data types (SM3x+)</li>
-<li>Added cub::MaxSmOccupancy() for accurately determining SM occupancy for any given kernel function pointer</li>
+<li>Added cub::TexObjInputIteratorT, cub::TexRefInputIteratorT, cub::CacheModifiedInputIteratorT, and <a class="el" href="classcub_1_1_cache_modified_output_iterator.html" title="A random-access output wrapper for storing array values using a PTX cache-modifier. ">cub::CacheModifiedOutputIterator</a> types for loading &amp; storing arbitrary data types through the cache hierarchy. Compatible with Thrust API.</li>
+<li>Added descending sorting to <a class="el" href="structcub_1_1_device_radix_sort.html" title="DeviceRadixSort provides device-wide, parallel operations for computing a radix sort across a sequenc...">cub::DeviceRadixSort</a> and <a class="el" href="classcub_1_1_block_radix_sort.html" title="The BlockRadixSort class provides collective methods for sorting items partitioned across a CUDA thre...">cub::BlockRadixSort</a></li>
+<li>Added min, max, arg-min, and arg-max to <a class="el" href="structcub_1_1_device_reduce.html" title="DeviceReduce provides device-wide, parallel operations for computing a reduction across a sequence of...">cub::DeviceReduce</a></li>
+<li>Added <a class="el" href="structcub_1_1_device_select.html" title="DeviceSelect provides device-wide, parallel operations for compacting selected items from sequences o...">cub::DeviceSelect</a> (select-unique, select-if, and select-flagged)</li>
+<li>Added <a class="el" href="structcub_1_1_device_partition.html" title="DevicePartition provides device-wide, parallel operations for partitioning sequences of data items re...">cub::DevicePartition</a> (partition-if, partition-flagged)</li>
+<li>Added generic <a class="el" href="group___warp_module.html#ga3ce0e7cbde4118ed1031accfdc1fe9b8" title="Shuffle-up for any data type. Each warp-lanei obtains the value input contributed by warp-lanei-src_o...">cub::ShuffleUp()</a>, <a class="el" href="group___warp_module.html#gaa4c1bde331915342a88e21975ab11ad3" title="Shuffle-down for any data type. Each warp-lanei obtains the value input contributed by warp-lanei+src...">cub::ShuffleDown()</a>, and <a class="el" href="group___warp_module.html#ga3271b0438c771086f7faf1ced681850b" title="Shuffle-broadcast for any data type. Each warp-lanei obtains the value input contributed by warp-lane...">cub::ShuffleIndex()</a> for warp-wide communication of arbitrary data types (SM3x+)</li>
+<li>Added <a class="el" href="group___util_mgmt.html#gad426539b30328122fae0d921243a303e" title="Computes maximum SM occupancy in thread blocks for executing the given kernel function pointer kernel...">cub::MaxSmOccupancy()</a> for accurately determining SM occupancy for any given kernel function pointer</li>
 <li>See the <a href="https://github.com/NVIDIA/cub/blob/main/CHANGELOG.md">change-log</a> for further details, including bug-fixes </li>
 </ul>
 <p class="endtd"></p>
@@ -501,7 +501,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <td style="white-space: nowrap; vertical-align:text-top;">08/08/2013<br/>
  <b>CUB v1.0.1</b> </td><td style="vertical-align:text-top;"><ul>
 <li>New API for block-wide and warp-wide collective operations</li>
-<li>New cub::DeviceRadixSort and <a href="https://research.nvidia.com/publication/single-pass-parallel-prefix-scan-decoupled-look-back">(single-pass)</a> cub::DeviceScan implementations</li>
+<li>New <a class="el" href="structcub_1_1_device_radix_sort.html" title="DeviceRadixSort provides device-wide, parallel operations for computing a radix sort across a sequenc...">cub::DeviceRadixSort</a> and <a href="https://research.nvidia.com/publication/single-pass-parallel-prefix-scan-decoupled-look-back">(single-pass)</a> <a class="el" href="structcub_1_1_device_scan.html" title="DeviceScan provides device-wide, parallel operations for computing a prefix scan across a sequence of...">cub::DeviceScan</a> implementations</li>
 <li>See the <a href="https://github.com/NVIDIA/cub/blob/main/CHANGELOG.md">change-log</a> for further details, including bug-fixes </li>
 </ul>
 <p class="endtd"></p>
@@ -509,7 +509,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr>
 <td style="white-space: nowrap; vertical-align:text-top;">05/07/2013<br/>
  <b>CUB v0.9.4</b> </td><td style="vertical-align:text-top;"><ul>
-<li>New cub::DeviceHistogram and cub::BlockHistogram implementations</li>
+<li>New <a class="el" href="structcub_1_1_device_histogram.html" title="DeviceHistogram provides device-wide parallel operations for constructing histogram(s) from a sequenc...">cub::DeviceHistogram</a> and <a class="el" href="classcub_1_1_block_histogram.html" title="The BlockHistogram class provides collective methods for constructing block-wide histograms from data...">cub::BlockHistogram</a> implementations</li>
 <li>See the <a href="https://github.com/NVIDIA/cub/blob/main/CHANGELOG.md">change-log</a> for further details, including bug-fixes </li>
 </ul>
 <p class="endtd"></p>

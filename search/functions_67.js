@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['gridbarrier',['GridBarrier',['../class_grid_barrier.html#aaf35d41d1343e3ac264fde2816e76907',1,'GridBarrier']]],
-  ['gridbarrierlifetime',['GridBarrierLifetime',['../class_grid_barrier_lifetime.html#abd26691ca8754d0d58e88a6a0c86c76b',1,'GridBarrierLifetime']]],
-  ['gridevenshare',['GridEvenShare',['../struct_grid_even_share.html#a983b536bdaf4e59217677784ffffc4a5',1,'GridEvenShare']]],
-  ['gridqueue',['GridQueue',['../class_grid_queue.html#abd502efaa1bb1a158df8775f818bf630',1,'GridQueue::GridQueue()'],['../class_grid_queue.html#a1d20954dcee74d9bde75791c74adb891',1,'GridQueue::GridQueue(void *d_storage)']]]
+  ['gridbarrier',['GridBarrier',['../classcub_1_1_grid_barrier.html#abddea8c1d33677999412646513ca4666',1,'cub::GridBarrier']]],
+  ['gridbarrierlifetime',['GridBarrierLifetime',['../classcub_1_1_grid_barrier_lifetime.html#ae0f3140b480e186fc18c4cd4a5c25f33',1,'cub::GridBarrierLifetime']]],
+  ['gridevenshare',['GridEvenShare',['../structcub_1_1_grid_even_share.html#a33f70dc990cc205308361eed4a5e34ab',1,'cub::GridEvenShare']]],
+  ['gridqueue',['GridQueue',['../classcub_1_1_grid_queue.html#aa00b210c64ee3c467f2c0c47e4cdc833',1,'cub::GridQueue::GridQueue()'],['../classcub_1_1_grid_queue.html#af20863a97aef5306a36287f901bfc957',1,'cub::GridQueue::GridQueue(void *d_storage)']]]
 ];
