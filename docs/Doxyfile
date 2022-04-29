@@ -677,6 +677,7 @@ WARN_LOGFILE           =
 # with spaces.
 
 INPUT                  = mainpage.dox 
+INPUT                  += download_cub.dox 
 INPUT                  += ../../cub/cub/cub.cuh 
 INPUT                  += ../../cub/cub/util_allocator.cuh 
 INPUT                  += ../../cub/cub/util_arch.cuh 
@@ -959,8 +960,7 @@ HTML_EXTRA_STYLESHEET  = extra_stylesheet.css
 # files. In the HTML_STYLESHEET file, use the file name only. Also note that
 # the files will be copied as-is; there are no commands or markers available.
 
-HTML_EXTRA_FILES       = download_cub.html 
-HTML_EXTRA_FILES       += .nojekyll 
+HTML_EXTRA_FILES       = .nojekyll 
 HTML_EXTRA_FILES       += images/nvresearch.png 
 HTML_EXTRA_FILES       += images/download-icon.png 
 HTML_EXTRA_FILES       += images/groups-icon.png 
