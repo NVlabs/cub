@@ -95,6 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_0x64.html#index_d"><span>d</span></a></li>
       <li><a href="functions_func_0x65.html#index_e"><span>e</span></a></li>
       <li><a href="functions_func_0x66.html#index_f"><span>f</span></a></li>
+      <li><a href="functions_func_0x67.html#index_g"><span>g</span></a></li>
       <li><a href="functions_func_0x68.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_0x69.html#index_i"><span>i</span></a></li>
       <li><a href="functions_func_0x6c.html#index_l"><span>l</span></a></li>
@@ -136,6 +137,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>ScatterToStriped()
 : <a class="el" href="class_block_exchange.html#a04d262564d8de555514560b25bc65604">BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+, <a class="el" href="class_warp_exchange.html#a5e05362d3fe7350aa7f2a2ec16b21d97">WarpExchange&lt; InputT, ITEMS_PER_THREAD, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
 </li>
 <li>ScatterToStripedFlagged()
 : <a class="el" href="class_block_exchange.html#a847cba74a01ce03015f477618d4d0c4f">BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
@@ -146,8 +148,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SetMaxCachedBytes()
 : <a class="el" href="struct_caching_device_allocator.html#a635d54b28298121840ee94a287b54158">CachingDeviceAllocator</a>
 </li>
+<li>Setup()
+: <a class="el" href="class_grid_barrier_lifetime.html#ad4944e16369d925b54da8d309751e175">GridBarrierLifetime</a>
+</li>
 <li>Sort()
-: <a class="el" href="class_block_radix_sort.html#af5fd5259b9079ed48ad71c0e3deba785">BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_radix_sort.html#a97a589430d005caee037b1a6a2605e64">BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+, <a class="el" href="class_block_merge_sort_strategy.html#ae05b8bcab598b7782043728d266c5e74">BlockMergeSortStrategy&lt; KeyT, ValueT, NUM_THREADS, ITEMS_PER_THREAD, SynchronizationPolicy &gt;</a>
+, <a class="el" href="class_block_radix_sort.html#af5fd5259b9079ed48ad71c0e3deba785">BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>SortBlockedToStriped()
 : <a class="el" href="class_block_radix_sort.html#a60132d5519198a4d59cf286b071083c8">BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
@@ -159,40 +166,91 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_block_radix_sort.html#a84e856978a462227701b5fe7c6317e9d">BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>SortKeys()
-: <a class="el" href="struct_device_radix_sort.html#a80d4845f853c9182a9287369cd3edc9b">DeviceRadixSort</a>
+: <a class="el" href="struct_device_merge_sort.html#a8a698362822ccd4c6217da623c7879e6">DeviceMergeSort</a>
+, <a class="el" href="struct_device_radix_sort.html#a80d4845f853c9182a9287369cd3edc9b">DeviceRadixSort</a>
 , <a class="el" href="struct_device_segmented_radix_sort.html#af3ded5ffef2e84ae5ba6e348cf1a7240">DeviceSegmentedRadixSort</a>
+, <a class="el" href="struct_device_segmented_sort.html#ac7ab52dfd53e08d33c91ea4ae98b51a7">DeviceSegmentedSort</a>
+</li>
+<li>SortKeysCopy()
+: <a class="el" href="struct_device_merge_sort.html#a7bceb68a8ef5cb95b18ab6b8c4811cd3">DeviceMergeSort</a>
 </li>
 <li>SortKeysDescending()
-: <a class="el" href="struct_device_radix_sort.html#a765c6e6f04683e50c1d304a4992b5bd7">DeviceRadixSort</a>
+: <a class="el" href="struct_device_radix_sort.html#a6eb98e100581e022ef429002cc2f60cb">DeviceRadixSort</a>
 , <a class="el" href="struct_device_segmented_radix_sort.html#abba7eea7602e3183bd21753cd0b3cffc">DeviceSegmentedRadixSort</a>
+, <a class="el" href="struct_device_segmented_sort.html#a436147441add3a931814f1bc9db6e73e">DeviceSegmentedSort</a>
+, <a class="el" href="struct_device_radix_sort.html#a765c6e6f04683e50c1d304a4992b5bd7">DeviceRadixSort</a>
 </li>
 <li>SortPairs()
-: <a class="el" href="struct_device_segmented_radix_sort.html#aafe73b3b12ff221079b3b4cfcf142421">DeviceSegmentedRadixSort</a>
+: <a class="el" href="struct_device_merge_sort.html#a60f7ebfe22776af1013e4ff491007ac6">DeviceMergeSort</a>
 , <a class="el" href="struct_device_radix_sort.html#abd20ebfc109aea91bdb6a20fa5b7f9e7">DeviceRadixSort</a>
 , <a class="el" href="struct_device_segmented_radix_sort.html#a83feb5a8b6566b32be471c4d8167c63f">DeviceSegmentedRadixSort</a>
+, <a class="el" href="struct_device_segmented_sort.html#a4093ad10868441622bae9bc7668abe2c">DeviceSegmentedSort</a>
+</li>
+<li>SortPairsCopy()
+: <a class="el" href="struct_device_merge_sort.html#a9b29ed14df9992e7019d00cabc358311">DeviceMergeSort</a>
 </li>
 <li>SortPairsDescending()
-: <a class="el" href="struct_device_radix_sort.html#ad7f720e37d7f00e282bf2b5ff1a25eed">DeviceRadixSort</a>
-, <a class="el" href="struct_device_segmented_radix_sort.html#ada42f31aa8b5e2a7f97952634e75c85e">DeviceSegmentedRadixSort</a>
-, <a class="el" href="struct_device_radix_sort.html#a95a8aae12d2cf4e2be519e9c2d09a6c4">DeviceRadixSort</a>
+: <a class="el" href="struct_device_radix_sort.html#a95a8aae12d2cf4e2be519e9c2d09a6c4">DeviceRadixSort</a>
+, <a class="el" href="struct_device_segmented_radix_sort.html#a0bf3deaa51ad24310af4a9c5ab3ae2a2">DeviceSegmentedRadixSort</a>
+, <a class="el" href="struct_device_segmented_sort.html#a910b9eda03d53139ad96e073fc7dacb3">DeviceSegmentedSort</a>
+</li>
+<li>StableSort()
+: <a class="el" href="class_block_merge_sort_strategy.html#a7eb162397cf7f126d303bdd6298992df">BlockMergeSortStrategy&lt; KeyT, ValueT, NUM_THREADS, ITEMS_PER_THREAD, SynchronizationPolicy &gt;</a>
+</li>
+<li>StableSortKeys()
+: <a class="el" href="struct_device_merge_sort.html#ad6eb1542594671e7fb065c837a1e60fd">DeviceMergeSort</a>
+, <a class="el" href="struct_device_segmented_sort.html#a61fe5ca4019bf9c9779559519d6395d4">DeviceSegmentedSort</a>
+</li>
+<li>StableSortKeysDescending()
+: <a class="el" href="struct_device_segmented_sort.html#adddfce66c489bda43298c4fbcb7ba02a">DeviceSegmentedSort</a>
+</li>
+<li>StableSortPairs()
+: <a class="el" href="struct_device_merge_sort.html#a18b1d1126150ba833c7dcefc4514e627">DeviceMergeSort</a>
+, <a class="el" href="struct_device_segmented_sort.html#aac939dd91f2a69694653740e9b5ba619">DeviceSegmentedSort</a>
+</li>
+<li>StableSortPairsDescending()
+: <a class="el" href="struct_device_segmented_sort.html#afb0c7789ee54719452cb7f2edece3801">DeviceSegmentedSort</a>
 </li>
 <li>Store()
-: <a class="el" href="class_block_store.html#ae8b56961649e07632700015aacd9e643">BlockStore&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+: <a class="el" href="class_block_store.html#a7af47cf051787fda7a77e07fb4faeda2">BlockStore&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+, <a class="el" href="class_warp_store.html#a531da2ed2e0c09dd942357317301b0f2">WarpStore&lt; T, ITEMS_PER_THREAD, ALGORITHM, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
 </li>
 <li>StripedToBlocked()
 : <a class="el" href="class_block_exchange.html#abc42328bdae6890ad7a45019a603085e">BlockExchange&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, WARP_TIME_SLICING, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+, <a class="el" href="class_warp_exchange.html#aee4c47e163886a19e1cf77983bff2369">WarpExchange&lt; InputT, ITEMS_PER_THREAD, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
+</li>
+<li>SubtractLeft()
+: <a class="el" href="class_block_adjacent_difference.html#a5f4ef4725894d001ed1aeac80e8be66e">BlockAdjacentDifference&lt; T, BLOCK_DIM_X, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+, <a class="el" href="group___single_module.html#gacbefbb6c924c01cc45a45c0b87ad2a47">DeviceAdjacentDifference</a>
+</li>
+<li>SubtractLeftCopy()
+: <a class="el" href="group___single_module.html#ga805fbd08a295785768d9cf8b2b16d64b">DeviceAdjacentDifference</a>
+</li>
+<li>SubtractLeftPartialTile()
+: <a class="el" href="class_block_adjacent_difference.html#ab07ddcbb1471fcd171dc8fee918ccb68">BlockAdjacentDifference&lt; T, BLOCK_DIM_X, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+</li>
+<li>SubtractRight()
+: <a class="el" href="class_block_adjacent_difference.html#a216563fe3b9e905987aaec0c5a0053d5">BlockAdjacentDifference&lt; T, BLOCK_DIM_X, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+, <a class="el" href="group___single_module.html#ga5f32809ad80475f870048cf82e6611b0">DeviceAdjacentDifference</a>
+, <a class="el" href="class_block_adjacent_difference.html#a127a75aab8b5416f0c88c54bf74d1345">BlockAdjacentDifference&lt; T, BLOCK_DIM_X, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+</li>
+<li>SubtractRightCopy()
+: <a class="el" href="group___single_module.html#gaf4f881d459986a2a1b5b0c5ba81dc814">DeviceAdjacentDifference</a>
+</li>
+<li>SubtractRightPartialTile()
+: <a class="el" href="class_block_adjacent_difference.html#a32d0597dde66981993d2dba2a2e4db0d">BlockAdjacentDifference&lt; T, BLOCK_DIM_X, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
 </li>
 <li>Sum()
-: <a class="el" href="class_block_reduce.html#a3d7ed8b2bde4d962a074f67dbd1e3950">BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
-, <a class="el" href="class_warp_reduce.html#a78538f57da1eacdc8ed79b2e7d9422f1">WarpReduce&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
-, <a class="el" href="class_block_reduce.html#ab5be571c0c17926554569ecd743d06f5">BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
-, <a class="el" href="struct_device_segmented_reduce.html#ada715faeeb780315f6161e87e3daec6e">DeviceSegmentedReduce</a>
+: <a class="el" href="struct_device_reduce.html#a2a0ca350f551f51c78e354190982b5af">DeviceReduce</a>
 , <a class="el" href="class_block_reduce.html#a9134e9e26c67cb82541b879f8f6a28e6">BlockReduce&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;</a>
+, <a class="el" href="struct_device_segmented_reduce.html#ada715faeeb780315f6161e87e3daec6e">DeviceSegmentedReduce</a>
 , <a class="el" href="class_warp_reduce.html#a31df9e99e3b9fe670985cf691aa2e287">WarpReduce&lt; T, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a>
-, <a class="el" href="struct_device_reduce.html#a2a0ca350f551f51c78e354190982b5af">DeviceReduce</a>
 </li>
 <li>SwizzleScanOp()
 : <a class="el" href="class_swizzle_scan_op.html#a75f59fc3ab061317735f274c554e8649">SwizzleScanOp&lt; ScanOp &gt;</a>
+</li>
+<li>Sync()
+: <a class="el" href="class_grid_barrier.html#aff712eee1b5a996575e1df42e532b569">GridBarrier</a>
 </li>
 </ul>
 </div><!-- contents -->

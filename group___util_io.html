@@ -114,6 +114,9 @@ Classes</h2></td></tr>
 .</div></div>
   <a href="class_block_store.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_warp_store.html">WarpStore&lt; T, ITEMS_PER_THREAD, ALGORITHM, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_warp_store.html" title="The WarpStore class provides collective data movement methods for writing a blocked arrangement of it...">WarpStore</a> class provides <a href="index.html#sec0"><em>collective</em></a> data movement methods for writing a <a href="index.html#sec5sec3"><em>blocked arrangement</em></a> of items partitioned across a CUDA warp to a linear segment of memory.  <a href="class_warp_store.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -142,22 +145,6 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gab01ff298577ffda7d8bb0508b7724159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of cache modifiers for memory store operations.  <a href="group___util_io.html#gab01ff298577ffda7d8bb0508b7724159">More...</a><br/></td></tr>
 <tr class="separator:gab01ff298577ffda7d8bb0508b7724159"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
-Thread I/O (cache modified)</h2></td></tr>
-<tr class="memitem:gaac43f61b9460dd83e144689f0b49f143"><td class="memTemplParams" colspan="2">template&lt;CacheLoadModifier MODIFIER, typename InputIteratorT &gt; </td></tr>
-<tr class="memitem:gaac43f61b9460dd83e144689f0b49f143"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__ <br class="typebreak"/>
-cub::detail::value_t<br class="typebreak"/>
-&lt; InputIteratorT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___util_io.html#gaac43f61b9460dd83e144689f0b49f143">ThreadLoad</a> (InputIteratorT itr)</td></tr>
-<tr class="memdesc:gaac43f61b9460dd83e144689f0b49f143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread utility for reading memory using cub::CacheLoadModifier cache modifiers. Can be used to load any data type.  <a href="#gaac43f61b9460dd83e144689f0b49f143">More...</a><br/></td></tr>
-<tr class="separator:gaac43f61b9460dd83e144689f0b49f143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
-Thread I/O (cache modified)</h2></td></tr>
-<tr class="memitem:ga5f6291f0b659c56195105b7401cf3c7d"><td class="memTemplParams" colspan="2">template&lt;CacheStoreModifier MODIFIER, typename OutputIteratorT , typename T &gt; </td></tr>
-<tr class="memitem:ga5f6291f0b659c56195105b7401cf3c7d"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___util_io.html#ga5f6291f0b659c56195105b7401cf3c7d">ThreadStore</a> (OutputIteratorT itr, T val)</td></tr>
-<tr class="memdesc:ga5f6291f0b659c56195105b7401cf3c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread utility for writing memory using cub::CacheStoreModifier cache modifiers. Can be used to store any data type.  <a href="#ga5f6291f0b659c56195105b7401cf3c7d">More...</a><br/></td></tr>
-<tr class="separator:ga5f6291f0b659c56195105b7401cf3c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Blocked arrangement I/O (direct)</h2></td></tr>
@@ -244,6 +231,22 @@ Warp-striped arrangement I/O (direct)</h2></td></tr>
 <tr class="memitem:gacc8886d9313d38bf8a4d96f17040971e"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___util_io.html#gacc8886d9313d38bf8a4d96f17040971e">StoreDirectWarpStriped</a> (int linear_tid, OutputIteratorT block_itr, T(&amp;items)[ITEMS_PER_THREAD], int valid_items)</td></tr>
 <tr class="memdesc:gacc8886d9313d38bf8a4d96f17040971e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a warp-striped arrangement of data across the thread block into a linear segment of items, guarded by range.  <a href="#gacc8886d9313d38bf8a4d96f17040971e">More...</a><br/></td></tr>
 <tr class="separator:gacc8886d9313d38bf8a4d96f17040971e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Thread I/O (cache modified)</h2></td></tr>
+<tr class="memitem:gaac43f61b9460dd83e144689f0b49f143"><td class="memTemplParams" colspan="2">template&lt;CacheLoadModifier MODIFIER, typename InputIteratorT &gt; </td></tr>
+<tr class="memitem:gaac43f61b9460dd83e144689f0b49f143"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__ <br class="typebreak"/>
+cub::detail::value_t<br class="typebreak"/>
+&lt; InputIteratorT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___util_io.html#gaac43f61b9460dd83e144689f0b49f143">ThreadLoad</a> (InputIteratorT itr)</td></tr>
+<tr class="memdesc:gaac43f61b9460dd83e144689f0b49f143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread utility for reading memory using cub::CacheLoadModifier cache modifiers. Can be used to load any data type.  <a href="#gaac43f61b9460dd83e144689f0b49f143">More...</a><br/></td></tr>
+<tr class="separator:gaac43f61b9460dd83e144689f0b49f143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Thread I/O (cache modified)</h2></td></tr>
+<tr class="memitem:ga5f6291f0b659c56195105b7401cf3c7d"><td class="memTemplParams" colspan="2">template&lt;CacheStoreModifier MODIFIER, typename OutputIteratorT , typename T &gt; </td></tr>
+<tr class="memitem:ga5f6291f0b659c56195105b7401cf3c7d"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___util_io.html#ga5f6291f0b659c56195105b7401cf3c7d">ThreadStore</a> (OutputIteratorT itr, T val)</td></tr>
+<tr class="memdesc:ga5f6291f0b659c56195105b7401cf3c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread utility for writing memory using cub::CacheStoreModifier cache modifiers. Can be used to store any data type.  <a href="#ga5f6291f0b659c56195105b7401cf3c7d">More...</a><br/></td></tr>
+<tr class="separator:ga5f6291f0b659c56195105b7401cf3c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="ga67b4d36fd46d7a646b4f218a8df326ad"></a>
@@ -318,113 +321,6 @@ Warp-striped arrangement I/O (direct)</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gaac43f61b9460dd83e144689f0b49f143"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;CacheLoadModifier MODIFIER, typename InputIteratorT &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">__device__ __forceinline__ cub::detail::value_t&lt;InputIteratorT&gt; ThreadLoad </td>
-          <td>(</td>
-          <td class="paramtype">InputIteratorT&#160;</td>
-          <td class="paramname"><em>itr</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Thread utility for reading memory using cub::CacheLoadModifier cache modifiers. Can be used to load any data type. </p>
-<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cub_8cuh.html">cub/cub.cuh</a>&gt;</span>   <span class="comment">// or equivalently &lt;cub/thread/thread_load.cuh&gt;</span></div>
-<div class="line"></div>
-<div class="line"><span class="comment">// 32-bit load using cache-global modifier:</span></div>
-<div class="line"><span class="keywordtype">int</span> *d_in;</div>
-<div class="line"><span class="keywordtype">int</span> val = cub::ThreadLoad&lt;cub::LOAD_CA&gt;(d_in + threadIdx.x);</div>
-<div class="line"></div>
-<div class="line"><span class="comment">// 16-bit load using default modifier</span></div>
-<div class="line"><span class="keywordtype">short</span> *d_in;</div>
-<div class="line"><span class="keywordtype">short</span> val = cub::ThreadLoad&lt;cub::LOAD_DEFAULT&gt;(d_in + threadIdx.x);</div>
-<div class="line"></div>
-<div class="line"><span class="comment">// 256-bit load using cache-volatile modifier</span></div>
-<div class="line">double4 *d_in;</div>
-<div class="line">double4 val = cub::ThreadLoad&lt;cub::LOAD_CV&gt;(d_in + threadIdx.x);</div>
-<div class="line"></div>
-<div class="line"><span class="comment">// 96-bit load using cache-streaming modifier</span></div>
-<div class="line"><span class="keyword">struct </span>TestFoo { <span class="keywordtype">bool</span> a; <span class="keywordtype">short</span> b; };</div>
-<div class="line">TestFoo *d_struct;</div>
-<div class="line">TestFoo val = cub::ThreadLoad&lt;cub::LOAD_CS&gt;(d_in + threadIdx.x);</div>
-</div><!-- fragment --></dd></dl>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">MODIFIER</td><td><b>[inferred]</b> CacheLoadModifier enumeration </td></tr>
-    <tr><td class="paramname">InputIteratorT</td><td><b>[inferred]</b> Input iterator type (may be a simple pointer type) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga5f6291f0b659c56195105b7401cf3c7d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;CacheStoreModifier MODIFIER, typename OutputIteratorT , typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">__device__ __forceinline__ void ThreadStore </td>
-          <td>(</td>
-          <td class="paramtype">OutputIteratorT&#160;</td>
-          <td class="paramname"><em>itr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Thread utility for writing memory using cub::CacheStoreModifier cache modifiers. Can be used to store any data type. </p>
-<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cub_8cuh.html">cub/cub.cuh</a>&gt;</span>   <span class="comment">// or equivalently &lt;cub/thread/thread_store.cuh&gt;</span></div>
-<div class="line"></div>
-<div class="line"><span class="comment">// 32-bit store using cache-global modifier:</span></div>
-<div class="line"><span class="keywordtype">int</span> *d_out;</div>
-<div class="line"><span class="keywordtype">int</span> val;</div>
-<div class="line">cub::ThreadStore&lt;cub::STORE_CG&gt;(d_out + threadIdx.x, val);</div>
-<div class="line"></div>
-<div class="line"><span class="comment">// 16-bit store using default modifier</span></div>
-<div class="line"><span class="keywordtype">short</span> *d_out;</div>
-<div class="line"><span class="keywordtype">short</span> val;</div>
-<div class="line">cub::ThreadStore&lt;cub::STORE_DEFAULT&gt;(d_out + threadIdx.x, val);</div>
-<div class="line"></div>
-<div class="line"><span class="comment">// 256-bit store using write-through modifier</span></div>
-<div class="line">double4 *d_out;</div>
-<div class="line">double4 val;</div>
-<div class="line">cub::ThreadStore&lt;cub::STORE_WT&gt;(d_out + threadIdx.x, val);</div>
-<div class="line"></div>
-<div class="line"><span class="comment">// 96-bit store using cache-streaming cache modifier</span></div>
-<div class="line"><span class="keyword">struct </span>TestFoo { <span class="keywordtype">bool</span> a; <span class="keywordtype">short</span> b; };</div>
-<div class="line">TestFoo *d_struct;</div>
-<div class="line">TestFoo val;</div>
-<div class="line">cub::ThreadStore&lt;cub::STORE_CS&gt;(d_out + threadIdx.x, val);</div>
-</div><!-- fragment --></dd></dl>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">MODIFIER</td><td><b>[inferred]</b> CacheStoreModifier enumeration </td></tr>
-    <tr><td class="paramname">InputIteratorT</td><td><b>[inferred]</b> Output iterator type (may be a simple pointer type) </td></tr>
-    <tr><td class="paramname">T</td><td><b>[inferred]</b> Data type of output value </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="ga828f253d27b9cbee9e69e4666b1817a3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1424,6 +1320,113 @@ template&lt;typename T , int ITEMS_PER_THREAD, typename OutputIteratorT &gt; </d
     <tr><td class="paramdir">[in]</td><td class="paramname">block_itr</td><td>The thread block's base output iterator for storing to </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">items</td><td>Data to store </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">valid_items</td><td>Number of valid items to write </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaac43f61b9460dd83e144689f0b49f143"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;CacheLoadModifier MODIFIER, typename InputIteratorT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ cub::detail::value_t&lt;InputIteratorT&gt; ThreadLoad </td>
+          <td>(</td>
+          <td class="paramtype">InputIteratorT&#160;</td>
+          <td class="paramname"><em>itr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Thread utility for reading memory using cub::CacheLoadModifier cache modifiers. Can be used to load any data type. </p>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cub_8cuh.html">cub/cub.cuh</a>&gt;</span>   <span class="comment">// or equivalently &lt;cub/thread/thread_load.cuh&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="comment">// 32-bit load using cache-global modifier:</span></div>
+<div class="line"><span class="keywordtype">int</span> *d_in;</div>
+<div class="line"><span class="keywordtype">int</span> val = cub::ThreadLoad&lt;cub::LOAD_CA&gt;(d_in + threadIdx.x);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// 16-bit load using default modifier</span></div>
+<div class="line"><span class="keywordtype">short</span> *d_in;</div>
+<div class="line"><span class="keywordtype">short</span> val = cub::ThreadLoad&lt;cub::LOAD_DEFAULT&gt;(d_in + threadIdx.x);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// 256-bit load using cache-volatile modifier</span></div>
+<div class="line">double4 *d_in;</div>
+<div class="line">double4 val = cub::ThreadLoad&lt;cub::LOAD_CV&gt;(d_in + threadIdx.x);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// 96-bit load using cache-streaming modifier</span></div>
+<div class="line"><span class="keyword">struct </span>TestFoo { <span class="keywordtype">bool</span> a; <span class="keywordtype">short</span> b; };</div>
+<div class="line">TestFoo *d_struct;</div>
+<div class="line">TestFoo val = cub::ThreadLoad&lt;cub::LOAD_CS&gt;(d_in + threadIdx.x);</div>
+</div><!-- fragment --></dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MODIFIER</td><td><b>[inferred]</b> CacheLoadModifier enumeration </td></tr>
+    <tr><td class="paramname">InputIteratorT</td><td><b>[inferred]</b> Input iterator type (may be a simple pointer type) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5f6291f0b659c56195105b7401cf3c7d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;CacheStoreModifier MODIFIER, typename OutputIteratorT , typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ void ThreadStore </td>
+          <td>(</td>
+          <td class="paramtype">OutputIteratorT&#160;</td>
+          <td class="paramname"><em>itr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Thread utility for writing memory using cub::CacheStoreModifier cache modifiers. Can be used to store any data type. </p>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cub_8cuh.html">cub/cub.cuh</a>&gt;</span>   <span class="comment">// or equivalently &lt;cub/thread/thread_store.cuh&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="comment">// 32-bit store using cache-global modifier:</span></div>
+<div class="line"><span class="keywordtype">int</span> *d_out;</div>
+<div class="line"><span class="keywordtype">int</span> val;</div>
+<div class="line">cub::ThreadStore&lt;cub::STORE_CG&gt;(d_out + threadIdx.x, val);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// 16-bit store using default modifier</span></div>
+<div class="line"><span class="keywordtype">short</span> *d_out;</div>
+<div class="line"><span class="keywordtype">short</span> val;</div>
+<div class="line">cub::ThreadStore&lt;cub::STORE_DEFAULT&gt;(d_out + threadIdx.x, val);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// 256-bit store using write-through modifier</span></div>
+<div class="line">double4 *d_out;</div>
+<div class="line">double4 val;</div>
+<div class="line">cub::ThreadStore&lt;cub::STORE_WT&gt;(d_out + threadIdx.x, val);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// 96-bit store using cache-streaming cache modifier</span></div>
+<div class="line"><span class="keyword">struct </span>TestFoo { <span class="keywordtype">bool</span> a; <span class="keywordtype">short</span> b; };</div>
+<div class="line">TestFoo *d_struct;</div>
+<div class="line">TestFoo val;</div>
+<div class="line">cub::ThreadStore&lt;cub::STORE_CS&gt;(d_out + threadIdx.x, val);</div>
+</div><!-- fragment --></dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MODIFIER</td><td><b>[inferred]</b> CacheStoreModifier enumeration </td></tr>
+    <tr><td class="paramname">InputIteratorT</td><td><b>[inferred]</b> Output iterator type (may be a simple pointer type) </td></tr>
+    <tr><td class="paramname">T</td><td><b>[inferred]</b> Data type of output value </td></tr>
   </table>
   </dd>
 </dl>

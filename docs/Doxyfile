@@ -684,44 +684,13 @@ INPUT                  += ../../cub/cub/util_debug.cuh
 INPUT                  += ../../cub/cub/util_device.cuh 
 INPUT                  += ../../cub/cub/util_ptx.cuh 
 INPUT                  += ../../cub/cub/util_type.cuh 
-INPUT                  += ../../cub/cub/iterator/arg_index_input_iterator.cuh
-INPUT                  += ../../cub/cub/iterator/cache_modified_input_iterator.cuh
-INPUT                  += ../../cub/cub/iterator/cache_modified_output_iterator.cuh
-INPUT                  += ../../cub/cub/iterator/constant_input_iterator.cuh
-INPUT                  += ../../cub/cub/iterator/counting_input_iterator.cuh
-INPUT                  += ../../cub/cub/iterator/tex_obj_input_iterator.cuh
-INPUT                  += ../../cub/cub/iterator/tex_ref_input_iterator.cuh
-INPUT                  += ../../cub/cub/iterator/transform_input_iterator.cuh
-INPUT                  += ../../cub/cub/thread/thread_load.cuh  
-INPUT                  += ../../cub/cub/thread/thread_operators.cuh 
-#INPUT                  += ../../cub/cub/thread/thread_reduce.cuh  
-#INPUT                  += ../../cub/cub/thread/thread_scan.cuh  
-INPUT                  += ../../cub/cub/thread/thread_store.cuh  
-INPUT                  += ../../cub/cub/block/block_discontinuity.cuh 
-INPUT                  += ../../cub/cub/block/block_exchange.cuh 
-INPUT                  += ../../cub/cub/block/block_histogram.cuh 
-INPUT                  += ../../cub/cub/block/block_load.cuh 
-# INPUT                  += ../../cub/cub/block/block_radix_rank.cuh 
-INPUT                  += ../../cub/cub/block/block_radix_sort.cuh 
-# INPUT                  += ../../cub/cub/block/block_raking_layout.cuh 
-INPUT                  += ../../cub/cub/block/block_reduce.cuh 
-INPUT                  += ../../cub/cub/block/block_scan.cuh 
-INPUT                  += ../../cub/cub/block/block_store.cuh 
-INPUT                  += ../../cub/cub/device/device_histogram.cuh 
-INPUT                  += ../../cub/cub/device/device_partition.cuh 
-INPUT                  += ../../cub/cub/device/device_radix_sort.cuh 
-INPUT                  += ../../cub/cub/device/device_reduce.cuh 
-INPUT                  += ../../cub/cub/device/device_run_length_encode.cuh 
-INPUT                  += ../../cub/cub/device/device_scan.cuh 
-INPUT                  += ../../cub/cub/device/device_segmented_radix_sort.cuh 
-INPUT                  += ../../cub/cub/device/device_segmented_reduce.cuh 
-INPUT                  += ../../cub/cub/device/device_select.cuh 
-INPUT                  += ../../cub/cub/device/device_spmv.cuh 
-# INPUT                  += ../../cub/cub/grid/grid_even_share.cuh 
-# INPUT                  += ../../cub/cub/grid/grid_mapping.cuh 
-# INPUT                  += ../../cub/cub/grid/grid_queue.cuh 
-INPUT                  += ../../cub/cub/warp/warp_scan.cuh 
-INPUT                  += ../../cub/cub/warp/warp_reduce.cuh 
+INPUT                  += ../../cub/cub/version.cuh
+INPUT                  += ../../cub/cub/block/
+INPUT                  += ../../cub/cub/device/
+INPUT                  += ../../cub/cub/grid/
+INPUT                  += ../../cub/cub/iterator/
+INPUT                  += ../../cub/cub/thread/
+INPUT                  += ../../cub/cub/warp/
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding, which is
@@ -739,7 +708,7 @@ INPUT_ENCODING         = UTF-8
 # *.hxx *.hpp *.h++ *.idl *.odl *.cs *.php *.php3 *.inc *.m *.mm *.dox *.py
 # *.f90 *.f *.for *.vhd *.vhdl
 
-FILE_PATTERNS          =
+FILE_PATTERNS          = *.cuh
 
 # The RECURSIVE tag can be used to turn specify whether or not subdirectories
 # should be searched for input files as well. Possible values are YES and NO.
@@ -753,7 +722,10 @@ RECURSIVE              = NO
 # Note that relative paths are relative to the directory from which doxygen is
 # run.
 
-EXCLUDE                =
+EXCLUDE                = ../../cub/cub/block/block_radix_rank.cuh 
+EXCLUDE               += ../../cub/cub/block/block_raking_layout.cuh 
+EXCLUDE               += ../../cub/cub/thread/thread_reduce.cuh  
+EXCLUDE               += ../../cub/cub/thread/thread_scan.cuh
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded

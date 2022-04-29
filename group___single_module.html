@@ -89,7 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Single-problem<div class="ingroups"><a class="el" href="group___device_module.html">Device-wide primitives</a></div></div>  </div>
 </div><!--header-->
@@ -97,6 +98,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_adjacent_difference.html">DeviceAdjacentDifference</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_device_adjacent_difference.html" title="DeviceAdjacentDifference provides device-wide, parallel operations for computing the differences of a...">DeviceAdjacentDifference</a> provides device-wide, parallel operations for computing the differences of adjacent elements residing within device-accessible memory.  <a href="struct_device_adjacent_difference.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_histogram.html">DeviceHistogram</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_device_histogram.html" title="DeviceHistogram provides device-wide parallel operations for constructing histogram(s) from a sequenc...">DeviceHistogram</a> provides device-wide parallel operations for constructing histogram(s) from a sequence of samples data residing within device-accessible memory. </p>
 <div class="image">
@@ -104,6 +108,9 @@ Classes</h2></td></tr>
 <div class="caption">
 .</div></div>
   <a href="struct_device_histogram.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_merge_sort.html">DeviceMergeSort</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_device_merge_sort.html" title="DeviceMergeSort provides device-wide, parallel operations for computing a merge sort across a sequenc...">DeviceMergeSort</a> provides device-wide, parallel operations for computing a merge sort across a sequence of data items residing within device-accessible memory.  <a href="struct_device_merge_sort.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_partition.html">DevicePartition</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_device_partition.html" title="DevicePartition provides device-wide, parallel operations for partitioning sequences of data items re...">DevicePartition</a> provides device-wide, parallel operations for partitioning sequences of data items residing within device-accessible memory. </p>
@@ -156,7 +163,543 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_spmv.html">DeviceSpmv</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_device_spmv.html" title="DeviceSpmv provides device-wide parallel operations for performing sparse-matrix * dense-vector multi...">DeviceSpmv</a> provides device-wide parallel operations for performing sparse-matrix * dense-vector multiplication (SpMV).  <a href="struct_device_spmv.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga805fbd08a295785768d9cf8b2b16d64b"><td class="memTemplParams" colspan="2">template&lt;typename InputIteratorT , typename OutputIteratorT , typename DifferenceOpT  = cub::Difference&gt; </td></tr>
+<tr class="memitem:ga805fbd08a295785768d9cf8b2b16d64b"><td class="memTemplItemLeft" align="right" valign="top">static CUB_RUNTIME_FUNCTION <br class="typebreak"/>
+cudaError_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___single_module.html#ga805fbd08a295785768d9cf8b2b16d64b">DeviceAdjacentDifference::SubtractLeftCopy</a> (void *d_temp_storage, std::size_t &amp;temp_storage_bytes, InputIteratorT d_input, OutputIteratorT d_output, std::size_t num_items, DifferenceOpT difference_op={}, cudaStream_t stream=0, bool debug_synchronous=false)</td></tr>
+<tr class="memdesc:ga805fbd08a295785768d9cf8b2b16d64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts the left element of each adjacent pair of elements residing within device-accessible memory.  <a href="#ga805fbd08a295785768d9cf8b2b16d64b">More...</a><br/></td></tr>
+<tr class="separator:ga805fbd08a295785768d9cf8b2b16d64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacbefbb6c924c01cc45a45c0b87ad2a47"><td class="memTemplParams" colspan="2">template&lt;typename RandomAccessIteratorT , typename DifferenceOpT  = cub::Difference&gt; </td></tr>
+<tr class="memitem:gacbefbb6c924c01cc45a45c0b87ad2a47"><td class="memTemplItemLeft" align="right" valign="top">static CUB_RUNTIME_FUNCTION <br class="typebreak"/>
+cudaError_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___single_module.html#gacbefbb6c924c01cc45a45c0b87ad2a47">DeviceAdjacentDifference::SubtractLeft</a> (void *d_temp_storage, std::size_t &amp;temp_storage_bytes, RandomAccessIteratorT d_input, std::size_t num_items, DifferenceOpT difference_op={}, cudaStream_t stream=0, bool debug_synchronous=false)</td></tr>
+<tr class="memdesc:gacbefbb6c924c01cc45a45c0b87ad2a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts the left element of each adjacent pair of elements residing within device-accessible memory.  <a href="#gacbefbb6c924c01cc45a45c0b87ad2a47">More...</a><br/></td></tr>
+<tr class="separator:gacbefbb6c924c01cc45a45c0b87ad2a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4f881d459986a2a1b5b0c5ba81dc814"><td class="memTemplParams" colspan="2">template&lt;typename InputIteratorT , typename OutputIteratorT , typename DifferenceOpT  = cub::Difference&gt; </td></tr>
+<tr class="memitem:gaf4f881d459986a2a1b5b0c5ba81dc814"><td class="memTemplItemLeft" align="right" valign="top">static CUB_RUNTIME_FUNCTION <br class="typebreak"/>
+cudaError_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___single_module.html#gaf4f881d459986a2a1b5b0c5ba81dc814">DeviceAdjacentDifference::SubtractRightCopy</a> (void *d_temp_storage, std::size_t &amp;temp_storage_bytes, InputIteratorT d_input, OutputIteratorT d_output, std::size_t num_items, DifferenceOpT difference_op={}, cudaStream_t stream=0, bool debug_synchronous=false)</td></tr>
+<tr class="memdesc:gaf4f881d459986a2a1b5b0c5ba81dc814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts the right element of each adjacent pair of elements residing within device-accessible memory.  <a href="#gaf4f881d459986a2a1b5b0c5ba81dc814">More...</a><br/></td></tr>
+<tr class="separator:gaf4f881d459986a2a1b5b0c5ba81dc814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f32809ad80475f870048cf82e6611b0"><td class="memTemplParams" colspan="2">template&lt;typename RandomAccessIteratorT , typename DifferenceOpT  = cub::Difference&gt; </td></tr>
+<tr class="memitem:ga5f32809ad80475f870048cf82e6611b0"><td class="memTemplItemLeft" align="right" valign="top">static CUB_RUNTIME_FUNCTION <br class="typebreak"/>
+cudaError_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___single_module.html#ga5f32809ad80475f870048cf82e6611b0">DeviceAdjacentDifference::SubtractRight</a> (void *d_temp_storage, std::size_t &amp;temp_storage_bytes, RandomAccessIteratorT d_input, std::size_t num_items, DifferenceOpT difference_op={}, cudaStream_t stream=0, bool debug_synchronous=false)</td></tr>
+<tr class="memdesc:ga5f32809ad80475f870048cf82e6611b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts the right element of each adjacent pair of elements residing within device-accessible memory.  <a href="#ga5f32809ad80475f870048cf82e6611b0">More...</a><br/></td></tr>
+<tr class="separator:ga5f32809ad80475f870048cf82e6611b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga805fbd08a295785768d9cf8b2b16d64b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename InputIteratorT , typename OutputIteratorT , typename DifferenceOpT  = cub::Difference&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static CUB_RUNTIME_FUNCTION cudaError_t DeviceAdjacentDifference::SubtractLeftCopy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>d_temp_storage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>temp_storage_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputIteratorT&#160;</td>
+          <td class="paramname"><em>d_input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutputIteratorT&#160;</td>
+          <td class="paramname"><em>d_output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>num_items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DifferenceOpT&#160;</td>
+          <td class="paramname"><em>difference_op</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cudaStream_t&#160;</td>
+          <td class="paramname"><em>stream</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>debug_synchronous</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts the left element of each adjacent pair of elements residing within device-accessible memory. </p>
+<dl class="section user"><dt>Overview</dt><dd><ul>
+<li>Calculates the differences of adjacent elements in <code>d_input</code>. That is, <code>*d_input</code> is assigned to <code>*d_output</code>, and, for each iterator <code>i</code> in the range <code>[d_input + 1, d_input + num_items)</code>, the result of <code>difference_op(*i, *(i - 1))</code> is assigned to <code>*(d_output + (i - d_input))</code>.</li>
+<li>Note that the behavior is undefined if the input and output ranges overlap in any way.</li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>Snippet</dt><dd>The code snippet below illustrates how to use <code><a class="el" href="struct_device_adjacent_difference.html" title="DeviceAdjacentDifference provides device-wide, parallel operations for computing the differences of a...">DeviceAdjacentDifference</a></code> to compute the difference between adjacent elements.</dd></dl>
+<dl class="section user"><dt></dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cub_8cuh.html">cub/cub.cuh</a>&gt;</span></div>
+<div class="line"><span class="comment">// or equivalently &lt;cub/device/device_adjacent_difference.cuh&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">struct </span>CustomDifference</div>
+<div class="line">{</div>
+<div class="line">  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> DataType&gt;</div>
+<div class="line">  __device__ DataType operator()(DataType &amp;lhs, DataType &amp;rhs)</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordflow">return</span> lhs - rhs;</div>
+<div class="line">  }</div>
+<div class="line">};</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Declare, allocate, and initialize device-accessible pointers</span></div>
+<div class="line"><span class="keywordtype">int</span>  num_items;      <span class="comment">// e.g., 8</span></div>
+<div class="line"><span class="keywordtype">int</span>  *d_input;       <span class="comment">// e.g., [1, 2, 1, 2, 1, 2, 1, 2]</span></div>
+<div class="line"><span class="keywordtype">int</span>  *d_output;</div>
+<div class="line">...</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Determine temporary device storage requirements</span></div>
+<div class="line">void     *d_temp_storage = NULL;</div>
+<div class="line"><span class="keywordtype">size_t</span>   temp_storage_bytes = 0;</div>
+<div class="line"></div>
+<div class="line">cub::DeviceAdjacentDifference::SubtractLeftCopy(</div>
+<div class="line">  d_temp_storage, temp_storage_bytes,</div>
+<div class="line">  d_input, d_output,</div>
+<div class="line">  num_items, CustomDifference());</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Allocate temporary storage</span></div>
+<div class="line">cudaMalloc(&amp;d_temp_storage, temp_storage_bytes);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Run operation</span></div>
+<div class="line">cub::DeviceAdjacentDifference::SubtractLeftCopy(</div>
+<div class="line">  d_temp_storage, temp_storage_bytes,</div>
+<div class="line">  d_input, d_output,</div>
+<div class="line">  num_items, CustomDifference());</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// d_input  &lt;-- [1, 2, 1, 2, 1, 2, 1, 2]</span></div>
+<div class="line"><span class="comment">// d_output &lt;-- [1, 1, -1, 1, -1, 1, -1, 1]</span></div>
+</div><!-- fragment --></dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">InputIteratorT</td><td>is a model of <a href="https://en.cppreference.com/w/cpp/iterator/input_iterator">Input Iterator</a>, and <code>x</code> and <code>y</code> are objects of <code>InputIteratorT</code>'s <code>value_type</code>, then <code>x - y</code> is defined, and <code>InputIteratorT</code>'s <code>value_type</code> is convertible to a type in <code>OutputIteratorT</code>'s set of <code>value_types</code>, and the return type of <code>x - y</code> is convertible to a type in <code>OutputIteratorT</code>'s set of <code>value_types</code>.</td></tr>
+    <tr><td class="paramname">OutputIteratorT</td><td>is a model of <a href="https://en.cppreference.com/w/cpp/iterator/output_iterator">Output Iterator</a>.</td></tr>
+    <tr><td class="paramname">DifferenceOpT</td><td>Its <code>result_type</code> is convertible to a type in <code>OutputIteratorT</code>'s set of <code>value_types</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">d_temp_storage</td><td>Device-accessible allocation of temporary storage. When <code>nullptr</code>, the required allocation size is written to <code>temp_storage_bytes</code> and no work is done.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">temp_storage_bytes</td><td>Reference to size in bytes of <code>d_temp_storage</code> allocation</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d_input</td><td>Pointer to the input sequence</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">d_output</td><td>Pointer to the output sequence</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_items</td><td>Number of items in the input sequence</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">difference_op</td><td>The binary function used to compute differences</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td><b>[optional]</b> CUDA stream to launch kernels within. Default is stream<sub>0</sub></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">debug_synchronous</td><td><b>[optional]</b> Whether or not to synchronize the stream after every kernel launch to check for errors. Also causes launch configurations to be printed to the console. Default is <code>false</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gacbefbb6c924c01cc45a45c0b87ad2a47"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RandomAccessIteratorT , typename DifferenceOpT  = cub::Difference&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static CUB_RUNTIME_FUNCTION cudaError_t DeviceAdjacentDifference::SubtractLeft </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>d_temp_storage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>temp_storage_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIteratorT&#160;</td>
+          <td class="paramname"><em>d_input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>num_items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DifferenceOpT&#160;</td>
+          <td class="paramname"><em>difference_op</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cudaStream_t&#160;</td>
+          <td class="paramname"><em>stream</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>debug_synchronous</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts the left element of each adjacent pair of elements residing within device-accessible memory. </p>
+<dl class="section user"><dt>Overview</dt><dd>Calculates the differences of adjacent elements in <code>d_input</code>. That is, for each iterator <code>i</code> in the range <code>[d_input + 1, d_input + num_items)</code>, the result of <code>difference_op(*i, *(i - 1))</code> is assigned to <code>*(d_input + (i - d_input))</code>.</dd></dl>
+<dl class="section user"><dt>Snippet</dt><dd>The code snippet below illustrates how to use <code><a class="el" href="struct_device_adjacent_difference.html" title="DeviceAdjacentDifference provides device-wide, parallel operations for computing the differences of a...">DeviceAdjacentDifference</a></code> to compute the difference between adjacent elements.</dd></dl>
+<dl class="section user"><dt></dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cub_8cuh.html">cub/cub.cuh</a>&gt;</span></div>
+<div class="line"><span class="comment">// or equivalently &lt;cub/device/device_adjacent_difference.cuh&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">struct </span>CustomDifference</div>
+<div class="line">{</div>
+<div class="line">  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> DataType&gt;</div>
+<div class="line">  __device__ DataType operator()(DataType &amp;lhs, DataType &amp;rhs)</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordflow">return</span> lhs - rhs;</div>
+<div class="line">  }</div>
+<div class="line">};</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Declare, allocate, and initialize device-accessible pointers</span></div>
+<div class="line"><span class="keywordtype">int</span>  num_items;     <span class="comment">// e.g., 8</span></div>
+<div class="line"><span class="keywordtype">int</span>  *d_data;       <span class="comment">// e.g., [1, 2, 1, 2, 1, 2, 1, 2]</span></div>
+<div class="line">...</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Determine temporary device storage requirements</span></div>
+<div class="line">void     *d_temp_storage = NULL;</div>
+<div class="line"><span class="keywordtype">size_t</span>   temp_storage_bytes = 0;</div>
+<div class="line">cub::DeviceAdjacentDifference::SubtractLeft(</div>
+<div class="line">  d_temp_storage, temp_storage_bytes,</div>
+<div class="line">  d_data, num_items, CustomDifference());</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Allocate temporary storage</span></div>
+<div class="line">cudaMalloc(&amp;d_temp_storage, temp_storage_bytes);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Run operation</span></div>
+<div class="line">cub::DeviceAdjacentDifference::SubtractLeft(</div>
+<div class="line">  d_temp_storage, temp_storage_bytes,</div>
+<div class="line">  d_data, num_items, CustomDifference());</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// d_data &lt;-- [1, 1, -1, 1, -1, 1, -1, 1]</span></div>
+</div><!-- fragment --></dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">RandomAccessIteratorT</td><td>is a model of <a href="https://en.cppreference.com/w/cpp/iterator/random_access_iterator">Random Access Iterator</a>, <code>RandomAccessIteratorT</code> is mutable. <a class="el" href="struct_if.html" title="Type selection (IF ? ThenType : ElseType) ">If</a> <code>x</code> and <code>y</code> are objects of <code>RandomAccessIteratorT</code>'s <code>value_type</code>, and <code>x - y</code> is defined, then the return type of <code>x - y</code> should be convertible to a type in <code>RandomAccessIteratorT</code>'s set of <code>value_types</code>.</td></tr>
+    <tr><td class="paramname">DifferenceOpT</td><td>Its <code>result_type</code> is convertible to a type in <code>RandomAccessIteratorT</code>'s set of <code>value_types</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">d_temp_storage</td><td>Device-accessible allocation of temporary storage. When <code>nullptr</code>, the required allocation size is written to <code>temp_storage_bytes</code> and no work is done.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">temp_storage_bytes</td><td>Reference to size in bytes of <code>d_temp_storage</code> allocation</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">d_input</td><td>Pointer to the input sequence and the result</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_items</td><td>Number of items in the input sequence</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">difference_op</td><td>The binary function used to compute differences</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td><b>[optional]</b> CUDA stream to launch kernels within. Default is stream<sub>0</sub>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">debug_synchronous</td><td><b>[optional]</b> Whether or not to synchronize the stream after every kernel launch to check for errors. Also causes launch configurations to be printed to the console. Default is <code>false</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf4f881d459986a2a1b5b0c5ba81dc814"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename InputIteratorT , typename OutputIteratorT , typename DifferenceOpT  = cub::Difference&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static CUB_RUNTIME_FUNCTION cudaError_t DeviceAdjacentDifference::SubtractRightCopy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>d_temp_storage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>temp_storage_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InputIteratorT&#160;</td>
+          <td class="paramname"><em>d_input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OutputIteratorT&#160;</td>
+          <td class="paramname"><em>d_output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>num_items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DifferenceOpT&#160;</td>
+          <td class="paramname"><em>difference_op</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cudaStream_t&#160;</td>
+          <td class="paramname"><em>stream</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>debug_synchronous</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts the right element of each adjacent pair of elements residing within device-accessible memory. </p>
+<dl class="section user"><dt>Overview</dt><dd><ul>
+<li>Calculates the right differences of adjacent elements in <code>d_input</code>. That is, <code>*(d_input + num_items - 1)</code> is assigned to <code>*(d_output + num_items - 1)</code>, and, for each iterator <code>i</code> in the range <code>[d_input, d_input + num_items - 1)</code>, the result of <code>difference_op(*i, *(i + 1))</code> is assigned to <code>*(d_output + (i - d_input))</code>.</li>
+<li>Note that the behavior is undefined if the input and output ranges overlap in any way.</li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>Snippet</dt><dd>The code snippet below illustrates how to use <code><a class="el" href="struct_device_adjacent_difference.html" title="DeviceAdjacentDifference provides device-wide, parallel operations for computing the differences of a...">DeviceAdjacentDifference</a></code> to compute the difference between adjacent elements.</dd></dl>
+<dl class="section user"><dt></dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cub_8cuh.html">cub/cub.cuh</a>&gt;</span></div>
+<div class="line"><span class="comment">// or equivalently &lt;cub/device/device_adjacent_difference.cuh&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">struct </span>CustomDifference</div>
+<div class="line">{</div>
+<div class="line">  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> DataType&gt;</div>
+<div class="line">  __device__ DataType operator()(DataType &amp;lhs, DataType &amp;rhs)</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keywordflow">return</span> lhs - rhs;</div>
+<div class="line">  }</div>
+<div class="line">};</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Declare, allocate, and initialize device-accessible pointers</span></div>
+<div class="line"><span class="keywordtype">int</span>  num_items;     <span class="comment">// e.g., 8</span></div>
+<div class="line"><span class="keywordtype">int</span>  *d_input;      <span class="comment">// e.g., [1, 2, 1, 2, 1, 2, 1, 2]</span></div>
+<div class="line"><span class="keywordtype">int</span>  *d_output;</div>
+<div class="line">..</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Determine temporary device storage requirements</span></div>
+<div class="line"><span class="keywordtype">void</span> *d_temp_storage = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="keywordtype">size_t</span> temp_storage_bytes = 0;</div>
+<div class="line">cub::DeviceAdjacentDifference::SubtractRightCopy(</div>
+<div class="line">  d_temp_storage, temp_storage_bytes,</div>
+<div class="line">  d_input, d_output, num_items, CustomDifference());</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Allocate temporary storage</span></div>
+<div class="line">cudaMalloc(&amp;d_temp_storage, temp_storage_bytes);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Run operation</span></div>
+<div class="line">cub::DeviceAdjacentDifference::SubtractRightCopy(</div>
+<div class="line">  d_temp_storage, temp_storage_bytes,</div>
+<div class="line">  d_input, d_output, num_items, CustomDifference());</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// d_input &lt;-- [1, 2, 1, 2, 1, 2, 1, 2]</span></div>
+<div class="line"><span class="comment">// d_data  &lt;-- [-1, 1, -1, 1, -1, 1, -1, 2]</span></div>
+</div><!-- fragment --></dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">InputIteratorT</td><td>is a model of <a href="https://en.cppreference.com/w/cpp/iterator/input_iterator">Input Iterator</a>, and <code>x</code> and <code>y</code> are objects of <code>InputIteratorT</code>'s <code>value_type</code>, then <code>x - y</code> is defined, and <code>InputIteratorT</code>'s <code>value_type</code> is convertible to a type in <code>OutputIteratorT</code>'s set of <code>value_types</code>, and the return type of <code>x - y</code> is convertible to a type in <code>OutputIteratorT</code>'s set of <code>value_types</code>.</td></tr>
+    <tr><td class="paramname">OutputIteratorT</td><td>is a model of <a href="https://en.cppreference.com/w/cpp/iterator/output_iterator">Output Iterator</a>.</td></tr>
+    <tr><td class="paramname">DifferenceOpT</td><td>Its <code>result_type</code> is convertible to a type in <code>RandomAccessIteratorT</code>'s set of <code>value_types</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">d_temp_storage</td><td>Device-accessible allocation of temporary storage. When <code>nullptr</code>, the required allocation size is written to <code>temp_storage_bytes</code> and no work is done.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">temp_storage_bytes</td><td>Reference to size in bytes of <code>d_temp_storage</code> allocation</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d_input</td><td>Pointer to the input sequence</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">d_output</td><td>Pointer to the output sequence</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_items</td><td>Number of items in the input sequence</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">difference_op</td><td>The binary function used to compute differences.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td><b>[optional]</b> CUDA stream to launch kernels within. Default is stream<sub>0</sub>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">debug_synchronous</td><td><b>[optional]</b> Whether or not to synchronize the stream after every kernel launch to check for errors. Also causes launch configurations to be printed to the console. Default is <code>false</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5f32809ad80475f870048cf82e6611b0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RandomAccessIteratorT , typename DifferenceOpT  = cub::Difference&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static CUB_RUNTIME_FUNCTION cudaError_t DeviceAdjacentDifference::SubtractRight </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>d_temp_storage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>temp_storage_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIteratorT&#160;</td>
+          <td class="paramname"><em>d_input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>num_items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DifferenceOpT&#160;</td>
+          <td class="paramname"><em>difference_op</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cudaStream_t&#160;</td>
+          <td class="paramname"><em>stream</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>debug_synchronous</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts the right element of each adjacent pair of elements residing within device-accessible memory. </p>
+<dl class="section user"><dt>Overview</dt><dd>Calculates the right differences of adjacent elements in <code>d_input</code>. That is, for each iterator <code>i</code> in the range <code>[d_input, d_input + num_items - 1)</code>, the result of <code>difference_op(*i, *(i + 1))</code> is assigned to <code>*(d_input + (i - d_input))</code>.</dd></dl>
+<dl class="section user"><dt>Snippet</dt><dd>The code snippet below illustrates how to use <code><a class="el" href="struct_device_adjacent_difference.html" title="DeviceAdjacentDifference provides device-wide, parallel operations for computing the differences of a...">DeviceAdjacentDifference</a></code> to compute the difference between adjacent elements.</dd></dl>
+<dl class="section user"><dt></dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cub_8cuh.html">cub/cub.cuh</a>&gt;</span></div>
+<div class="line"><span class="comment">// or equivalently &lt;cub/device/device_adjacent_difference.cuh&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Declare, allocate, and initialize device-accessible pointers</span></div>
+<div class="line"><span class="keywordtype">int</span>  num_items;    <span class="comment">// e.g., 8</span></div>
+<div class="line"><span class="keywordtype">int</span>  *d_data;      <span class="comment">// e.g., [1, 2, 1, 2, 1, 2, 1, 2]</span></div>
+<div class="line">...</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Determine temporary device storage requirements</span></div>
+<div class="line">void *d_temp_storage = NULL;</div>
+<div class="line"><span class="keywordtype">size_t</span> temp_storage_bytes = 0;</div>
+<div class="line">cub::DeviceAdjacentDifference::SubtractRight(</div>
+<div class="line">  d_temp_storage, temp_storage_bytes, d_data, num_items);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Allocate temporary storage</span></div>
+<div class="line">cudaMalloc(&amp;d_temp_storage, temp_storage_bytes);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// Run operation</span></div>
+<div class="line">cub::DeviceAdjacentDifference::SubtractRight(</div>
+<div class="line">  d_temp_storage, temp_storage_bytes, d_data, num_items);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// d_data  &lt;-- [-1, 1, -1, 1, -1, 1, -1, 2]</span></div>
+</div><!-- fragment --></dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">RandomAccessIteratorT</td><td>is a model of <a href="https://en.cppreference.com/w/cpp/iterator/random_access_iterator">Random Access Iterator</a>, <code>RandomAccessIteratorT</code> is mutable. <a class="el" href="struct_if.html" title="Type selection (IF ? ThenType : ElseType) ">If</a> <code>x</code> and <code>y</code> are objects of <code>RandomAccessIteratorT</code>'s <code>value_type</code>, and <code>x - y</code> is defined, then the return type of <code>x - y</code> should be convertible to a type in <code>RandomAccessIteratorT</code>'s set of <code>value_types</code>.</td></tr>
+    <tr><td class="paramname">DifferenceOpT</td><td>Its <code>result_type</code> is convertible to a type in <code>RandomAccessIteratorT</code>'s set of <code>value_types</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">d_temp_storage</td><td>Device-accessible allocation of temporary storage. When <code>nullptr</code>, the required allocation size is written to <code>temp_storage_bytes</code> and no work is done.</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">temp_storage_bytes</td><td>Reference to size in bytes of <code>d_temp_storage</code> allocation</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">d_input</td><td>Pointer to the input sequence</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_items</td><td>Number of items in the input sequence</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">difference_op</td><td>The binary function used to compute differences</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td><b>[optional]</b> CUDA stream to launch kernels within. Default is stream<sub>0</sub>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">debug_synchronous</td><td><b>[optional]</b> Whether or not to synchronize the stream after every kernel launch to check for errors. Also causes launch configurations to be printed to the console. Default is <code>false</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
