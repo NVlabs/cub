@@ -73,9 +73,9 @@
 
 </td></tr><tr><td>
 
-<a href="https://github.com/NVlabs/cub"><img src="github-icon-747d8b799a48162434b2c0595ba1317e.png" style="position:relative; bottom:-10px; border:0px;"/></a>
+<a href="https://github.com/NVIDIA/cub"><img src="github-icon-747d8b799a48162434b2c0595ba1317e.png" style="position:relative; bottom:-10px; border:0px;"/></a>
 &nbsp;&nbsp;
-<a href="https://github.com/NVlabs/cub"><em>Browse or fork CUB at GitHub</em></a>
+<a href="https://github.com/NVIDIA/cub"><em>Browse or fork CUB at GitHub</em></a>
 
 </td><td>
 </td></tr></table>
@@ -250,7 +250,7 @@ library and software abstraction layer, CUB provides:
    resources provided by each CUDA processor architecture. As a result, our CUB 
    implementations demonstrate much better performance-portability when compared to more 
    traditional, rigidly-coded parallel libraries such 
-   as [<b><em>Thrust</em></b>](http://thrust.github.com/): <br><br><img src="scan_int32.png"><br><br> 
+   as [<b><em>Thrust</em></b>](http://thrust.github.io/): <br><br><img src="scan_int32.png"><br><br> 
    
 -# <b><em>Simplicity of performance tuning</em></b>:
   - <b><em>Resource utilization</em></b>.  CUB primitives allow developers to quickly 
@@ -462,7 +462,7 @@ We also have collection of simple [<b>CUB example programs</b>] (examples.html)
 \section sec7 (7) How is CUB different than Thrust and Modern GPU?
 
 \par CUB and Thrust
-CUB and [<b><em>Thrust</em></b>](http://thrust.github.com/) share some 
+CUB and [<b><em>Thrust</em></b>](http://thrust.github.io/) share some 
 similarities in that they both provide similar device-wide primitives for CUDA.  
 However, they target different abstraction layers for parallel computing.
 Thrust abstractions are agnostic of any particular parallel framework (e.g., 
@@ -483,7 +483,7 @@ within Thrust by using reusable block-wide primitives to reduce maintenance and
 tuning effort.  
 
 \par CUB and Modern GPU
-CUB and [<b><em>Modern GPU</em></b>](http://nvlabs.github.io/moderngpu/) also
+CUB and [<b><em>Modern GPU</em></b>](https://github.com/moderngpu/moderngpu) also
 share some similarities in that they both implement similar device-wide primitives for CUDA.
 However, they serve different purposes for the CUDA programming community.  MGPU
 is a pedagogical tool for high-performance GPU computing, providing clear and concise 
@@ -523,6 +523,7 @@ See the [releases](https://github.com/NVIDIA/cub/releases) page for latest relea
 \par
 CUB is developed as an open-source project by [NVIDIA Research](http://research.nvidia.com).
 The primary contributor is [Duane Merrill](http://github.com/dumerrill).
+More information on configuring your CUB build and creating a pull request is found in [CONTRIBUTING.md](https://github.com/NVIDIA/cub/blob/main/CONTRIBUTING.md).
 
 \section sec10 (10) Open Source License
 
