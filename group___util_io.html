@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -115,6 +115,9 @@ Classes</h2></td></tr>
 <div class="caption">
 .</div></div>
   <a href="classcub_1_1_block_store.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_warp_load.html">WarpLoad&lt; InputT, ITEMS_PER_THREAD, ALGORITHM, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_warp_load.html" title="The WarpLoad class provides collective data movement methods for loading a linear segment of items fr...">WarpLoad</a> class provides <a href="index.html#sec0"><em>collective</em></a> data movement methods for loading a linear segment of items from memory into a <a href="index.html#sec5sec3"><em>blocked arrangement</em></a> across a CUDA thread block.  <a href="class_warp_load.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_warp_store.html">WarpStore&lt; T, ITEMS_PER_THREAD, ALGORITHM, LOGICAL_WARP_THREADS, PTX_ARCH &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_warp_store.html" title="The WarpStore class provides collective data movement methods for writing a blocked arrangement of it...">WarpStore</a> class provides <a href="index.html#sec0"><em>collective</em></a> data movement methods for writing a <a href="index.html#sec5sec3"><em>blocked arrangement</em></a> of items partitioned across a CUDA warp to a linear segment of memory.  <a href="class_warp_store.html#details">More...</a><br/></td></tr>
@@ -231,11 +234,11 @@ Thread I/O (cache modified)</h2></td></tr>
 <tr class="memitem:ga8d25bb4380faf93073f9b3bbe2928978"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__ <br class="typebreak"/>
 cub::detail::value_t<br class="typebreak"/>
 &lt; InputIteratorT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___util_io.html#ga8d25bb4380faf93073f9b3bbe2928978">cub::ThreadLoad</a> (InputIteratorT itr)</td></tr>
-<tr class="memdesc:ga8d25bb4380faf93073f9b3bbe2928978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread utility for reading memory using cub::CacheLoadModifier cache modifiers. Can be used to load any data type.  <a href="#ga8d25bb4380faf93073f9b3bbe2928978">More...</a><br/></td></tr>
+<tr class="memdesc:ga8d25bb4380faf93073f9b3bbe2928978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread utility for reading memory using <a class="el" href="group___util_io.html#gac5f2805ad56fdd0f2860a5421d76d9b9" title="Enumeration of cache modifiers for memory load operations. ">cub::CacheLoadModifier</a> cache modifiers. Can be used to load any data type.  <a href="#ga8d25bb4380faf93073f9b3bbe2928978">More...</a><br/></td></tr>
 <tr class="separator:ga8d25bb4380faf93073f9b3bbe2928978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7e46f6e1c83bab6124cf8d4b66377812"><td class="memTemplParams" colspan="2">template&lt;CacheStoreModifier MODIFIER, typename OutputIteratorT , typename T &gt; </td></tr>
 <tr class="memitem:ga7e46f6e1c83bab6124cf8d4b66377812"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___util_io.html#ga7e46f6e1c83bab6124cf8d4b66377812">cub::ThreadStore</a> (OutputIteratorT itr, T val)</td></tr>
-<tr class="memdesc:ga7e46f6e1c83bab6124cf8d4b66377812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread utility for writing memory using cub::CacheStoreModifier cache modifiers. Can be used to store any data type.  <a href="#ga7e46f6e1c83bab6124cf8d4b66377812">More...</a><br/></td></tr>
+<tr class="memdesc:ga7e46f6e1c83bab6124cf8d4b66377812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread utility for writing memory using <a class="el" href="group___util_io.html#ga648d25a92a50ca41cf73e93a35f21f37" title="Enumeration of cache modifiers for memory store operations. ">cub::CacheStoreModifier</a> cache modifiers. Can be used to store any data type.  <a href="#ga7e46f6e1c83bab6124cf8d4b66377812">More...</a><br/></td></tr>
 <tr class="separator:ga7e46f6e1c83bab6124cf8d4b66377812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -526,7 +529,7 @@ template&lt;typename T , int ITEMS_PER_THREAD&gt; </div>
 <p>Load a linear segment of items into a blocked arrangement across the thread block. </p>
 <p>Assumes a <a href="index.html#sec4sec3"><em>blocked arrangement</em></a> of (<em>block-threads</em>*<em>items-per-thread</em>) items across the thread block, where thread<sub><em>i</em></sub> owns the <em>i</em><sup>th</sup> range of <em>items-per-thread</em> contiguous items. For multi-dimensional thread blocks, a row-major thread ordering is assumed.</p>
 <p>The input offset (<code>block_ptr</code> + <code>block_offset</code>) must be quad-item aligned</p>
-<p>The following conditions will prevent vectorization and loading will fall back to cub::BLOCK_LOAD_DIRECT:</p>
+<p>The following conditions will prevent vectorization and loading will fall back to <a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401a2d4d8900d7e697e9dac4062e97d3d835">cub::BLOCK_LOAD_DIRECT</a>:</p>
 <ul>
 <li><code>ITEMS_PER_THREAD</code> is odd</li>
 <li>The data type <code>T</code> is not a built-in primitive or CUDA vector type (e.g., <code>short</code>, <code>int2</code>, <code>double</code>, <code>float2</code>, etc.)</li>
@@ -1063,7 +1066,7 @@ template&lt;typename T , int ITEMS_PER_THREAD&gt; </div>
 <p>Store a blocked arrangement of items across a thread block into a linear segment of items. </p>
 <p>Assumes a <a href="index.html#sec4sec3"><em>blocked arrangement</em></a> of (<em>block-threads</em>*<em>items-per-thread</em>) items across the thread block, where thread<sub><em>i</em></sub> owns the <em>i</em><sup>th</sup> range of <em>items-per-thread</em> contiguous items. For multi-dimensional thread blocks, a row-major thread ordering is assumed.</p>
 <p>The output offset (<code>block_ptr</code> + <code>block_offset</code>) must be quad-item aligned, which is the default starting offset returned by <code>cudaMalloc()</code> </p>
-<dl class="section user"><dt></dt><dd>The following conditions will prevent vectorization and storing will fall back to cub::BLOCK_STORE_DIRECT:<ul>
+<dl class="section user"><dt></dt><dd>The following conditions will prevent vectorization and storing will fall back to <a class="el" href="namespacecub.html#a839b145451e9eec3d44172e3c3619700a9b8dcc7b6b06bcfc24af4f499523b880">cub::BLOCK_STORE_DIRECT</a>:<ul>
 <li><code>ITEMS_PER_THREAD</code> is odd</li>
 <li>The data type <code>T</code> is not a built-in primitive or CUDA vector type (e.g., <code>short</code>, <code>int2</code>, <code>double</code>, <code>float2</code>, etc.)</li>
 </ul>
@@ -1332,7 +1335,7 @@ template&lt;CacheLoadModifier MODIFIER, typename InputIteratorT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Thread utility for reading memory using cub::CacheLoadModifier cache modifiers. Can be used to load any data type. </p>
+<p>Thread utility for reading memory using <a class="el" href="group___util_io.html#gac5f2805ad56fdd0f2860a5421d76d9b9" title="Enumeration of cache modifiers for memory load operations. ">cub::CacheLoadModifier</a> cache modifiers. Can be used to load any data type. </p>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cub_8cuh.html">cub/cub.cuh</a>&gt;</span>   <span class="comment">// or equivalently &lt;cub/thread/thread_load.cuh&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="comment">// 32-bit load using cache-global modifier:</span></div>
@@ -1388,7 +1391,7 @@ template&lt;CacheStoreModifier MODIFIER, typename OutputIteratorT , typename T &
       </table>
 </div><div class="memdoc">
 
-<p>Thread utility for writing memory using cub::CacheStoreModifier cache modifiers. Can be used to store any data type. </p>
+<p>Thread utility for writing memory using <a class="el" href="group___util_io.html#ga648d25a92a50ca41cf73e93a35f21f37" title="Enumeration of cache modifiers for memory store operations. ">cub::CacheStoreModifier</a> cache modifiers. Can be used to store any data type. </p>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cub_8cuh.html">cub/cub.cuh</a>&gt;</span>   <span class="comment">// or equivalently &lt;cub/thread/thread_store.cuh&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="comment">// 32-bit store using cache-global modifier:</span></div>

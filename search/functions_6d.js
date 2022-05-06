@@ -1,7 +1,10 @@
 var searchData=
 [
+  ['makebinaryflip',['MakeBinaryFlip',['../group___util_module.html#gaa730be5d964b84fb1c06d59d283b6e50',1,'cub']]],
+  ['matchany',['MatchAny',['../namespacecub.html#a7926f69b78b66ee68cab442c40e326a4',1,'cub']]],
   ['max',['Max',['../structcub_1_1_device_reduce.html#a974a241463ca892c8f5e73b879065e48',1,'cub::DeviceReduce::Max()'],['../structcub_1_1_device_segmented_reduce.html#a7c2e75de0efeb30bdc1dccd4aa5d357b',1,'cub::DeviceSegmentedReduce::Max()']]],
   ['maxsmoccupancy',['MaxSmOccupancy',['../group___util_mgmt.html#gad426539b30328122fae0d921243a303e',1,'cub']]],
+  ['mergepath',['MergePath',['../block__merge__sort_8cuh.html#a24b22522d55b557a1634eff1f26ce7d0',1,'block_merge_sort.cuh']]],
   ['mergepathsearch',['MergePathSearch',['../thread__search_8cuh.html#a195960877076a455ef1c6230f584eaf6',1,'thread_search.cuh']]],
   ['min',['Min',['../structcub_1_1_device_reduce.html#a14d9c12a1beb9a04f77e903d07fa596a',1,'cub::DeviceReduce::Min()'],['../structcub_1_1_device_segmented_reduce.html#a69ffa6b907381875e6b42fe2b08220b0',1,'cub::DeviceSegmentedReduce::Min()']]],
   ['multihistogrameven',['MultiHistogramEven',['../structcub_1_1_device_histogram.html#a917e507d773ef1b11424ed8bc49e4d95',1,'cub::DeviceHistogram::MultiHistogramEven(void *d_temp_storage, size_t &amp;temp_storage_bytes, SampleIteratorT d_samples, CounterT *d_histogram[NUM_ACTIVE_CHANNELS], int num_levels[NUM_ACTIVE_CHANNELS], LevelT lower_level[NUM_ACTIVE_CHANNELS], LevelT upper_level[NUM_ACTIVE_CHANNELS], OffsetT num_pixels, cudaStream_t stream=0, bool debug_synchronous=false)'],['../structcub_1_1_device_histogram.html#a309c2e30bd62935e1cfcd623fb04b668',1,'cub::DeviceHistogram::MultiHistogramEven(void *d_temp_storage, size_t &amp;temp_storage_bytes, SampleIteratorT d_samples, CounterT *d_histogram[NUM_ACTIVE_CHANNELS], int num_levels[NUM_ACTIVE_CHANNELS], LevelT lower_level[NUM_ACTIVE_CHANNELS], LevelT upper_level[NUM_ACTIVE_CHANNELS], OffsetT num_row_pixels, OffsetT num_rows, size_t row_stride_bytes, cudaStream_t stream=0, bool debug_synchronous=false)']]],

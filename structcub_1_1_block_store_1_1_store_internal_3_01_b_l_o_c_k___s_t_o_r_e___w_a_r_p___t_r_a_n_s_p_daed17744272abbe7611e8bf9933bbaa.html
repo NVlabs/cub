@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cub</b></li><li class="navelem"><a class="el" href="classcub_1_1_block_store.html">BlockStore</a></li><li class="navelem"><b>StoreInternal< BLOCK_STORE_WARP_TRANSPOSE_TIMESLICED, DUMMY ></b></li><li class="navelem"><a class="el" href="structcub_1_1_block_store_1_1_store_internal_3_01_b_l_o_c_k___s_t_o_r_e___w_a_r_p___t_r_a_n_s_p_daed17744272abbe7611e8bf9933bbaa.html">_TempStorage</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecub.html">cub</a></li><li class="navelem"><a class="el" href="classcub_1_1_block_store.html">BlockStore</a></li><li class="navelem"><b>StoreInternal< BLOCK_STORE_WARP_TRANSPOSE_TIMESLICED, DUMMY ></b></li><li class="navelem"><a class="el" href="structcub_1_1_block_store_1_1_store_internal_3_01_b_l_o_c_k___s_t_o_r_e___w_a_r_p___t_r_a_n_s_p_daed17744272abbe7611e8bf9933bbaa.html">_TempStorage</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -133,11 +133,29 @@ Inheritance diagram for cub::BlockStore&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, AL
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Members</h2></td></tr>
-<tr class="memitem:a46676f74dbaad9219ad38e1895f7ee81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46676f74dbaad9219ad38e1895f7ee81"></a>
-volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_block_store_1_1_store_internal_3_01_b_l_o_c_k___s_t_o_r_e___w_a_r_p___t_r_a_n_s_p_daed17744272abbe7611e8bf9933bbaa.html#a46676f74dbaad9219ad38e1895f7ee81">valid_items</a></td></tr>
-<tr class="memdesc:a46676f74dbaad9219ad38e1895f7ee81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary storage for partially-full block guard. <br/></td></tr>
+<tr class="memitem:a46676f74dbaad9219ad38e1895f7ee81"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_block_store_1_1_store_internal_3_01_b_l_o_c_k___s_t_o_r_e___w_a_r_p___t_r_a_n_s_p_daed17744272abbe7611e8bf9933bbaa.html#a46676f74dbaad9219ad38e1895f7ee81">valid_items</a></td></tr>
+<tr class="memdesc:a46676f74dbaad9219ad38e1895f7ee81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary storage for partially-full block guard.  <a href="#a46676f74dbaad9219ad38e1895f7ee81">More...</a><br/></td></tr>
 <tr class="separator:a46676f74dbaad9219ad38e1895f7ee81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a46676f74dbaad9219ad38e1895f7ee81"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int BLOCK_DIM_X, int ITEMS_PER_THREAD, BlockStoreAlgorithm ALGORITHM = BLOCK_STORE_DIRECT, int BLOCK_DIM_Y = 1, int BLOCK_DIM_Z = 1, int PTX_ARCH = CUB_PTX_ARCH&gt; </div>
+<div class="memtemplate">
+template&lt;int DUMMY&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile int <a class="el" href="classcub_1_1_block_store.html">cub::BlockStore</a>&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;::StoreInternal&lt; <a class="el" href="namespacecub.html#a839b145451e9eec3d44172e3c3619700ae0f1b9565e96bf7c12d4e02d58ba52d7">BLOCK_STORE_WARP_TRANSPOSE_TIMESLICED</a>, DUMMY &gt;::_TempStorage::valid_items</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Temporary storage for partially-full block guard. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="block__store_8cuh.html">block_store.cuh</a></li>
 </ul>

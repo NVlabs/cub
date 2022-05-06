@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cub</b></li><li class="navelem"><a class="el" href="structcub_1_1_chained_policy.html">ChainedPolicy</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecub.html">cub</a></li><li class="navelem"><a class="el" href="structcub_1_1_chained_policy.html">ChainedPolicy</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -119,20 +119,76 @@ struct cub::ChainedPolicy&lt; PTX_VERSION, PolicyT, PrevPolicyT &gt;</h3>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7cd7be83babe80884f9f4e9e64363077"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cd7be83babe80884f9f4e9e64363077"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_chained_policy.html#a7cd7be83babe80884f9f4e9e64363077">ActivePolicy</a> = cub::detail::conditional_t&lt;(CUB_PTX_ARCH&lt; PTX_VERSION), typename PrevPolicyT::ActivePolicy, PolicyT &gt;</td></tr>
-<tr class="memdesc:a7cd7be83babe80884f9f4e9e64363077"><td class="mdescLeft">&#160;</td><td class="mdescRight">The policy for the active compiler pass. <br/></td></tr>
+<tr class="memitem:a7cd7be83babe80884f9f4e9e64363077"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_chained_policy.html#a7cd7be83babe80884f9f4e9e64363077">ActivePolicy</a> = cub::detail::conditional_t&lt;(CUB_PTX_ARCH&lt; PTX_VERSION), typename PrevPolicyT::ActivePolicy, PolicyT &gt;</td></tr>
+<tr class="memdesc:a7cd7be83babe80884f9f4e9e64363077"><td class="mdescLeft">&#160;</td><td class="mdescRight">The policy for the active compiler pass.  <a href="#a7cd7be83babe80884f9f4e9e64363077">More...</a><br/></td></tr>
 <tr class="separator:a7cd7be83babe80884f9f4e9e64363077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Methods</h2></td></tr>
-<tr class="memitem:a83d4ea481b370164e6d1c1a83748f60c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a83d4ea481b370164e6d1c1a83748f60c"></a>
-template&lt;typename FunctorT &gt; </td></tr>
+<tr class="memitem:a83d4ea481b370164e6d1c1a83748f60c"><td class="memTemplParams" colspan="2">template&lt;typename FunctorT &gt; </td></tr>
 <tr class="memitem:a83d4ea481b370164e6d1c1a83748f60c"><td class="memTemplItemLeft" align="right" valign="top">CUB_RUNTIME_FUNCTION static <br class="typebreak"/>
 __forceinline__ cudaError_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structcub_1_1_chained_policy.html#a83d4ea481b370164e6d1c1a83748f60c">Invoke</a> (int ptx_version, FunctorT &amp;op)</td></tr>
-<tr class="memdesc:a83d4ea481b370164e6d1c1a83748f60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specializes and dispatches op in accordance to the first policy in the chain of adequate PTX version. <br/></td></tr>
+<tr class="memdesc:a83d4ea481b370164e6d1c1a83748f60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specializes and dispatches op in accordance to the first policy in the chain of adequate PTX version.  <a href="#a83d4ea481b370164e6d1c1a83748f60c">More...</a><br/></td></tr>
 <tr class="separator:a83d4ea481b370164e6d1c1a83748f60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a7cd7be83babe80884f9f4e9e64363077"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int PTX_VERSION, typename PolicyT , typename PrevPolicyT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structcub_1_1_chained_policy.html">cub::ChainedPolicy</a>&lt; PTX_VERSION, PolicyT, PrevPolicyT &gt;::<a class="el" href="structcub_1_1_chained_policy.html#a7cd7be83babe80884f9f4e9e64363077">ActivePolicy</a> =  cub::detail::conditional_t&lt;(CUB_PTX_ARCH &lt; PTX_VERSION), typename PrevPolicyT::ActivePolicy, PolicyT&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The policy for the active compiler pass. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a83d4ea481b370164e6d1c1a83748f60c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int PTX_VERSION, typename PolicyT , typename PrevPolicyT &gt; </div>
+<div class="memtemplate">
+template&lt;typename FunctorT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CUB_RUNTIME_FUNCTION static __forceinline__ cudaError_t <a class="el" href="structcub_1_1_chained_policy.html">cub::ChainedPolicy</a>&lt; PTX_VERSION, PolicyT, PrevPolicyT &gt;::Invoke </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ptx_version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FunctorT &amp;&#160;</td>
+          <td class="paramname"><em>op</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Specializes and dispatches op in accordance to the first policy in the chain of adequate PTX version. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="util__device_8cuh.html">util_device.cuh</a></li>
 </ul>

@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cub</b></li><li class="navelem"><a class="el" href="classcub_1_1_block_histogram.html">BlockHistogram</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecub.html">cub</a></li><li class="navelem"><a class="el" href="classcub_1_1_block_histogram.html">BlockHistogram</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -130,7 +130,7 @@ class cub::BlockHistogram&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, BINS, ALGORITHM,
     <tr><td class="paramname">BLOCK_DIM_X</td><td>The thread block length in threads along the X dimension </td></tr>
     <tr><td class="paramname">ITEMS_PER_THREAD</td><td>The number of items per thread </td></tr>
     <tr><td class="paramname">BINS</td><td>The number bins within the histogram </td></tr>
-    <tr><td class="paramname">ALGORITHM</td><td><b>[optional]</b> cub::BlockHistogramAlgorithm enumerator specifying the underlying algorithm to use (default: cub::BLOCK_HISTO_SORT) </td></tr>
+    <tr><td class="paramname">ALGORITHM</td><td><b>[optional]</b> <a class="el" href="namespacecub.html#a845ca81ef9b346ef7429a35d4fdc80d2" title="BlockHistogramAlgorithm enumerates alternative algorithms for the parallel construction of block-wide...">cub::BlockHistogramAlgorithm</a> enumerator specifying the underlying algorithm to use (default: <a class="el" href="namespacecub.html#a845ca81ef9b346ef7429a35d4fdc80d2ac14962247ae5693de2de53a8db40ca54">cub::BLOCK_HISTO_SORT</a>) </td></tr>
     <tr><td class="paramname">BLOCK_DIM_Y</td><td><b>[optional]</b> The thread block length in threads along the Y dimension (default: 1) </td></tr>
     <tr><td class="paramname">BLOCK_DIM_Z</td><td><b>[optional]</b> The thread block length in threads along the Z dimension (default: 1) </td></tr>
     <tr><td class="paramname">PTX_ARCH</td><td><b>[optional]</b> The PTX compute capability for which to to specialize this collective, formatted as per the <code><b>CUDA_ARCH</b></code> macro (e.g., 350 for sm_35). Useful for determining the collective's storage requirements for a given device from the host. (Default: the value of <code><b>CUDA_ARCH</b></code> during the current compiler pass)</td></tr>
@@ -142,8 +142,8 @@ class cub::BlockHistogram&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, BINS, ALGORITHM,
 <li>The <code>T</code> type must be implicitly castable to an integer type.</li>
 <li><a class="el" href="classcub_1_1_block_histogram.html" title="The BlockHistogram class provides collective methods for constructing block-wide histograms from data...">BlockHistogram</a> expects each integral <code>input[i]</code> value to satisfy <code>0 &lt;= input[i] &lt; BINS</code>. Values outside of this range result in undefined behavior.</li>
 <li><a class="el" href="classcub_1_1_block_histogram.html" title="The BlockHistogram class provides collective methods for constructing block-wide histograms from data...">BlockHistogram</a> can be optionally specialized to use different algorithms:<ol type="1">
-<li><b>cub::BLOCK_HISTO_SORT</b>. Sorting followed by differentiation. More...</li>
-<li><b>cub::BLOCK_HISTO_ATOMIC</b>. Use atomic addition to update byte counts directly. More...</li>
+<li><b><a class="el" href="namespacecub.html#a845ca81ef9b346ef7429a35d4fdc80d2ac14962247ae5693de2de53a8db40ca54">cub::BLOCK_HISTO_SORT</a></b>. Sorting followed by differentiation. <a class="el" href="namespacecub.html#a845ca81ef9b346ef7429a35d4fdc80d2">More...</a></li>
+<li><b><a class="el" href="namespacecub.html#a845ca81ef9b346ef7429a35d4fdc80d2abfc89fce43fcda396d18a4b2801025aa">cub::BLOCK_HISTO_ATOMIC</a></b>. Use atomic addition to update byte counts directly. <a class="el" href="namespacecub.html#a845ca81ef9b346ef7429a35d4fdc80d2">More...</a></li>
 </ol>
 </li>
 </ul>
@@ -177,7 +177,7 @@ class cub::BlockHistogram&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, BINS, ALGORITHM,
 <dl class="section user"><dt>Performance and Usage Considerations</dt><dd><ul>
 <li>All input values must fall between [0, BINS), or behavior is undefined.</li>
 <li>The histogram output can be constructed in shared or device-accessible memory</li>
-<li>See cub::BlockHistogramAlgorithm for performance details regarding algorithmic alternatives</li>
+<li>See <a class="el" href="namespacecub.html#a845ca81ef9b346ef7429a35d4fdc80d2" title="BlockHistogramAlgorithm enumerates alternative algorithms for the parallel construction of block-wide...">cub::BlockHistogramAlgorithm</a> for performance details regarding algorithmic alternatives</li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Re-using dynamically allocating shared memory</dt><dd>The following example under the examples/block folder illustrates usage of dynamically shared memory with <a class="el" href="classcub_1_1_block_reduce.html" title="The BlockReduce class provides collective methods for computing a parallel reduction of items partiti...">BlockReduce</a> and how to re-purpose the same memory region: <a href="../../examples/block/example_block_reduce_dyn_smem.cu">example_block_reduce_dyn_smem.cu</a></dd></dl>
@@ -192,9 +192,8 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Collective constructors</div></td></tr>
-<tr class="memitem:a0cebf0947dda55b487e33ca63d900d7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cebf0947dda55b487e33ca63d900d7b"></a>
-__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_histogram.html#a0cebf0947dda55b487e33ca63d900d7b">BlockHistogram</a> ()</td></tr>
-<tr class="memdesc:a0cebf0947dda55b487e33ca63d900d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collective constructor using a private static allocation of shared memory as temporary storage. <br/></td></tr>
+<tr class="memitem:a0cebf0947dda55b487e33ca63d900d7b"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_histogram.html#a0cebf0947dda55b487e33ca63d900d7b">BlockHistogram</a> ()</td></tr>
+<tr class="memdesc:a0cebf0947dda55b487e33ca63d900d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collective constructor using a private static allocation of shared memory as temporary storage.  <a href="#a0cebf0947dda55b487e33ca63d900d7b">More...</a><br/></td></tr>
 <tr class="separator:a0cebf0947dda55b487e33ca63d900d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a875a03627d3fc144b616c2353569281c"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_histogram.html#a875a03627d3fc144b616c2353569281c">BlockHistogram</a> (<a class="el" href="structcub_1_1_block_histogram_1_1_temp_storage.html">TempStorage</a> &amp;temp_storage)</td></tr>
 <tr class="memdesc:a875a03627d3fc144b616c2353569281c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collective constructor using the specified memory allocation as temporary storage.  <a href="#a875a03627d3fc144b616c2353569281c">More...</a><br/></td></tr>
@@ -214,6 +213,33 @@ __device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a
 <tr class="separator:a90ef25b7af7ce819367eca662a47dd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0cebf0947dda55b487e33ca63d900d7b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int BLOCK_DIM_X, int ITEMS_PER_THREAD, int BINS, BlockHistogramAlgorithm ALGORITHM = BLOCK_HISTO_SORT, int BLOCK_DIM_Y = 1, int BLOCK_DIM_Z = 1, int PTX_ARCH = CUB_PTX_ARCH&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ <a class="el" href="classcub_1_1_block_histogram.html">cub::BlockHistogram</a>&lt; T, BLOCK_DIM_X, ITEMS_PER_THREAD, BINS, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;::<a class="el" href="classcub_1_1_block_histogram.html">BlockHistogram</a> </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Collective constructor using a private static allocation of shared memory as temporary storage. </p>
+
+</div>
+</div>
 <a class="anchor" id="a875a03627d3fc144b616c2353569281c"></a>
 <div class="memitem">
 <div class="memproto">

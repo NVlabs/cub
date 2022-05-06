@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cub</b></li><li class="navelem"><a class="el" href="classcub_1_1_block_scan.html">BlockScan</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecub.html">cub</a></li><li class="navelem"><a class="el" href="classcub_1_1_block_scan.html">BlockScan</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -126,7 +126,7 @@ class cub::BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PT
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Data type being scanned </td></tr>
     <tr><td class="paramname">BLOCK_DIM_X</td><td>The thread block length in threads along the X dimension </td></tr>
-    <tr><td class="paramname">ALGORITHM</td><td><b>[optional]</b> cub::BlockScanAlgorithm enumerator specifying the underlying algorithm to use (default: cub::BLOCK_SCAN_RAKING) </td></tr>
+    <tr><td class="paramname">ALGORITHM</td><td><b>[optional]</b> <a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23ab" title="BlockScanAlgorithm enumerates alternative algorithms for cub::BlockScan to compute a parallel prefix ...">cub::BlockScanAlgorithm</a> enumerator specifying the underlying algorithm to use (default: <a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23aba0fa6cac57b7df2f475a67af053b9371c">cub::BLOCK_SCAN_RAKING</a>) </td></tr>
     <tr><td class="paramname">BLOCK_DIM_Y</td><td><b>[optional]</b> The thread block length in threads along the Y dimension (default: 1) </td></tr>
     <tr><td class="paramname">BLOCK_DIM_Z</td><td><b>[optional]</b> The thread block length in threads along the Z dimension (default: 1) </td></tr>
     <tr><td class="paramname">PTX_ARCH</td><td><b>[optional]</b> The PTX compute capability for which to to specialize this collective, formatted as per the <code><b>CUDA_ARCH</b></code> macro (e.g., 350 for sm_35). Useful for determining the collective's storage requirements for a given device from the host. (Default: the value of <code><b>CUDA_ARCH</b></code> during the current compiler pass)</td></tr>
@@ -137,9 +137,9 @@ class cub::BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PT
 <li>Given a list of input elements and a binary reduction operator, a <a href="http://en.wikipedia.org/wiki/Prefix_sum"><em>prefix scan</em></a> produces an output list where each element is computed to be the reduction of the elements occurring earlier in the input list. <em>Prefix sum</em> connotes a prefix scan with the addition operator. The term <em>inclusive</em> indicates that the <em>i</em><sup>th</sup> output reduction incorporates the <em>i</em><sup>th</sup> input. The term <em>exclusive</em> indicates the <em>i</em><sup>th</sup> input is not incorporated into the <em>i</em><sup>th</sup> output reduction.</li>
 <li>For multi-dimensional blocks, threads are linearly ranked in row-major order.</li>
 <li><a class="el" href="classcub_1_1_block_scan.html" title="The BlockScan class provides collective methods for computing a parallel prefix sum/scan of items par...">BlockScan</a> can be optionally specialized by algorithm to accommodate different workload profiles:<ol type="1">
-<li><b>cub::BLOCK_SCAN_RAKING</b>. An efficient (high throughput) "raking reduce-then-scan" prefix scan algorithm. More...</li>
-<li><b>cub::BLOCK_SCAN_RAKING_MEMOIZE</b>. Similar to cub::BLOCK_SCAN_RAKING, but having higher throughput at the expense of additional register pressure for intermediate storage. More...</li>
-<li><b>cub::BLOCK_SCAN_WARP_SCANS</b>. A quick (low latency) "tiled warpscans" prefix scan algorithm. More...</li>
+<li><b><a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23aba0fa6cac57b7df2f475a67af053b9371c">cub::BLOCK_SCAN_RAKING</a></b>. An efficient (high throughput) "raking reduce-then-scan" prefix scan algorithm. <a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23ab">More...</a></li>
+<li><b><a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23abadc8dfe7760ac97ddde467ecf1070674f">cub::BLOCK_SCAN_RAKING_MEMOIZE</a></b>. Similar to <a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23aba0fa6cac57b7df2f475a67af053b9371c">cub::BLOCK_SCAN_RAKING</a>, but having higher throughput at the expense of additional register pressure for intermediate storage. <a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23ab">More...</a></li>
+<li><b><a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23aba7f51e58246eb53f1a97bd1bc8c0f400f">cub::BLOCK_SCAN_WARP_SCANS</a></b>. A quick (low latency) "tiled warpscans" prefix scan algorithm. <a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23ab">More...</a></li>
 </ol>
 </li>
 </ul>
@@ -155,7 +155,7 @@ class cub::BlockScan&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PT
 <li>The number of threads in the block is a multiple of the architecture's warp size</li>
 </ul>
 </li>
-<li>See cub::BlockScanAlgorithm for performance details regarding algorithmic alternatives</li>
+<li>See <a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23ab" title="BlockScanAlgorithm enumerates alternative algorithms for cub::BlockScan to compute a parallel prefix ...">cub::BlockScanAlgorithm</a> for performance details regarding algorithmic alternatives</li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>A Simple Example</dt><dd>Every thread in the block uses the <a class="el" href="classcub_1_1_block_scan.html" title="The BlockScan class provides collective methods for computing a parallel prefix sum/scan of items par...">BlockScan</a> class by first specializing the <a class="el" href="classcub_1_1_block_scan.html" title="The BlockScan class provides collective methods for computing a parallel prefix sum/scan of items par...">BlockScan</a> type, then instantiating an instance with parameters for communication, and finally invoking one or more collective member functions. </dd></dl>
@@ -191,9 +191,8 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Collective constructors</div></td></tr>
-<tr class="memitem:a5133f76e261ce0b33d381e8be747966c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5133f76e261ce0b33d381e8be747966c"></a>
-__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_scan.html#a5133f76e261ce0b33d381e8be747966c">BlockScan</a> ()</td></tr>
-<tr class="memdesc:a5133f76e261ce0b33d381e8be747966c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collective constructor using a private static allocation of shared memory as temporary storage. <br/></td></tr>
+<tr class="memitem:a5133f76e261ce0b33d381e8be747966c"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_scan.html#a5133f76e261ce0b33d381e8be747966c">BlockScan</a> ()</td></tr>
+<tr class="memdesc:a5133f76e261ce0b33d381e8be747966c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collective constructor using a private static allocation of shared memory as temporary storage.  <a href="#a5133f76e261ce0b33d381e8be747966c">More...</a><br/></td></tr>
 <tr class="separator:a5133f76e261ce0b33d381e8be747966c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5156b3509d81ed5e53e06e270ab28cf"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_scan.html#aa5156b3509d81ed5e53e06e270ab28cf">BlockScan</a> (<a class="el" href="structcub_1_1_block_scan_1_1_temp_storage.html">TempStorage</a> &amp;temp_storage)</td></tr>
 <tr class="memdesc:aa5156b3509d81ed5e53e06e270ab28cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collective constructor using the specified memory allocation as temporary storage.  <a href="#aa5156b3509d81ed5e53e06e270ab28cf">More...</a><br/></td></tr>
@@ -300,6 +299,33 @@ __device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a
 <tr class="separator:accb292da806e242c851c142c01f638a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a5133f76e261ce0b33d381e8be747966c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int BLOCK_DIM_X, BlockScanAlgorithm ALGORITHM = BLOCK_SCAN_RAKING, int BLOCK_DIM_Y = 1, int BLOCK_DIM_Z = 1, int PTX_ARCH = CUB_PTX_ARCH&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ <a class="el" href="classcub_1_1_block_scan.html">cub::BlockScan</a>&lt; T, BLOCK_DIM_X, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;::<a class="el" href="classcub_1_1_block_scan.html">BlockScan</a> </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Collective constructor using a private static allocation of shared memory as temporary storage. </p>
+
+</div>
+</div>
 <a class="anchor" id="aa5156b3509d81ed5e53e06e270ab28cf"></a>
 <div class="memitem">
 <div class="memproto">

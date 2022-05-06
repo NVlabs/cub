@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cub</b></li><li class="navelem"><a class="el" href="structcub_1_1_binary_flip.html">BinaryFlip</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecub.html">cub</a></li><li class="navelem"><a class="el" href="structcub_1_1_binary_flip.html">BinaryFlip</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -111,20 +111,100 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:a2d73d40a9b720a09c1b0236ccc40e969"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d73d40a9b720a09c1b0236ccc40e969"></a>
-__device__ __host__&#160;</td><td class="memItemRight" valign="bottom"><b>BinaryFlip</b> (BinaryOpT binary_op)</td></tr>
+<tr class="memitem:a2d73d40a9b720a09c1b0236ccc40e969"><td class="memItemLeft" align="right" valign="top">__device__ __host__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_binary_flip.html#a2d73d40a9b720a09c1b0236ccc40e969">BinaryFlip</a> (BinaryOpT <a class="el" href="structcub_1_1_binary_flip.html#ac1a079ca341586cc1fef867038a38c0f">binary_op</a>)</td></tr>
 <tr class="separator:a2d73d40a9b720a09c1b0236ccc40e969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07910c0c19dd67df36b2b9c9b7ee2e82"><td class="memTemplParams" colspan="2"><a class="anchor" id="a07910c0c19dd67df36b2b9c9b7ee2e82"></a>
-template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:a07910c0c19dd67df36b2b9c9b7ee2e82"><td class="memTemplItemLeft" align="right" valign="top">__device__ auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T &amp;&amp;t, U &amp;&amp;u) -&gt; decltype(binary_op(std::forward&lt; U &gt;(u), std::forward&lt; T &gt;(t)))</td></tr>
+<tr class="memitem:a07910c0c19dd67df36b2b9c9b7ee2e82"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:a07910c0c19dd67df36b2b9c9b7ee2e82"><td class="memTemplItemLeft" align="right" valign="top">__device__ auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structcub_1_1_binary_flip.html#a07910c0c19dd67df36b2b9c9b7ee2e82">operator()</a> (T &amp;&amp;t, U &amp;&amp;u) -&gt; decltype(<a class="el" href="structcub_1_1_binary_flip.html#ac1a079ca341586cc1fef867038a38c0f">binary_op</a>(std::forward&lt; U &gt;(u), std::forward&lt; T &gt;(t)))</td></tr>
 <tr class="separator:a07910c0c19dd67df36b2b9c9b7ee2e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Members</h2></td></tr>
-<tr class="memitem:ac1a079ca341586cc1fef867038a38c0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1a079ca341586cc1fef867038a38c0f"></a>
-BinaryOpT&#160;</td><td class="memItemRight" valign="bottom"><b>binary_op</b></td></tr>
+<tr class="memitem:ac1a079ca341586cc1fef867038a38c0f"><td class="memItemLeft" align="right" valign="top">BinaryOpT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_binary_flip.html#ac1a079ca341586cc1fef867038a38c0f">binary_op</a></td></tr>
 <tr class="separator:ac1a079ca341586cc1fef867038a38c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a2d73d40a9b720a09c1b0236ccc40e969"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BinaryOpT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __host__ <a class="el" href="structcub_1_1_binary_flip.html">cub::BinaryFlip</a>&lt; BinaryOpT &gt;::<a class="el" href="structcub_1_1_binary_flip.html">BinaryFlip</a> </td>
+          <td>(</td>
+          <td class="paramtype">BinaryOpT&#160;</td>
+          <td class="paramname"><em>binary_op</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a07910c0c19dd67df36b2b9c9b7ee2e82"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BinaryOpT &gt; </div>
+<div class="memtemplate">
+template&lt;typename T , typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ auto <a class="el" href="structcub_1_1_binary_flip.html">cub::BinaryFlip</a>&lt; BinaryOpT &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U &amp;&amp;&#160;</td>
+          <td class="paramname"><em>u</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; decltype(<a class="el" href="structcub_1_1_binary_flip.html#ac1a079ca341586cc1fef867038a38c0f">binary_op</a>(std::forward&lt;U&gt;(u),
+                                                 std::forward&lt;T&gt;(t)))
+  </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ac1a079ca341586cc1fef867038a38c0f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BinaryOpT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">BinaryOpT <a class="el" href="structcub_1_1_binary_flip.html">cub::BinaryFlip</a>&lt; BinaryOpT &gt;::binary_op</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="thread__operators_8cuh.html">thread_operators.cuh</a></li>
 </ul>

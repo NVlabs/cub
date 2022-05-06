@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cub</b></li><li class="navelem"><a class="el" href="classcub_1_1_block_run_length_decode.html">BlockRunLengthDecode</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecub.html">cub</a></li><li class="navelem"><a class="el" href="classcub_1_1_block_run_length_decode.html">BlockRunLengthDecode</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -190,25 +190,21 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:a49f08d8e951bb98e6e40175c4e991c0e"><td class="memTemplParams" colspan="2"><a class="anchor" id="a49f08d8e951bb98e6e40175c4e991c0e"></a>
-template&lt;typename RunLengthT , typename TotalDecodedSizeT &gt; </td></tr>
+<tr class="memitem:a49f08d8e951bb98e6e40175c4e991c0e"><td class="memTemplParams" colspan="2">template&lt;typename RunLengthT , typename TotalDecodedSizeT &gt; </td></tr>
 <tr class="memitem:a49f08d8e951bb98e6e40175c4e991c0e"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_run_length_decode.html#a49f08d8e951bb98e6e40175c4e991c0e">BlockRunLengthDecode</a> (<a class="el" href="structcub_1_1_block_run_length_decode_1_1_temp_storage.html">TempStorage</a> &amp;temp_storage, ItemT(&amp;run_values)[RUNS_PER_THREAD], RunLengthT(&amp;run_lengths)[RUNS_PER_THREAD], TotalDecodedSizeT &amp;total_decoded_size)</td></tr>
-<tr class="memdesc:a49f08d8e951bb98e6e40175c4e991c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor specialised for user-provided temporary storage, initializing using the runs' lengths. The algorithm's temporary storage may not be repurposed between the constructor call and subsequent <b>RunLengthDecode</b> calls. <br/></td></tr>
+<tr class="memdesc:a49f08d8e951bb98e6e40175c4e991c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor specialised for user-provided temporary storage, initializing using the runs' lengths. The algorithm's temporary storage may not be repurposed between the constructor call and subsequent <b>RunLengthDecode</b> calls.  <a href="#a49f08d8e951bb98e6e40175c4e991c0e">More...</a><br/></td></tr>
 <tr class="separator:a49f08d8e951bb98e6e40175c4e991c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14fe15a9be65ff1f6495501b834ee658"><td class="memTemplParams" colspan="2"><a class="anchor" id="a14fe15a9be65ff1f6495501b834ee658"></a>
-template&lt;typename UserRunOffsetT &gt; </td></tr>
+<tr class="memitem:a14fe15a9be65ff1f6495501b834ee658"><td class="memTemplParams" colspan="2">template&lt;typename UserRunOffsetT &gt; </td></tr>
 <tr class="memitem:a14fe15a9be65ff1f6495501b834ee658"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_run_length_decode.html#a14fe15a9be65ff1f6495501b834ee658">BlockRunLengthDecode</a> (<a class="el" href="structcub_1_1_block_run_length_decode_1_1_temp_storage.html">TempStorage</a> &amp;temp_storage, ItemT(&amp;run_values)[RUNS_PER_THREAD], UserRunOffsetT(&amp;run_offsets)[RUNS_PER_THREAD])</td></tr>
-<tr class="memdesc:a14fe15a9be65ff1f6495501b834ee658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor specialised for user-provided temporary storage, initializing using the runs' offsets. The algorithm's temporary storage may not be repurposed between the constructor call and subsequent <b>RunLengthDecode</b> calls. <br/></td></tr>
+<tr class="memdesc:a14fe15a9be65ff1f6495501b834ee658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor specialised for user-provided temporary storage, initializing using the runs' offsets. The algorithm's temporary storage may not be repurposed between the constructor call and subsequent <b>RunLengthDecode</b> calls.  <a href="#a14fe15a9be65ff1f6495501b834ee658">More...</a><br/></td></tr>
 <tr class="separator:a14fe15a9be65ff1f6495501b834ee658"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f77b873af96cd6c9ea976dba7c44393"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0f77b873af96cd6c9ea976dba7c44393"></a>
-template&lt;typename RunLengthT , typename TotalDecodedSizeT &gt; </td></tr>
+<tr class="memitem:a0f77b873af96cd6c9ea976dba7c44393"><td class="memTemplParams" colspan="2">template&lt;typename RunLengthT , typename TotalDecodedSizeT &gt; </td></tr>
 <tr class="memitem:a0f77b873af96cd6c9ea976dba7c44393"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_run_length_decode.html#a0f77b873af96cd6c9ea976dba7c44393">BlockRunLengthDecode</a> (ItemT(&amp;run_values)[RUNS_PER_THREAD], RunLengthT(&amp;run_lengths)[RUNS_PER_THREAD], TotalDecodedSizeT &amp;total_decoded_size)</td></tr>
-<tr class="memdesc:a0f77b873af96cd6c9ea976dba7c44393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor specialised for static temporary storage, initializing using the runs' lengths. <br/></td></tr>
+<tr class="memdesc:a0f77b873af96cd6c9ea976dba7c44393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor specialised for static temporary storage, initializing using the runs' lengths.  <a href="#a0f77b873af96cd6c9ea976dba7c44393">More...</a><br/></td></tr>
 <tr class="separator:a0f77b873af96cd6c9ea976dba7c44393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16f5bd86566384ec2747ca10a3eef5a7"><td class="memTemplParams" colspan="2"><a class="anchor" id="a16f5bd86566384ec2747ca10a3eef5a7"></a>
-template&lt;typename UserRunOffsetT &gt; </td></tr>
+<tr class="memitem:a16f5bd86566384ec2747ca10a3eef5a7"><td class="memTemplParams" colspan="2">template&lt;typename UserRunOffsetT &gt; </td></tr>
 <tr class="memitem:a16f5bd86566384ec2747ca10a3eef5a7"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_run_length_decode.html#a16f5bd86566384ec2747ca10a3eef5a7">BlockRunLengthDecode</a> (ItemT(&amp;run_values)[RUNS_PER_THREAD], UserRunOffsetT(&amp;run_offsets)[RUNS_PER_THREAD])</td></tr>
-<tr class="memdesc:a16f5bd86566384ec2747ca10a3eef5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor specialised for static temporary storage, initializing using the runs' offsets. <br/></td></tr>
+<tr class="memdesc:a16f5bd86566384ec2747ca10a3eef5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor specialised for static temporary storage, initializing using the runs' offsets.  <a href="#a16f5bd86566384ec2747ca10a3eef5a7">More...</a><br/></td></tr>
 <tr class="separator:a16f5bd86566384ec2747ca10a3eef5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2682df94aab75364752f3bd6a4ddf45f"><td class="memTemplParams" colspan="2">template&lt;typename RelativeOffsetT &gt; </td></tr>
 <tr class="memitem:a2682df94aab75364752f3bd6a4ddf45f"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_run_length_decode.html#a2682df94aab75364752f3bd6a4ddf45f">RunLengthDecode</a> (ItemT(&amp;decoded_items)[DECODED_ITEMS_PER_THREAD], RelativeOffsetT(&amp;item_offsets)[DECODED_ITEMS_PER_THREAD], DecodedOffsetT from_decoded_offset=0)</td></tr>
@@ -218,6 +214,191 @@ template&lt;typename UserRunOffsetT &gt; </td></tr>
 <tr class="memdesc:a70cb4f47c48435bf3a97875bc85c4259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run-length decodes the runs previously passed via a call to Init(...) and returns the run-length decoded items in a blocked arrangement to <code>decoded_items</code>. <a class="el" href="struct_if.html" title="Type selection (IF ? ThenType : ElseType) ">If</a> the number of run-length decoded items exceeds the run-length decode buffer (i.e., <b>DECODED_ITEMS_PER_THREAD * BLOCK_THREADS</b>), only the items that fit within the buffer are returned. Subsequent calls to <b>RunLengthDecode</b> adjusting <code>from_decoded_offset</code> can be used to retrieve the remaining run-length decoded items. Calling __syncthreads() between any two calls to <b>RunLengthDecode</b> is not required.  <a href="#a70cb4f47c48435bf3a97875bc85c4259">More...</a><br/></td></tr>
 <tr class="separator:a70cb4f47c48435bf3a97875bc85c4259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a49f08d8e951bb98e6e40175c4e991c0e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ItemT , int BLOCK_DIM_X, int RUNS_PER_THREAD, int DECODED_ITEMS_PER_THREAD, typename DecodedOffsetT  = uint32_t, int BLOCK_DIM_Y = 1, int BLOCK_DIM_Z = 1&gt; </div>
+<div class="memtemplate">
+template&lt;typename RunLengthT , typename TotalDecodedSizeT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ <a class="el" href="classcub_1_1_block_run_length_decode.html">cub::BlockRunLengthDecode</a>&lt; ItemT, BLOCK_DIM_X, RUNS_PER_THREAD, DECODED_ITEMS_PER_THREAD, DecodedOffsetT, BLOCK_DIM_Y, BLOCK_DIM_Z &gt;::<a class="el" href="classcub_1_1_block_run_length_decode.html">BlockRunLengthDecode</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcub_1_1_block_run_length_decode_1_1_temp_storage.html">TempStorage</a> &amp;&#160;</td>
+          <td class="paramname"><em>temp_storage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ItemT(&amp;)&#160;</td>
+          <td class="paramname"><em>run_values</em>[RUNS_PER_THREAD], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RunLengthT(&amp;)&#160;</td>
+          <td class="paramname"><em>run_lengths</em>[RUNS_PER_THREAD], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TotalDecodedSizeT &amp;&#160;</td>
+          <td class="paramname"><em>total_decoded_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor specialised for user-provided temporary storage, initializing using the runs' lengths. The algorithm's temporary storage may not be repurposed between the constructor call and subsequent <b>RunLengthDecode</b> calls. </p>
+
+</div>
+</div>
+<a class="anchor" id="a14fe15a9be65ff1f6495501b834ee658"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ItemT , int BLOCK_DIM_X, int RUNS_PER_THREAD, int DECODED_ITEMS_PER_THREAD, typename DecodedOffsetT  = uint32_t, int BLOCK_DIM_Y = 1, int BLOCK_DIM_Z = 1&gt; </div>
+<div class="memtemplate">
+template&lt;typename UserRunOffsetT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ <a class="el" href="classcub_1_1_block_run_length_decode.html">cub::BlockRunLengthDecode</a>&lt; ItemT, BLOCK_DIM_X, RUNS_PER_THREAD, DECODED_ITEMS_PER_THREAD, DecodedOffsetT, BLOCK_DIM_Y, BLOCK_DIM_Z &gt;::<a class="el" href="classcub_1_1_block_run_length_decode.html">BlockRunLengthDecode</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcub_1_1_block_run_length_decode_1_1_temp_storage.html">TempStorage</a> &amp;&#160;</td>
+          <td class="paramname"><em>temp_storage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ItemT(&amp;)&#160;</td>
+          <td class="paramname"><em>run_values</em>[RUNS_PER_THREAD], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UserRunOffsetT(&amp;)&#160;</td>
+          <td class="paramname"><em>run_offsets</em>[RUNS_PER_THREAD]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor specialised for user-provided temporary storage, initializing using the runs' offsets. The algorithm's temporary storage may not be repurposed between the constructor call and subsequent <b>RunLengthDecode</b> calls. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0f77b873af96cd6c9ea976dba7c44393"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ItemT , int BLOCK_DIM_X, int RUNS_PER_THREAD, int DECODED_ITEMS_PER_THREAD, typename DecodedOffsetT  = uint32_t, int BLOCK_DIM_Y = 1, int BLOCK_DIM_Z = 1&gt; </div>
+<div class="memtemplate">
+template&lt;typename RunLengthT , typename TotalDecodedSizeT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ <a class="el" href="classcub_1_1_block_run_length_decode.html">cub::BlockRunLengthDecode</a>&lt; ItemT, BLOCK_DIM_X, RUNS_PER_THREAD, DECODED_ITEMS_PER_THREAD, DecodedOffsetT, BLOCK_DIM_Y, BLOCK_DIM_Z &gt;::<a class="el" href="classcub_1_1_block_run_length_decode.html">BlockRunLengthDecode</a> </td>
+          <td>(</td>
+          <td class="paramtype">ItemT(&amp;)&#160;</td>
+          <td class="paramname"><em>run_values</em>[RUNS_PER_THREAD], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RunLengthT(&amp;)&#160;</td>
+          <td class="paramname"><em>run_lengths</em>[RUNS_PER_THREAD], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TotalDecodedSizeT &amp;&#160;</td>
+          <td class="paramname"><em>total_decoded_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor specialised for static temporary storage, initializing using the runs' lengths. </p>
+
+</div>
+</div>
+<a class="anchor" id="a16f5bd86566384ec2747ca10a3eef5a7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ItemT , int BLOCK_DIM_X, int RUNS_PER_THREAD, int DECODED_ITEMS_PER_THREAD, typename DecodedOffsetT  = uint32_t, int BLOCK_DIM_Y = 1, int BLOCK_DIM_Z = 1&gt; </div>
+<div class="memtemplate">
+template&lt;typename UserRunOffsetT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ <a class="el" href="classcub_1_1_block_run_length_decode.html">cub::BlockRunLengthDecode</a>&lt; ItemT, BLOCK_DIM_X, RUNS_PER_THREAD, DECODED_ITEMS_PER_THREAD, DecodedOffsetT, BLOCK_DIM_Y, BLOCK_DIM_Z &gt;::<a class="el" href="classcub_1_1_block_run_length_decode.html">BlockRunLengthDecode</a> </td>
+          <td>(</td>
+          <td class="paramtype">ItemT(&amp;)&#160;</td>
+          <td class="paramname"><em>run_values</em>[RUNS_PER_THREAD], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UserRunOffsetT(&amp;)&#160;</td>
+          <td class="paramname"><em>run_offsets</em>[RUNS_PER_THREAD]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor specialised for static temporary storage, initializing using the runs' offsets. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a2682df94aab75364752f3bd6a4ddf45f"></a>
 <div class="memitem">
@@ -319,7 +500,7 @@ template&lt;typename ItemT , int BLOCK_DIM_X, int RUNS_PER_THREAD, int DECODED_I
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>block_run_length_decode.cuh</li>
+<li><a class="el" href="block__run__length__decode_8cuh.html">block_run_length_decode.cuh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.3.1-->

@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cub</b></li><li class="navelem"><a class="el" href="structcub_1_1_radix_sort_twiddle.html">RadixSortTwiddle</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecub.html">cub</a></li><li class="navelem"><a class="el" href="structcub_1_1_radix_sort_twiddle.html">RadixSortTwiddle</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -118,28 +118,130 @@ struct cub::RadixSortTwiddle&lt; IS_DESCENDING, KeyT &gt;</h3>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a239ebf9ac99d02e6fc9fd80d2134640f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a239ebf9ac99d02e6fc9fd80d2134640f"></a>
-typedef Traits&lt; KeyT &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TraitsT</b></td></tr>
+<tr class="memitem:a239ebf9ac99d02e6fc9fd80d2134640f"><td class="memItemLeft" align="right" valign="top">typedef Traits&lt; KeyT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_radix_sort_twiddle.html#a239ebf9ac99d02e6fc9fd80d2134640f">TraitsT</a></td></tr>
 <tr class="separator:a239ebf9ac99d02e6fc9fd80d2134640f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33e9f9f0669819090e69b92cf0c888e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33e9f9f0669819090e69b92cf0c888e0"></a>
-typedef TraitsT::UnsignedBits&#160;</td><td class="memItemRight" valign="bottom"><b>UnsignedBits</b></td></tr>
+<tr class="memitem:a33e9f9f0669819090e69b92cf0c888e0"><td class="memItemLeft" align="right" valign="top">typedef TraitsT::UnsignedBits&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_radix_sort_twiddle.html#a33e9f9f0669819090e69b92cf0c888e0">UnsignedBits</a></td></tr>
 <tr class="separator:a33e9f9f0669819090e69b92cf0c888e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Methods</h2></td></tr>
-<tr class="memitem:a62af0aa79b6c143facdcef719fd4782b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62af0aa79b6c143facdcef719fd4782b"></a>
-static __host__ __device__ <br class="typebreak"/>
-__forceinline__ UnsignedBits&#160;</td><td class="memItemRight" valign="bottom"><b>In</b> (UnsignedBits key)</td></tr>
+<tr class="memitem:a62af0aa79b6c143facdcef719fd4782b"><td class="memItemLeft" align="right" valign="top">static __host__ __device__ <br class="typebreak"/>
+__forceinline__ <a class="el" href="structcub_1_1_radix_sort_twiddle.html#a33e9f9f0669819090e69b92cf0c888e0">UnsignedBits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_radix_sort_twiddle.html#a62af0aa79b6c143facdcef719fd4782b">In</a> (<a class="el" href="structcub_1_1_radix_sort_twiddle.html#a33e9f9f0669819090e69b92cf0c888e0">UnsignedBits</a> key)</td></tr>
 <tr class="separator:a62af0aa79b6c143facdcef719fd4782b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00080244ca5f50a90e6517fd20bd41ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00080244ca5f50a90e6517fd20bd41ce"></a>
-static __host__ __device__ <br class="typebreak"/>
-__forceinline__ UnsignedBits&#160;</td><td class="memItemRight" valign="bottom"><b>Out</b> (UnsignedBits key)</td></tr>
+<tr class="memitem:a00080244ca5f50a90e6517fd20bd41ce"><td class="memItemLeft" align="right" valign="top">static __host__ __device__ <br class="typebreak"/>
+__forceinline__ <a class="el" href="structcub_1_1_radix_sort_twiddle.html#a33e9f9f0669819090e69b92cf0c888e0">UnsignedBits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_radix_sort_twiddle.html#a00080244ca5f50a90e6517fd20bd41ce">Out</a> (<a class="el" href="structcub_1_1_radix_sort_twiddle.html#a33e9f9f0669819090e69b92cf0c888e0">UnsignedBits</a> key)</td></tr>
 <tr class="separator:a00080244ca5f50a90e6517fd20bd41ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb6b15cf6bba31be610f3bfb7b4e7dd3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb6b15cf6bba31be610f3bfb7b4e7dd3"></a>
-static __host__ __device__ <br class="typebreak"/>
-__forceinline__ UnsignedBits&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultKey</b> ()</td></tr>
+<tr class="memitem:acb6b15cf6bba31be610f3bfb7b4e7dd3"><td class="memItemLeft" align="right" valign="top">static __host__ __device__ <br class="typebreak"/>
+__forceinline__ <a class="el" href="structcub_1_1_radix_sort_twiddle.html#a33e9f9f0669819090e69b92cf0c888e0">UnsignedBits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_radix_sort_twiddle.html#acb6b15cf6bba31be610f3bfb7b4e7dd3">DefaultKey</a> ()</td></tr>
 <tr class="separator:acb6b15cf6bba31be610f3bfb7b4e7dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a239ebf9ac99d02e6fc9fd80d2134640f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool IS_DESCENDING, typename KeyT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Traits&lt;KeyT&gt; <a class="el" href="structcub_1_1_radix_sort_twiddle.html">cub::RadixSortTwiddle</a>&lt; IS_DESCENDING, KeyT &gt;::<a class="el" href="structcub_1_1_radix_sort_twiddle.html#a239ebf9ac99d02e6fc9fd80d2134640f">TraitsT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a33e9f9f0669819090e69b92cf0c888e0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool IS_DESCENDING, typename KeyT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef TraitsT::UnsignedBits <a class="el" href="structcub_1_1_radix_sort_twiddle.html">cub::RadixSortTwiddle</a>&lt; IS_DESCENDING, KeyT &gt;::<a class="el" href="structcub_1_1_radix_sort_twiddle.html#a33e9f9f0669819090e69b92cf0c888e0">UnsignedBits</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a62af0aa79b6c143facdcef719fd4782b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool IS_DESCENDING, typename KeyT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static __host__ __device__ __forceinline__ <a class="el" href="structcub_1_1_radix_sort_twiddle.html#a33e9f9f0669819090e69b92cf0c888e0">UnsignedBits</a> <a class="el" href="structcub_1_1_radix_sort_twiddle.html">cub::RadixSortTwiddle</a>&lt; IS_DESCENDING, KeyT &gt;::In </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcub_1_1_radix_sort_twiddle.html#a33e9f9f0669819090e69b92cf0c888e0">UnsignedBits</a>&#160;</td>
+          <td class="paramname"><em>key</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a00080244ca5f50a90e6517fd20bd41ce"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool IS_DESCENDING, typename KeyT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static __host__ __device__ __forceinline__ <a class="el" href="structcub_1_1_radix_sort_twiddle.html#a33e9f9f0669819090e69b92cf0c888e0">UnsignedBits</a> <a class="el" href="structcub_1_1_radix_sort_twiddle.html">cub::RadixSortTwiddle</a>&lt; IS_DESCENDING, KeyT &gt;::Out </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcub_1_1_radix_sort_twiddle.html#a33e9f9f0669819090e69b92cf0c888e0">UnsignedBits</a>&#160;</td>
+          <td class="paramname"><em>key</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb6b15cf6bba31be610f3bfb7b4e7dd3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool IS_DESCENDING, typename KeyT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static __host__ __device__ __forceinline__ <a class="el" href="structcub_1_1_radix_sort_twiddle.html#a33e9f9f0669819090e69b92cf0c888e0">UnsignedBits</a> <a class="el" href="structcub_1_1_radix_sort_twiddle.html">cub::RadixSortTwiddle</a>&lt; IS_DESCENDING, KeyT &gt;::DefaultKey </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="radix__rank__sort__operations_8cuh.html">radix_rank_sort_operations.cuh</a></li>
 </ul>

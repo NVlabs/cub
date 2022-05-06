@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -157,7 +157,7 @@ class WarpMergeSort&lt; KeyT, ITEMS_PER_THREAD, LOGICAL_WARP_THREADS, ValueT, PT
 <div class="line">    <span class="keywordtype">int</span> thread_keys[items_per_thread];</div>
 <div class="line">    <span class="comment">// ...</span></div>
 <div class="line"></div>
-<div class="line">    <a class="code" href="class_warp_merge_sort.html" title="The WarpMergeSort class provides methods for sorting items partitioned across a CUDA warp using a mer...">WarpMergeSort</a>(temp_storage[warp_id]).<a class="code" href="class_block_merge_sort_strategy.html#ae05b8bcab598b7782043728d266c5e74" title="Sorts items partitioned across a CUDA thread block using a merge sorting method. ">Sort</a>(thread_keys, CustomLess());</div>
+<div class="line">    <a class="code" href="class_warp_merge_sort.html#aacaf1a7099be7f093a986366db03fcaa">WarpMergeSort</a>(temp_storage[warp_id]).Sort(thread_keys, CustomLess());</div>
 <div class="line">    <span class="comment">// ...</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> </dd></dl>
@@ -174,23 +174,22 @@ Inheritance diagram for WarpMergeSort&lt; KeyT, ITEMS_PER_THREAD, LOGICAL_WARP_T
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:ae31f9e382a763e3d37cacfdac084798c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae31f9e382a763e3d37cacfdac084798c"></a>
-__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><b>WarpMergeSort</b> (typename <a class="el" href="struct_block_merge_sort_strategy_1_1_temp_storage.html">BlockMergeSortStrategyT::TempStorage</a> &amp;temp_storage)</td></tr>
+<tr class="memitem:aacaf1a7099be7f093a986366db03fcaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_warp_merge_sort.html#aacaf1a7099be7f093a986366db03fcaa">WarpMergeSort</a> ()=delete</td></tr>
+<tr class="separator:aacaf1a7099be7f093a986366db03fcaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31f9e382a763e3d37cacfdac084798c"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_warp_merge_sort.html#ae31f9e382a763e3d37cacfdac084798c">WarpMergeSort</a> (typename <a class="el" href="struct_block_merge_sort_strategy_1_1_temp_storage.html">BlockMergeSortStrategyT::TempStorage</a> &amp;temp_storage)</td></tr>
 <tr class="separator:ae31f9e382a763e3d37cacfdac084798c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d60e075a4ccee8461093a5e3f1dcf1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d60e075a4ccee8461093a5e3f1dcf1a"></a>
-__device__ __forceinline__ <br class="typebreak"/>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>get_member_mask</b> () const </td></tr>
+<tr class="memitem:a7d60e075a4ccee8461093a5e3f1dcf1a"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__ <br class="typebreak"/>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_warp_merge_sort.html#a7d60e075a4ccee8461093a5e3f1dcf1a">get_member_mask</a> () const </td></tr>
 <tr class="separator:a7d60e075a4ccee8461093a5e3f1dcf1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_block_merge_sort_strategy"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_block_merge_sort_strategy')"><img src="closed.png" alt="-"/>&#160;Public Methods inherited from <a class="el" href="class_block_merge_sort_strategy.html">BlockMergeSortStrategy&lt; KeyT, ValueT, LOGICAL_WARP_THREADS, ITEMS_PER_THREAD, WarpMergeSort&lt; KeyT, ITEMS_PER_THREAD, LOGICAL_WARP_THREADS, ValueT, PTX_ARCH &gt; &gt;</a></td></tr>
-<tr class="memitem:a38d100a9d672c4cfc8d71bab59e4568d inherit pub_methods_class_block_merge_sort_strategy"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38d100a9d672c4cfc8d71bab59e4568d"></a>
-__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><b>BlockMergeSortStrategy</b> (unsigned int linear_tid)</td></tr>
+<tr class="memitem:a8ef8a7a07e5af8997d155d60f976fad4 inherit pub_methods_class_block_merge_sort_strategy"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_block_merge_sort_strategy.html#a8ef8a7a07e5af8997d155d60f976fad4">BlockMergeSortStrategy</a> ()=delete</td></tr>
+<tr class="separator:a8ef8a7a07e5af8997d155d60f976fad4 inherit pub_methods_class_block_merge_sort_strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d100a9d672c4cfc8d71bab59e4568d inherit pub_methods_class_block_merge_sort_strategy"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_block_merge_sort_strategy.html#a38d100a9d672c4cfc8d71bab59e4568d">BlockMergeSortStrategy</a> (unsigned int linear_tid)</td></tr>
 <tr class="separator:a38d100a9d672c4cfc8d71bab59e4568d inherit pub_methods_class_block_merge_sort_strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab40dc2bc28ba6c90b7440f9a0c4215a3 inherit pub_methods_class_block_merge_sort_strategy"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab40dc2bc28ba6c90b7440f9a0c4215a3"></a>
-__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><b>BlockMergeSortStrategy</b> (TempStorage &amp;temp_storage, unsigned int linear_tid)</td></tr>
+<tr class="memitem:ab40dc2bc28ba6c90b7440f9a0c4215a3 inherit pub_methods_class_block_merge_sort_strategy"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_block_merge_sort_strategy.html#ab40dc2bc28ba6c90b7440f9a0c4215a3">BlockMergeSortStrategy</a> (TempStorage &amp;temp_storage, unsigned int linear_tid)</td></tr>
 <tr class="separator:ab40dc2bc28ba6c90b7440f9a0c4215a3 inherit pub_methods_class_block_merge_sort_strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4bf219a4fe2fe33f1a727885e6387e7 inherit pub_methods_class_block_merge_sort_strategy"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4bf219a4fe2fe33f1a727885e6387e7"></a>
-__device__ __forceinline__ <br class="typebreak"/>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>get_linear_tid</b> () const</td></tr>
+<tr class="memitem:ac4bf219a4fe2fe33f1a727885e6387e7 inherit pub_methods_class_block_merge_sort_strategy"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__ <br class="typebreak"/>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_block_merge_sort_strategy.html#ac4bf219a4fe2fe33f1a727885e6387e7">get_linear_tid</a> () const</td></tr>
 <tr class="separator:ac4bf219a4fe2fe33f1a727885e6387e7 inherit pub_methods_class_block_merge_sort_strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae05b8bcab598b7782043728d266c5e74 inherit pub_methods_class_block_merge_sort_strategy"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_block_merge_sort_strategy.html#ae05b8bcab598b7782043728d266c5e74">Sort</a> (KeyT(&amp;keys)[ITEMS_PER_THREAD], CompareOp compare_op)</td></tr>
 <tr class="memdesc:ae05b8bcab598b7782043728d266c5e74 inherit pub_methods_class_block_merge_sort_strategy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts items partitioned across a CUDA thread block using a merge sorting method.  <a href="#ae05b8bcab598b7782043728d266c5e74">More...</a><br/></td></tr>
@@ -217,8 +216,86 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>get_linear_ti
 <tr class="memdesc:ae84c08b728c79e690a90ff6e83f249fc inherit pub_methods_class_block_merge_sort_strategy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts items partitioned across a CUDA thread block using a merge sorting method.  <a href="#ae84c08b728c79e690a90ff6e83f249fc">More...</a><br/></td></tr>
 <tr class="separator:ae84c08b728c79e690a90ff6e83f249fc inherit pub_methods_class_block_merge_sort_strategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aacaf1a7099be7f093a986366db03fcaa"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeyT , int ITEMS_PER_THREAD, int LOGICAL_WARP_THREADS = CUB_PTX_WARP_THREADS, typename ValueT  = NullType, int PTX_ARCH = CUB_PTX_ARCH&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_warp_merge_sort.html">WarpMergeSort</a>&lt; KeyT, ITEMS_PER_THREAD, LOGICAL_WARP_THREADS, ValueT, PTX_ARCH &gt;::<a class="el" href="class_warp_merge_sort.html">WarpMergeSort</a> </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae31f9e382a763e3d37cacfdac084798c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeyT , int ITEMS_PER_THREAD, int LOGICAL_WARP_THREADS = CUB_PTX_WARP_THREADS, typename ValueT  = NullType, int PTX_ARCH = CUB_PTX_ARCH&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ <a class="el" href="class_warp_merge_sort.html">WarpMergeSort</a>&lt; KeyT, ITEMS_PER_THREAD, LOGICAL_WARP_THREADS, ValueT, PTX_ARCH &gt;::<a class="el" href="class_warp_merge_sort.html">WarpMergeSort</a> </td>
+          <td>(</td>
+          <td class="paramtype">typename <a class="el" href="struct_block_merge_sort_strategy_1_1_temp_storage.html">BlockMergeSortStrategyT::TempStorage</a> &amp;&#160;</td>
+          <td class="paramname"><em>temp_storage</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7d60e075a4ccee8461093a5e3f1dcf1a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeyT , int ITEMS_PER_THREAD, int LOGICAL_WARP_THREADS = CUB_PTX_WARP_THREADS, typename ValueT  = NullType, int PTX_ARCH = CUB_PTX_ARCH&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ unsigned int <a class="el" href="class_warp_merge_sort.html">WarpMergeSort</a>&lt; KeyT, ITEMS_PER_THREAD, LOGICAL_WARP_THREADS, ValueT, PTX_ARCH &gt;::get_member_mask </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>warp_merge_sort.cuh</li>
+<li><a class="el" href="warp__merge__sort_8cuh.html">warp_merge_sort.cuh</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.3.1-->

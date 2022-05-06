@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cub</b></li><li class="navelem"><a class="el" href="classcub_1_1_block_load.html">BlockLoad</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecub.html">cub</a></li><li class="navelem"><a class="el" href="classcub_1_1_block_load.html">BlockLoad</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -128,7 +128,7 @@ class cub::BlockLoad&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, ALGORITHM, BLOCK
     <tr><td class="paramname">InputT</td><td>The data type to read into (which must be convertible from the input iterator's value type). </td></tr>
     <tr><td class="paramname">BLOCK_DIM_X</td><td>The thread block length in threads along the X dimension </td></tr>
     <tr><td class="paramname">ITEMS_PER_THREAD</td><td>The number of consecutive items partitioned onto each thread. </td></tr>
-    <tr><td class="paramname">ALGORITHM</td><td><b>[optional]</b> cub::BlockLoadAlgorithm tuning policy. default: cub::BLOCK_LOAD_DIRECT. </td></tr>
+    <tr><td class="paramname">ALGORITHM</td><td><b>[optional]</b> <a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401" title="cub::BlockLoadAlgorithm enumerates alternative algorithms for cub::BlockLoad to read a linear segment...">cub::BlockLoadAlgorithm</a> tuning policy. default: <a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401a2d4d8900d7e697e9dac4062e97d3d835">cub::BLOCK_LOAD_DIRECT</a>. </td></tr>
     <tr><td class="paramname">WARP_TIME_SLICING</td><td><b>[optional]</b> Whether or not only one warp's worth of shared memory should be allocated and time-sliced among block-warps during any load-related data transpositions (versus each warp having its own storage). (default: false) </td></tr>
     <tr><td class="paramname">BLOCK_DIM_Y</td><td><b>[optional]</b> The thread block length in threads along the Y dimension (default: 1) </td></tr>
     <tr><td class="paramname">BLOCK_DIM_Z</td><td><b>[optional]</b> The thread block length in threads along the Z dimension (default: 1) </td></tr>
@@ -137,14 +137,14 @@ class cub::BlockLoad&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, ALGORITHM, BLOCK
   </dd>
 </dl>
 <dl class="section user"><dt>Overview</dt><dd><ul>
-<li>The <a class="el" href="classcub_1_1_block_load.html" title="The BlockLoad class provides collective data movement methods for loading a linear segment of items f...">BlockLoad</a> class provides a single data movement abstraction that can be specialized to implement different cub::BlockLoadAlgorithm strategies. This facilitates different performance policies for different architectures, data types, granularity sizes, etc.</li>
+<li>The <a class="el" href="classcub_1_1_block_load.html" title="The BlockLoad class provides collective data movement methods for loading a linear segment of items f...">BlockLoad</a> class provides a single data movement abstraction that can be specialized to implement different <a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401" title="cub::BlockLoadAlgorithm enumerates alternative algorithms for cub::BlockLoad to read a linear segment...">cub::BlockLoadAlgorithm</a> strategies. This facilitates different performance policies for different architectures, data types, granularity sizes, etc.</li>
 <li><a class="el" href="classcub_1_1_block_load.html" title="The BlockLoad class provides collective data movement methods for loading a linear segment of items f...">BlockLoad</a> can be optionally specialized by different data movement strategies:<ol type="1">
-<li><b>cub::BLOCK_LOAD_DIRECT</b>. A <a href="index.html#sec5sec3"><em>blocked arrangement</em></a> of data is read directly from memory. More...</li>
-<li><b>cub::BLOCK_LOAD_STRIPED,</b>. A <a href="index.html#sec5sec3"><em>striped arrangement</em></a> of data is read directly from memory. More...</li>
-<li><b>cub::BLOCK_LOAD_VECTORIZE</b>. A <a href="index.html#sec5sec3"><em>blocked arrangement</em></a> of data is read directly from memory using CUDA's built-in vectorized loads as a coalescing optimization. More...</li>
-<li><b>cub::BLOCK_LOAD_TRANSPOSE</b>. A <a href="index.html#sec5sec3"><em>striped arrangement</em></a> of data is read directly from memory and is then locally transposed into a <a href="index.html#sec5sec3"><em>blocked arrangement</em></a>. More...</li>
-<li><b>cub::BLOCK_LOAD_WARP_TRANSPOSE</b>. A <a href="index.html#sec5sec3"><em>warp-striped arrangement</em></a> of data is read directly from memory and is then locally transposed into a <a href="index.html#sec5sec3"><em>blocked arrangement</em></a>. More...</li>
-<li><b>cub::BLOCK_LOAD_WARP_TRANSPOSE_TIMESLICED,</b>. A <a href="index.html#sec5sec3"><em>warp-striped arrangement</em></a> of data is read directly from memory and is then locally transposed into a <a href="index.html#sec5sec3"><em>blocked arrangement</em></a> one warp at a time. More...</li>
+<li><b><a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401a2d4d8900d7e697e9dac4062e97d3d835">cub::BLOCK_LOAD_DIRECT</a></b>. A <a href="index.html#sec5sec3"><em>blocked arrangement</em></a> of data is read directly from memory. <a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401">More...</a></li>
+<li><b><a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401a2656cd687526977aa60f925d1f0ca86f">cub::BLOCK_LOAD_STRIPED</a>,</b>. A <a href="index.html#sec5sec3"><em>striped arrangement</em></a> of data is read directly from memory. <a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401">More...</a></li>
+<li><b><a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401a826be9d4df1c44c0e5c00a9c9c136965">cub::BLOCK_LOAD_VECTORIZE</a></b>. A <a href="index.html#sec5sec3"><em>blocked arrangement</em></a> of data is read directly from memory using CUDA's built-in vectorized loads as a coalescing optimization. <a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401">More...</a></li>
+<li><b><a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401acd94f285472e8f7c883a7407f6f4efc4">cub::BLOCK_LOAD_TRANSPOSE</a></b>. A <a href="index.html#sec5sec3"><em>striped arrangement</em></a> of data is read directly from memory and is then locally transposed into a <a href="index.html#sec5sec3"><em>blocked arrangement</em></a>. <a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401">More...</a></li>
+<li><b><a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401aba21066c09e6c6ebcf08c7e86216eb1f">cub::BLOCK_LOAD_WARP_TRANSPOSE</a></b>. A <a href="index.html#sec5sec3"><em>warp-striped arrangement</em></a> of data is read directly from memory and is then locally transposed into a <a href="index.html#sec5sec3"><em>blocked arrangement</em></a>. <a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401">More...</a></li>
+<li><b><a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401ac054fad7116482974e5cf0ab937bbfa4">cub::BLOCK_LOAD_WARP_TRANSPOSE_TIMESLICED</a>,</b>. A <a href="index.html#sec5sec3"><em>warp-striped arrangement</em></a> of data is read directly from memory and is then locally transposed into a <a href="index.html#sec5sec3"><em>blocked arrangement</em></a> one warp at a time. <a class="el" href="namespacecub.html#a9d7e37497fdd99864c57adecda710401">More...</a></li>
 </ol>
 </li>
 <li>For multi-dimensional blocks, threads are linearly ranked in row-major order.</li>
@@ -180,9 +180,8 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Collective constructors</div></td></tr>
-<tr class="memitem:a4dd32bdc4eb8efa0aef66fec635c29b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4dd32bdc4eb8efa0aef66fec635c29b2"></a>
-__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_load.html#a4dd32bdc4eb8efa0aef66fec635c29b2">BlockLoad</a> ()</td></tr>
-<tr class="memdesc:a4dd32bdc4eb8efa0aef66fec635c29b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collective constructor using a private static allocation of shared memory as temporary storage. <br/></td></tr>
+<tr class="memitem:a4dd32bdc4eb8efa0aef66fec635c29b2"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_load.html#a4dd32bdc4eb8efa0aef66fec635c29b2">BlockLoad</a> ()</td></tr>
+<tr class="memdesc:a4dd32bdc4eb8efa0aef66fec635c29b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collective constructor using a private static allocation of shared memory as temporary storage.  <a href="#a4dd32bdc4eb8efa0aef66fec635c29b2">More...</a><br/></td></tr>
 <tr class="separator:a4dd32bdc4eb8efa0aef66fec635c29b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb44b240f59e36e691cb36880d3e7dbe"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_load.html#aeb44b240f59e36e691cb36880d3e7dbe">BlockLoad</a> (<a class="el" href="structcub_1_1_block_load_1_1_temp_storage.html">TempStorage</a> &amp;temp_storage)</td></tr>
 <tr class="memdesc:aeb44b240f59e36e691cb36880d3e7dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collective constructor using the specified memory allocation as temporary storage.  <a href="#aeb44b240f59e36e691cb36880d3e7dbe">More...</a><br/></td></tr>
@@ -202,6 +201,33 @@ __device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a
 <tr class="separator:a7ed503ebd1b5511a0e4ec6549de8a596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a4dd32bdc4eb8efa0aef66fec635c29b2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename InputT , int BLOCK_DIM_X, int ITEMS_PER_THREAD, BlockLoadAlgorithm ALGORITHM = BLOCK_LOAD_DIRECT, int BLOCK_DIM_Y = 1, int BLOCK_DIM_Z = 1, int PTX_ARCH = CUB_PTX_ARCH&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ <a class="el" href="classcub_1_1_block_load.html">cub::BlockLoad</a>&lt; InputT, BLOCK_DIM_X, ITEMS_PER_THREAD, ALGORITHM, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;::<a class="el" href="classcub_1_1_block_load.html">BlockLoad</a> </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Collective constructor using a private static allocation of shared memory as temporary storage. </p>
+
+</div>
+</div>
 <a class="anchor" id="aeb44b240f59e36e691cb36880d3e7dbe"></a>
 <div class="memitem">
 <div class="memproto">

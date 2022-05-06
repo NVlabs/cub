@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cub</b></li><li class="navelem"><a class="el" href="classcub_1_1_block_radix_sort.html">BlockRadixSort</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecub.html">cub</a></li><li class="navelem"><a class="el" href="classcub_1_1_block_radix_sort.html">BlockRadixSort</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -135,7 +135,7 @@ class cub::BlockRadixSort&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX
     <tr><td class="paramname">ValueT</td><td><b>[optional]</b> ValueT type (default: cub::NullType, which indicates a keys-only sort) </td></tr>
     <tr><td class="paramname">RADIX_BITS</td><td><b>[optional]</b> The number of radix bits per digit place (default: 4 bits) </td></tr>
     <tr><td class="paramname">MEMOIZE_OUTER_SCAN</td><td><b>[optional]</b> Whether or not to buffer outer raking scan partials to incur fewer shared memory reads at the expense of higher register pressure (default: true for architectures SM35 and newer, false otherwise). </td></tr>
-    <tr><td class="paramname">INNER_SCAN_ALGORITHM</td><td><b>[optional]</b> The cub::BlockScanAlgorithm algorithm to use (default: cub::BLOCK_SCAN_WARP_SCANS) </td></tr>
+    <tr><td class="paramname">INNER_SCAN_ALGORITHM</td><td><b>[optional]</b> The <a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23ab" title="BlockScanAlgorithm enumerates alternative algorithms for cub::BlockScan to compute a parallel prefix ...">cub::BlockScanAlgorithm</a> algorithm to use (default: <a class="el" href="namespacecub.html#abec44bba36037c547e7e84906d0d23aba7f51e58246eb53f1a97bd1bc8c0f400f">cub::BLOCK_SCAN_WARP_SCANS</a>) </td></tr>
     <tr><td class="paramname">SMEM_CONFIG</td><td><b>[optional]</b> Shared memory bank mode (default: <code>cudaSharedMemBankSizeFourByte</code>) </td></tr>
     <tr><td class="paramname">BLOCK_DIM_Y</td><td><b>[optional]</b> The thread block length in threads along the Y dimension (default: 1) </td></tr>
     <tr><td class="paramname">BLOCK_DIM_Z</td><td><b>[optional]</b> The thread block length in threads along the Z dimension (default: 1) </td></tr>
@@ -202,9 +202,8 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Collective constructors</div></td></tr>
-<tr class="memitem:abaccdf539c5a4d3ec0eea3f080650f65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abaccdf539c5a4d3ec0eea3f080650f65"></a>
-__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_radix_sort.html#abaccdf539c5a4d3ec0eea3f080650f65">BlockRadixSort</a> ()</td></tr>
-<tr class="memdesc:abaccdf539c5a4d3ec0eea3f080650f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collective constructor using a private static allocation of shared memory as temporary storage. <br/></td></tr>
+<tr class="memitem:abaccdf539c5a4d3ec0eea3f080650f65"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_radix_sort.html#abaccdf539c5a4d3ec0eea3f080650f65">BlockRadixSort</a> ()</td></tr>
+<tr class="memdesc:abaccdf539c5a4d3ec0eea3f080650f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collective constructor using a private static allocation of shared memory as temporary storage.  <a href="#abaccdf539c5a4d3ec0eea3f080650f65">More...</a><br/></td></tr>
 <tr class="separator:abaccdf539c5a4d3ec0eea3f080650f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afec22300c3b4b119e18ecac33373a14c"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcub_1_1_block_radix_sort.html#afec22300c3b4b119e18ecac33373a14c">BlockRadixSort</a> (<a class="el" href="structcub_1_1_block_radix_sort_1_1_temp_storage.html">TempStorage</a> &amp;temp_storage)</td></tr>
 <tr class="memdesc:afec22300c3b4b119e18ecac33373a14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collective constructor using the specified memory allocation as temporary storage.  <a href="#afec22300c3b4b119e18ecac33373a14c">More...</a><br/></td></tr>
@@ -237,6 +236,33 @@ __device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a
 <tr class="separator:ab56d4d4c3a8da9ff718906bfc5d815c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="abaccdf539c5a4d3ec0eea3f080650f65"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeyT , int BLOCK_DIM_X, int ITEMS_PER_THREAD, typename ValueT  = NullType, int RADIX_BITS = 4, bool MEMOIZE_OUTER_SCAN = (CUB_PTX_ARCH &gt;= 350) ? true : false, BlockScanAlgorithm INNER_SCAN_ALGORITHM = BLOCK_SCAN_WARP_SCANS, cudaSharedMemConfig SMEM_CONFIG = cudaSharedMemBankSizeFourByte, int BLOCK_DIM_Y = 1, int BLOCK_DIM_Z = 1, int PTX_ARCH = CUB_PTX_ARCH&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ <a class="el" href="classcub_1_1_block_radix_sort.html">cub::BlockRadixSort</a>&lt; KeyT, BLOCK_DIM_X, ITEMS_PER_THREAD, ValueT, RADIX_BITS, MEMOIZE_OUTER_SCAN, INNER_SCAN_ALGORITHM, SMEM_CONFIG, BLOCK_DIM_Y, BLOCK_DIM_Z, PTX_ARCH &gt;::<a class="el" href="classcub_1_1_block_radix_sort.html">BlockRadixSort</a> </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Collective constructor using a private static allocation of shared memory as temporary storage. </p>
+
+</div>
+</div>
 <a class="anchor" id="afec22300c3b4b119e18ecac33373a14c"></a>
 <div class="memitem">
 <div class="memproto">

@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cub</b></li><li class="navelem"><a class="el" href="structcub_1_1_device_scan.html">DeviceScan</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecub.html">cub</a></li><li class="navelem"><a class="el" href="structcub_1_1_device_scan.html">DeviceScan</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -894,7 +894,7 @@ template&lt;typename KeysInputIteratorT , typename ValuesInputIteratorT , typena
     <tr><td class="paramname">KeysInputIteratorT</td><td><b>[inferred]</b> Random-access input iterator type for reading scan keys inputs (may be a simple pointer type) </td></tr>
     <tr><td class="paramname">ValuesInputIteratorT</td><td><b>[inferred]</b> Random-access input iterator type for reading scan values inputs (may be a simple pointer type) </td></tr>
     <tr><td class="paramname">ValuesOutputIteratorT</td><td><b>[inferred]</b> Random-access output iterator type for writing scan values outputs (may be a simple pointer type) </td></tr>
-    <tr><td class="paramname">EqualityOpT</td><td><b>[inferred][/b] Functor type having member <code>T operator()(const T &amp;a, const T &amp;b)</code> for binary operations that defines the equality of keys </b></td></tr>
+    <tr><td class="paramname">EqualityOpT</td><td><b>[inferred]</b> Functor type having member <code>T operator()(const T &amp;a, const T &amp;b)</code> for binary operations that defines the equality of keys </td></tr>
   </table>
   </dd>
 </dl>
@@ -1063,7 +1063,7 @@ template&lt;typename KeysInputIteratorT , typename ValuesInputIteratorT , typena
     <tr><td class="paramname">ValuesOutputIteratorT</td><td><b>[inferred]</b> Random-access output iterator type for writing scan values outputs (may be a simple pointer type) </td></tr>
     <tr><td class="paramname">ScanOp</td><td><b>[inferred]</b> Binary scan functor type having member <code>T operator()(const T &amp;a, const T &amp;b)</code> </td></tr>
     <tr><td class="paramname">InitValueT</td><td><b>[inferred]</b> Type of the <code>init_value</code> value used in Binary scan functor type having member <code>T operator()(const T &amp;a, const T &amp;b)</code> </td></tr>
-    <tr><td class="paramname">EqualityOpT</td><td><b>[inferred][/b] Functor type having member <code>T operator()(const T &amp;a, const T &amp;b)</code> for binary operations that defines the equality of keys </b></td></tr>
+    <tr><td class="paramname">EqualityOpT</td><td><b>[inferred]</b> Functor type having member <code>T operator()(const T &amp;a, const T &amp;b)</code> for binary operations that defines the equality of keys </td></tr>
   </table>
   </dd>
 </dl>
@@ -1197,7 +1197,7 @@ template&lt;typename KeysInputIteratorT , typename ValuesInputIteratorT , typena
     <tr><td class="paramname">KeysInputIteratorT</td><td><b>[inferred]</b> Random-access input iterator type for reading scan keys inputs (may be a simple pointer type) </td></tr>
     <tr><td class="paramname">ValuesInputIteratorT</td><td><b>[inferred]</b> Random-access input iterator type for reading scan values inputs (may be a simple pointer type) </td></tr>
     <tr><td class="paramname">ValuesOutputIteratorT</td><td><b>[inferred]</b> Random-access output iterator type for writing scan values outputs (may be a simple pointer type) </td></tr>
-    <tr><td class="paramname">EqualityOpT</td><td><b>[inferred][/b] Functor type having member <code>T operator()(const T &amp;a, const T &amp;b)</code> for binary operations that defines the equality of keys </b></td></tr>
+    <tr><td class="paramname">EqualityOpT</td><td><b>[inferred]</b> Functor type having member <code>T operator()(const T &amp;a, const T &amp;b)</code> for binary operations that defines the equality of keys </td></tr>
   </table>
   </dd>
 </dl>
@@ -1359,7 +1359,7 @@ template&lt;typename KeysInputIteratorT , typename ValuesInputIteratorT , typena
     <tr><td class="paramname">ValuesInputIteratorT</td><td><b>[inferred]</b> Random-access input iterator type for reading scan values inputs (may be a simple pointer type) </td></tr>
     <tr><td class="paramname">ValuesOutputIteratorT</td><td><b>[inferred]</b> Random-access output iterator type for writing scan values outputs (may be a simple pointer type) </td></tr>
     <tr><td class="paramname">ScanOp</td><td><b>[inferred]</b> Binary scan functor type having member <code>T operator()(const T &amp;a, const T &amp;b)</code> </td></tr>
-    <tr><td class="paramname">EqualityOpT</td><td><b>[inferred][/b] Functor type having member <code>T operator()(const T &amp;a, const T &amp;b)</code> for binary operations that defines the equality of keys </b></td></tr>
+    <tr><td class="paramname">EqualityOpT</td><td><b>[inferred]</b> Functor type having member <code>T operator()(const T &amp;a, const T &amp;b)</code> for binary operations that defines the equality of keys </td></tr>
   </table>
   </dd>
 </dl>

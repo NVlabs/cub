@@ -1,8 +1,13 @@
 var searchData=
 [
+  ['d_5fsync',['d_sync',['../classcub_1_1_grid_barrier.html#a3acf468e6191133e1541e0bf5bdbf42d',1,'cub::GridBarrier']]],
   ['debug',['Debug',['../group___util_mgmt.html#ga5a175d2a88f63f7f1ab30e8b4f2cfa95',1,'cub']]],
+  ['defaultkey',['DefaultKey',['../structcub_1_1_radix_sort_twiddle.html#acb6b15cf6bba31be610f3bfb7b4e7dd3',1,'cub::RadixSortTwiddle']]],
   ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
+  ['detail',['detail',['../namespacedetail.html',1,'']]],
+  ['device_5fadjacent_5fdifference_2ecuh',['device_adjacent_difference.cuh',['../device__adjacent__difference_8cuh.html',1,'']]],
   ['device_5fhistogram_2ecuh',['device_histogram.cuh',['../device__histogram_8cuh.html',1,'']]],
+  ['device_5fmerge_5fsort_2ecuh',['device_merge_sort.cuh',['../device__merge__sort_8cuh.html',1,'']]],
   ['device_5fpartition_2ecuh',['device_partition.cuh',['../device__partition_8cuh.html',1,'']]],
   ['device_5fradix_5fsort_2ecuh',['device_radix_sort.cuh',['../device__radix__sort_8cuh.html',1,'']]],
   ['device_5freduce_2ecuh',['device_reduce.cuh',['../device__reduce_8cuh.html',1,'']]],
@@ -33,6 +38,7 @@ var searchData=
   ['devicespmv',['DeviceSpmv',['../structcub_1_1_device_spmv.html',1,'cub']]],
   ['difference',['Difference',['../structcub_1_1_difference.html',1,'cub']]],
   ['difference_5ftype',['difference_type',['../classcub_1_1_arg_index_input_iterator.html#aa5baa6e0a4526a1a73b38632838e947d',1,'cub::ArgIndexInputIterator::difference_type()'],['../classcub_1_1_cache_modified_input_iterator.html#a268f1e7a4b42a05c5b4d0bca2775c26e',1,'cub::CacheModifiedInputIterator::difference_type()'],['../classcub_1_1_cache_modified_output_iterator.html#ac8cdd3a29db7e398f14e44a7aa054750',1,'cub::CacheModifiedOutputIterator::difference_type()'],['../classcub_1_1_constant_input_iterator.html#ab45cc48afbfda7eaa3b4ea643e719c33',1,'cub::ConstantInputIterator::difference_type()'],['../classcub_1_1_counting_input_iterator.html#ac66dea2a687f0ad6ed0cbcd6217a3029',1,'cub::CountingInputIterator::difference_type()'],['../classcub_1_1_discard_output_iterator.html#a502bc5d0752a9b85b134fd1d00ba5057',1,'cub::DiscardOutputIterator::difference_type()'],['../classcub_1_1_tex_obj_input_iterator.html#a710012acbff3dd0c35822951e28148ea',1,'cub::TexObjInputIterator::difference_type()'],['../classcub_1_1_tex_ref_input_iterator.html#aff1afce146f69adb655e2ff7366b869f',1,'cub::TexRefInputIterator::difference_type()'],['../classcub_1_1_transform_input_iterator.html#ac05064e9ad33dc032452e3d09e8768f6',1,'cub::TransformInputIterator::difference_type()']]],
+  ['digit',['Digit',['../structcub_1_1_b_f_e_digit_extractor.html#aebc47eb7652c617fb23136840e353b0e',1,'cub::BFEDigitExtractor::Digit()'],['../structcub_1_1_shift_digit_extractor.html#a5bf033bcd11b6deebf3fd3c686de2a42',1,'cub::ShiftDigitExtractor::Digit()']]],
   ['discard_5foutput_5fiterator_2ecuh',['discard_output_iterator.cuh',['../discard__output__iterator_8cuh.html',1,'']]],
   ['discardoutputiterator',['DiscardOutputIterator',['../classcub_1_1_discard_output_iterator.html#ab43f12bf97b18ca58735286a64740c2e',1,'cub::DiscardOutputIterator']]],
   ['discardoutputiterator',['DiscardOutputIterator',['../classcub_1_1_discard_output_iterator.html',1,'cub']]],
@@ -40,6 +46,7 @@ var searchData=
   ['division',['Division',['../structcub_1_1_division.html',1,'cub']]],
   ['down',['Down',['../classcub_1_1_block_shuffle.html#a32b61b3c3230f122bbcb363d80aafbd5',1,'cub::BlockShuffle::Down(T(&amp;input)[ITEMS_PER_THREAD], T(&amp;prev)[ITEMS_PER_THREAD])'],['../classcub_1_1_block_shuffle.html#a7b8d89532ca483e141732f2889454ea2',1,'cub::BlockShuffle::Down(T(&amp;input)[ITEMS_PER_THREAD], T(&amp;prev)[ITEMS_PER_THREAD], T &amp;block_prefix)']]],
   ['download_20cub_21',['Download CUB!',['../download_cub.html',1,'']]],
+  ['download_5fcub_2edox',['download_cub.dox',['../download__cub_8dox.html',1,'']]],
   ['drain',['Drain',['../classcub_1_1_grid_queue.html#aa5a596bb3c8e9b8cdc049e7a8d061973',1,'cub::GridQueue']]],
   ['device_2c_20kernel_2c_20and_20storage_20management',['Device, kernel, and storage management',['../group___util_mgmt.html',1,'']]]
 ];

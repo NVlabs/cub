@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cub</b></li><li class="navelem"><a class="el" href="structcub_1_1_shift_digit_extractor.html">ShiftDigitExtractor</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecub.html">cub</a></li><li class="navelem"><a class="el" href="structcub_1_1_shift_digit_extractor.html">ShiftDigitExtractor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -126,40 +126,126 @@ Inheritance diagram for cub::ShiftDigitExtractor&lt; KeyT &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:a1b97076682ff456131f4a8da13935d89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b97076682ff456131f4a8da13935d89"></a>
-__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><b>ShiftDigitExtractor</b> (uint32_t bit_start=0, uint32_t num_bits=0)</td></tr>
+<tr class="memitem:a1b97076682ff456131f4a8da13935d89"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_shift_digit_extractor.html#a1b97076682ff456131f4a8da13935d89">ShiftDigitExtractor</a> (uint32_t <a class="el" href="structcub_1_1_shift_digit_extractor.html#aa4c88bcd037d45e7e25955ea6dacda9d">bit_start</a>=0, uint32_t num_bits=0)</td></tr>
 <tr class="separator:a1b97076682ff456131f4a8da13935d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bf033bcd11b6deebf3fd3c686de2a42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bf033bcd11b6deebf3fd3c686de2a42"></a>
-__device__ __forceinline__ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Digit</b> (UnsignedBits key)</td></tr>
+<tr class="memitem:a5bf033bcd11b6deebf3fd3c686de2a42"><td class="memItemLeft" align="right" valign="top">__device__ __forceinline__ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_shift_digit_extractor.html#a5bf033bcd11b6deebf3fd3c686de2a42">Digit</a> (<a class="el" href="structcub_1_1_base_digit_extractor.html#ad0e9dd0e9b7f8ce7e1567953ad7c667e">UnsignedBits</a> key)</td></tr>
 <tr class="separator:a5bf033bcd11b6deebf3fd3c686de2a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Members</h2></td></tr>
-<tr class="memitem:aa4c88bcd037d45e7e25955ea6dacda9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4c88bcd037d45e7e25955ea6dacda9d"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>bit_start</b></td></tr>
+<tr class="memitem:aa4c88bcd037d45e7e25955ea6dacda9d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_shift_digit_extractor.html#aa4c88bcd037d45e7e25955ea6dacda9d">bit_start</a></td></tr>
 <tr class="separator:aa4c88bcd037d45e7e25955ea6dacda9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e08812661caa9937cc9961b34038da7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e08812661caa9937cc9961b34038da7"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>mask</b></td></tr>
+<tr class="memitem:a6e08812661caa9937cc9961b34038da7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_shift_digit_extractor.html#a6e08812661caa9937cc9961b34038da7">mask</a></td></tr>
 <tr class="separator:a6e08812661caa9937cc9961b34038da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_structcub_1_1_base_digit_extractor"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structcub_1_1_base_digit_extractor')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structcub_1_1_base_digit_extractor.html">cub::BaseDigitExtractor&lt; KeyT &gt;</a></td></tr>
-<tr class="memitem:a8069dc2cb9b444ba31efeea9c4d03de4 inherit pub_types_structcub_1_1_base_digit_extractor"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>FLOAT_KEY</b> = TraitsT::CATEGORY == FLOATING_POINT
+<tr class="memitem:a8069dc2cb9b444ba31efeea9c4d03de4 inherit pub_types_structcub_1_1_base_digit_extractor"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="structcub_1_1_base_digit_extractor.html#a8069dc2cb9b444ba31efeea9c4d03de4a5dbb3b87f939a78a7e6b2c1e3aec96a1">FLOAT_KEY</a> = TraitsT::CATEGORY == FLOATING_POINT
  }</td></tr>
 <tr class="separator:a8069dc2cb9b444ba31efeea9c4d03de4 inherit pub_types_structcub_1_1_base_digit_extractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9861fcd911f3ad57255e69f341554e9 inherit pub_types_structcub_1_1_base_digit_extractor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9861fcd911f3ad57255e69f341554e9"></a>
-typedef Traits&lt; KeyT &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TraitsT</b></td></tr>
+<tr class="memitem:af9861fcd911f3ad57255e69f341554e9 inherit pub_types_structcub_1_1_base_digit_extractor"><td class="memItemLeft" align="right" valign="top">typedef Traits&lt; KeyT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_base_digit_extractor.html#af9861fcd911f3ad57255e69f341554e9">TraitsT</a></td></tr>
 <tr class="separator:af9861fcd911f3ad57255e69f341554e9 inherit pub_types_structcub_1_1_base_digit_extractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0e9dd0e9b7f8ce7e1567953ad7c667e inherit pub_types_structcub_1_1_base_digit_extractor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0e9dd0e9b7f8ce7e1567953ad7c667e"></a>
-typedef TraitsT::UnsignedBits&#160;</td><td class="memItemRight" valign="bottom"><b>UnsignedBits</b></td></tr>
+<tr class="memitem:ad0e9dd0e9b7f8ce7e1567953ad7c667e inherit pub_types_structcub_1_1_base_digit_extractor"><td class="memItemLeft" align="right" valign="top">typedef TraitsT::UnsignedBits&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_base_digit_extractor.html#ad0e9dd0e9b7f8ce7e1567953ad7c667e">UnsignedBits</a></td></tr>
 <tr class="separator:ad0e9dd0e9b7f8ce7e1567953ad7c667e inherit pub_types_structcub_1_1_base_digit_extractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_structcub_1_1_base_digit_extractor"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_structcub_1_1_base_digit_extractor')"><img src="closed.png" alt="-"/>&#160;Static Public Methods inherited from <a class="el" href="structcub_1_1_base_digit_extractor.html">cub::BaseDigitExtractor&lt; KeyT &gt;</a></td></tr>
-<tr class="memitem:a74a5b33ef7f2e0f485220b3e3cee349f inherit pub_static_methods_structcub_1_1_base_digit_extractor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74a5b33ef7f2e0f485220b3e3cee349f"></a>
-static __device__ <br class="typebreak"/>
-__forceinline__ UnsignedBits&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessFloatMinusZero</b> (UnsignedBits key)</td></tr>
+<tr class="memitem:a74a5b33ef7f2e0f485220b3e3cee349f inherit pub_static_methods_structcub_1_1_base_digit_extractor"><td class="memItemLeft" align="right" valign="top">static __device__ <br class="typebreak"/>
+__forceinline__ <a class="el" href="structcub_1_1_base_digit_extractor.html#ad0e9dd0e9b7f8ce7e1567953ad7c667e">UnsignedBits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_base_digit_extractor.html#a74a5b33ef7f2e0f485220b3e3cee349f">ProcessFloatMinusZero</a> (<a class="el" href="structcub_1_1_base_digit_extractor.html#ad0e9dd0e9b7f8ce7e1567953ad7c667e">UnsignedBits</a> key)</td></tr>
 <tr class="separator:a74a5b33ef7f2e0f485220b3e3cee349f inherit pub_static_methods_structcub_1_1_base_digit_extractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a1b97076682ff456131f4a8da13935d89"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeyT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ <a class="el" href="structcub_1_1_shift_digit_extractor.html">cub::ShiftDigitExtractor</a>&lt; KeyT &gt;::<a class="el" href="structcub_1_1_shift_digit_extractor.html">ShiftDigitExtractor</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>bit_start</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num_bits</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5bf033bcd11b6deebf3fd3c686de2a42"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeyT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __forceinline__ uint32_t <a class="el" href="structcub_1_1_shift_digit_extractor.html">cub::ShiftDigitExtractor</a>&lt; KeyT &gt;::Digit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcub_1_1_base_digit_extractor.html#ad0e9dd0e9b7f8ce7e1567953ad7c667e">UnsignedBits</a>&#160;</td>
+          <td class="paramname"><em>key</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa4c88bcd037d45e7e25955ea6dacda9d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeyT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t <a class="el" href="structcub_1_1_shift_digit_extractor.html">cub::ShiftDigitExtractor</a>&lt; KeyT &gt;::bit_start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6e08812661caa9937cc9961b34038da7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeyT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t <a class="el" href="structcub_1_1_shift_digit_extractor.html">cub::ShiftDigitExtractor</a>&lt; KeyT &gt;::mask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="radix__rank__sort__operations_8cuh.html">radix_rank_sort_operations.cuh</a></li>
 </ul>

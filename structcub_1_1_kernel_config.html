@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cub</b></li><li class="navelem"><a class="el" href="structcub_1_1_kernel_config.html">KernelConfig</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecub.html">cub</a></li><li class="navelem"><a class="el" href="structcub_1_1_kernel_config.html">KernelConfig</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -113,27 +113,125 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Methods</h2></td></tr>
-<tr class="memitem:ac3c1d116058a1674ced83e051274bcaa"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac3c1d116058a1674ced83e051274bcaa"></a>
-template&lt;typename AgentPolicyT , typename KernelPtrT &gt; </td></tr>
+<tr class="memitem:a6d4047834dc21a4def361dd81e0bba00"><td class="memItemLeft" align="right" valign="top">CUB_RUNTIME_FUNCTION <br class="typebreak"/>
+__forceinline__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_kernel_config.html#a6d4047834dc21a4def361dd81e0bba00">KernelConfig</a> ()</td></tr>
+<tr class="separator:a6d4047834dc21a4def361dd81e0bba00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c1d116058a1674ced83e051274bcaa"><td class="memTemplParams" colspan="2">template&lt;typename AgentPolicyT , typename KernelPtrT &gt; </td></tr>
 <tr class="memitem:ac3c1d116058a1674ced83e051274bcaa"><td class="memTemplItemLeft" align="right" valign="top">CUB_RUNTIME_FUNCTION <br class="typebreak"/>
-__forceinline__ cudaError_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Init</b> (KernelPtrT kernel_ptr)</td></tr>
+__forceinline__ cudaError_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structcub_1_1_kernel_config.html#ac3c1d116058a1674ced83e051274bcaa">Init</a> (KernelPtrT kernel_ptr)</td></tr>
 <tr class="separator:ac3c1d116058a1674ced83e051274bcaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Members</h2></td></tr>
-<tr class="memitem:a93b7fa762e7d76f579718ab6a6ae7d39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93b7fa762e7d76f579718ab6a6ae7d39"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>block_threads</b></td></tr>
+<tr class="memitem:a93b7fa762e7d76f579718ab6a6ae7d39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_kernel_config.html#a93b7fa762e7d76f579718ab6a6ae7d39">block_threads</a></td></tr>
 <tr class="separator:a93b7fa762e7d76f579718ab6a6ae7d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25d75fd077637621c6bcb79020d798d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25d75fd077637621c6bcb79020d798d2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>items_per_thread</b></td></tr>
+<tr class="memitem:a25d75fd077637621c6bcb79020d798d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_kernel_config.html#a25d75fd077637621c6bcb79020d798d2">items_per_thread</a></td></tr>
 <tr class="separator:a25d75fd077637621c6bcb79020d798d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc96c83fae25528ee9c46bf1e7b17f04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc96c83fae25528ee9c46bf1e7b17f04"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>tile_size</b></td></tr>
+<tr class="memitem:acc96c83fae25528ee9c46bf1e7b17f04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_kernel_config.html#acc96c83fae25528ee9c46bf1e7b17f04">tile_size</a></td></tr>
 <tr class="separator:acc96c83fae25528ee9c46bf1e7b17f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a1b81b923e0f79b1fc1d633edd0f20d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a1b81b923e0f79b1fc1d633edd0f20d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sm_occupancy</b></td></tr>
+<tr class="memitem:a7a1b81b923e0f79b1fc1d633edd0f20d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcub_1_1_kernel_config.html#a7a1b81b923e0f79b1fc1d633edd0f20d">sm_occupancy</a></td></tr>
 <tr class="separator:a7a1b81b923e0f79b1fc1d633edd0f20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6d4047834dc21a4def361dd81e0bba00"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CUB_RUNTIME_FUNCTION __forceinline__ cub::KernelConfig::KernelConfig </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac3c1d116058a1674ced83e051274bcaa"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename AgentPolicyT , typename KernelPtrT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CUB_RUNTIME_FUNCTION __forceinline__ cudaError_t cub::KernelConfig::Init </td>
+          <td>(</td>
+          <td class="paramtype">KernelPtrT&#160;</td>
+          <td class="paramname"><em>kernel_ptr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a93b7fa762e7d76f579718ab6a6ae7d39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cub::KernelConfig::block_threads</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a25d75fd077637621c6bcb79020d798d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cub::KernelConfig::items_per_thread</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc96c83fae25528ee9c46bf1e7b17f04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cub::KernelConfig::tile_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7a1b81b923e0f79b1fc1d633edd0f20d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cub::KernelConfig::sm_occupancy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="util__device_8cuh.html">util_device.cuh</a></li>
 </ul>
